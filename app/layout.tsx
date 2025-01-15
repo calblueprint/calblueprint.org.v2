@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.scss';
 import { Inter, Poppins, Roboto } from 'next/font/google';
+import Footer from '@/components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 
 const roboto = Roboto({
@@ -75,8 +76,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bpText.className}>
-        <Navbar />
-        <div>{children}</div>
+        <div>
+          <Navbar />
+          <div>{children}</div>
+        </div>
+        <Footer />
       </body>
     </html>
   );
