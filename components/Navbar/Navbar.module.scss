@@ -1,0 +1,279 @@
+nav.bpNav {
+  padding: 15px 0;
+  position: relative;
+  z-index: 10;
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .logoContainer {
+    font-family: "Poppins";
+    font-size: 20px;
+    transition: 100ms;
+
+    a {
+      color: $bp-blue;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .logo {
+    background-image: image_url("logo.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    transition: 750ms;
+    vertical-align: middle;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+
+  .mobileNavBtn {
+    display: none;
+    height: 30px;
+    width: 30px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .mobileNavClose {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .mobileNavShow {
+    color: $bp-blue;
+    font-size: 21px;
+    margin-left: auto;
+  }
+
+  .linkContainer {
+    color: $bp-blue;
+    display: flex;
+    font-family: $bptext-font;
+    font-weight: 600;
+    margin-left: auto;
+    position: relative;
+    text-transform: uppercase;
+
+    li {
+      color: $bp-blue-80;
+      margin: 0 15px;
+      transition: opacity 100ms;
+
+      &:hover {
+        color: $bp-blue;
+      }
+    }
+
+    a {
+      color: inherit;
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
+nav.bpNav.navHome {
+  .logo-container {
+    a {
+      color: $white;
+    }
+  }
+
+  .mobileNavShow {
+    color: white;
+  }
+
+  .logo {
+    background-image: image_url("logo-white.png");
+  }
+
+  .linkContainer {
+    li {
+      color: $white-80;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .adminDropdown {
+    li {
+      color: inherit;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
+
+// For use on dark or colored backgrounds
+nav.bpNav.navWhite {
+
+  .logo-container {
+    a {
+      color: $white;
+    }
+  }
+
+  .mobileNavShow {
+    color: white;
+  }
+
+  .logo {
+    background-image: image_url("logo-white.png");
+  }
+
+  .linkContainer {
+    li {
+      color: $white-80;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .adminDropdown {
+    li {
+      color: inherit;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.staticPageNav {
+  left: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+nav.bpNavFixed {
+  animation: none;
+  background: white;
+  position: fixed !important;
+  transform: translateY(-100%);
+  transition: 150ms;
+  width: 100%;
+  visibility: hidden;
+
+  .navLink {
+    animation: none !important;
+  }
+
+  &.navFixedShow {
+    box-shadow: 0 2px 15px $dark-gray-10;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .mobileNavShow {
+    color: $bp-blue;
+  }
+}
+
+@media (max-width: 700px) {
+  .notifyBarLink+.content>nav.bpNav .linkContainer {
+    top: -100px;
+  }
+
+  nav.bpNav {
+    .mobileNavBtn {
+      display: block;
+    }
+
+    .linkContainer {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      opacity: 0;
+      padding: 20px;
+      padding-left: 20%;
+      padding-right: 60px;
+      background: $dark-gray;
+      transition: 200ms;
+      transform: translateY(-100%);
+
+      &.mobileShow {
+        top: 0 !important;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      li {
+        animation: none !important;
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+// Admin Dropdown Styles
+#headerAdminDropdown {
+  cursor: pointer;
+}
+
+nav.bpNav {
+  .linkContainer {
+    .adminDropdown {
+      li {
+        font-family: $sans-serif;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .divider {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+.notifyBarLink {
+  text-decoration: none;
+}
+
+.notifyBarContainer {
+  display: flex;
+  height: auto;
+  font-size: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  padding: 8px 0;
+}
+
+.notifyBarContainer:hover {
+  background-color: $bp-blue-10;
+}

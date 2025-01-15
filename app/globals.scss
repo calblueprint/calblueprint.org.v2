@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// Vendor -------------------------
+@import "bootstrap/dist/css/bootstrap.min.css";
+// @import 'bootstrap/dist/css/bootstrap-grid.min.css';
+// @import 'bootstrap/dist/css/bootstrap-sprockets.min.css';
+// @import 'bootstrap/dist/css/bootstrap-variables.min.css';
+// @import 'bootstrap/dist/css/bootstrap-mixins.min.css';
+// @import 'bootstrap/dist/css/bootstrap-dropdowns.min.css';
+
+// Reset browser-specific CSS
+@import "../styles/vendor/normalize";
+@import "../styles/partials/reset";
+
+// Other
+@import "../styles/vendor/toastr";
+
+
+// Stylesheets --------------------
+
+// Partials
+@import "../styles/partials/variables";
+@import "../styles/partials/animations";
+@import "../styles/partials/fonts";
+@import "../styles/partials/layout";
+
+// Styles
+@import "../styles/components/all.scss";
+
+@import "../styles/pages/all.scss";
+@import "../styles/apply/all.scss";
+@import "../styles/nonprofit_applications/all.scss";
+@import "../styles/nonprofit_interest_forms/npo_interest_forms.scss";
+@import "../styles/shared/newsletter-subscribe";
+
+.content {
+  position: relative;
+}
