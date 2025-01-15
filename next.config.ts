@@ -1,6 +1,19 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  images: {
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.gravatar.com',
+        port: '',
+        pathname: '/avatar/**',
+        search: '?s=300&d=404',
+      },
+    ],
+  },
   sassOptions: {
     additionalData: `
       /* Main Blueprint Blue color */

@@ -1,4 +1,5 @@
 @media (min-width: 1200px) {
+
   // Override bootstrap container style for about page
   .pages-about .container {
     width: 970px;
@@ -12,7 +13,7 @@
 }
 
 .about-page-hero {
-  background-image: image_url("home/group_photo_2021.jpg");
+  // background-image: image_url("home/group_photo_2021.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,6 +136,7 @@
     }
 
   }
+
   li.active {
     border-top: 1px solid $bp-blue;
     color: $bp-blue;
@@ -150,9 +152,9 @@
 
 .about-page-member-item {
   margin-bottom: 30px;
-  width: 17%;
+  // width: 17%;
 
-  a {
+  about-page-member a {
     color: inherit;
     text-decoration: none;
   }

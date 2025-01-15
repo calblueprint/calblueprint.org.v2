@@ -76,9 +76,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bpText.className}>
-        <div>
+        <div className="content pages pages-about">
           <Navbar />
-          <div>{children}</div>
+          {children}
         </div>
         <Footer />
       </body>

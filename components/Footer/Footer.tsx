@@ -97,7 +97,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="container footer-copyright">© Blueprint 2023</div>
+      <div className="container footer-copyright">© Blueprint 2025</div>
     </div>
   );
 }

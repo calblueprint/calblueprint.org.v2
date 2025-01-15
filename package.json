@@ -11,6 +11,7 @@
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "bootstrap": "^5.3.3",
+    "crypto-js": "^4.2.0",
     "next": "15.1.4",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
