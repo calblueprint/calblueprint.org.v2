@@ -4,7 +4,7 @@ import ProjectCard from '@/components/ProjectCard/ProjectCard';
 import projects from '@/data/projects.json';
 import heroImage from '@/public/images/projects/background.png';
 
-type ProjectData = {
+export type ProjectData = {
   status: 'current' | 'past';
   title: string;
   short_summary: string;
@@ -12,6 +12,7 @@ type ProjectData = {
   color: string;
   banner_image: string;
   full_description: string;
+  blurb?: string;
 };
 
 export default function ProjectsPage() {
@@ -28,6 +29,7 @@ export default function ProjectsPage() {
           <HeroButton
             buttonText={'View Our Github'}
             buttonLink={'https://github.com/calblueprint/'}
+            className="mt-[40px]"
           />
         }
         heroImage={heroImage}

@@ -4,6 +4,7 @@
       "ocf": {
         "status": "current",
         "title": "Our City Forest",
+        "blurb": "Our City Forest is the leading nonprofit in Silicon Valley for urban forestry and environmental education.",
         "short_summary": "Our City Forest is the leading nonprofit in Silicon Valley for urban forestry and environmental education. They provide drought-tolerant trees to local residents, schools, and parks, and have a nursery where they educate their community on how to plant and care for trees.\n",
         "org_link": "https://www.ourcityforest.org/home-programs",
         "color": "314E25",
@@ -13,6 +14,7 @@
       "jdi": {
         "status": "current",
         "title": "Just Detention International",
+        "blurb": "Just Detention International is a human rights organization that seeks to end sexual abuse in detention.",
         "short_summary": "Just Detention International (JDI) is a human rights organization that seeks to end sexual abuse in detention. Their work is guided by three core goals: to hold government officials accountable for sexual abuse in detention; to promote public attitudes that value the safety and dignity of incarcerated people; and to ensure that survivors of sexual abuse get the help they need. \n",
         "org_link": "https://justdetention.org/who-we-are/our-mission/",
         "color": "E37F1C",
@@ -22,6 +24,7 @@
       "ace": {
         "status": "current",
         "title": "The Alliance for Clean Energy",
+        "blurb": "ACE NY encourages the use of renewable energy and energy efficiency in New York state.",
         "short_summary": "ACE NY seeks to encourage the use of renewable energy and energy efficiency in New York State in order to help decrease pollution and improve public health. The organization works towards its goals through public policy advocacy, education, outreach, research, and coalition-building. They work closely with state legislature to increase the use of renewable energy. \n",
         "org_link": "https://www.aceny.org/mission",
         "color": "0472BB",
@@ -31,6 +34,7 @@
       "breadandroses": {
         "status": "current",
         "title": "Bread & Roses Presents",
+        "blurb": "Bread & Roses Presents uplifts the human spirit with free, live, quality entertainment to communities.",
         "short_summary": "Bread & Roses Presents aims to uplift the human spirit by providing free, live, quality entertainment to communities. They are a cultural cornerstone in the Bay Area, producing 500+ shows annually — particularly for vulnerable populations unable to experience the enriching power of art. In its commitment to inclusivity, Bread & Roses Presents brings the joy and inspiration of live music and performing arts to those who need it most.\n",
         "org_link": "https://www.breadandroses.org/who-we-are",
         "color": "E73D30",
@@ -40,6 +44,7 @@
       "trapgarden": {
         "status": "current",
         "title": "Trap Garden",
+        "blurb": "Trap Garden uplifts food-insecure communities by supporting community gardens and promoting healthy eating.",
         "short_summary": "Trap Garden’s mission is to uplift food-insecure communities by creating and supporting community gardens and promoting healthy eating. They believe that community gardens serve not only to increase availability and access to healthy foods, but also as safe spaces for community interaction, empowerment and nutritional education for the public.\n",
         "org_link": "https://trapgarden.org/about",
         "color": "0B9444",

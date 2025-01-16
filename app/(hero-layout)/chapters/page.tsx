@@ -37,6 +37,7 @@ export default function ChapterPage() {
           <HeroButton
             buttonText={'Submit Interest Form'}
             buttonLink={'/chapters#interest'}
+            className="mt-[40px]"
           />
         }
         heroImage={heroImage}

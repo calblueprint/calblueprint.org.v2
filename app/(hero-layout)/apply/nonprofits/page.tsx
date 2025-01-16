@@ -34,6 +34,7 @@ export default function NonprofitApplyPage() {
     <HeroButton
       buttonText={'Apply Now'}
       buttonLink={settings.nonprofit_application_link}
+      className="mt-[40px]"
     />
   ) : (
     <HeroMessage text={appsDisabledText} />

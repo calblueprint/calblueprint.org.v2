@@ -38,7 +38,11 @@ export default function AboutPage() {
           'We’re a club at UC Berkeley that develops pro-bono apps for nonprofits and promotes tech for social good.'
         }
         action={
-          <HeroButton buttonText={'Read More'} buttonLink={'/about#mission'} />
+          <HeroButton
+            buttonText={'Read More'}
+            buttonLink={'/about#mission'}
+            className="mt-[40px]"
+          />
         }
         heroImage={fullClubImage}
         className={'static-page-hero about-page-hero'}

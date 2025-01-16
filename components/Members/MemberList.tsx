@@ -15,7 +15,7 @@ type MemberSectionProps = {
 export default function MemberList({ data, title }: MemberSectionProps) {
   return (
     <section className="about-page-team-section" id="team">
-      <div className="container">
+      <div className="container max-w-[940px]">
         <h2 className="static-page-header marginBot-lg">{title}</h2>
         <div className="">
           <ul className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-[4%]">
