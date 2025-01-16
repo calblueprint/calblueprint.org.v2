@@ -175,11 +175,11 @@ export default function NonprofitApplyPage() {
                   If your proposed project sounds like something we can build,
                   we'll be in touch for a final interview.
                 </div>
-                <div className="timeline-row-btn">
-                  <Link className="bp-btn" href="/nonprofit_applications">
-                    View Application
-                  </Link>
-                </div>
+                {/* <div className="timeline-row-btn"> */}
+                {/*   <Link className="bp-btn" href="/nonprofit_applications"> */}
+                {/*     View Application */}
+                {/*   </Link> */}
+                {/* </div> */}
               </div>
             </div>
             <div className="timeline-row">

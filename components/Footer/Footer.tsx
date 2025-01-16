@@ -22,7 +22,7 @@ export default function Footer() {
           <Link className="footer-link" href="/projects">
             Projects
           </Link>
-          <Link className="footer-link" href="/contact_forms/new">
+          <Link className="footer-link" href="mailto:team@calblueprint.org">
             Contact
           </Link>
           <Link className="footer-link" href="https://medium.com/blueprint">
@@ -49,9 +49,9 @@ export default function Footer() {
           <Link className="footer-link" href="/apply/nonprofits">
             Apply
           </Link>
-          <Link className="footer-link" href="/nonprofits/sign_in">
-            Login
-          </Link>
+          {/* <Link className="footer-link" href="/nonprofits/sign_in"> */}
+          {/*   Login */}
+          {/* </Link> */}
           <Link
             className="footer-link"
             href="/apply/nonprofits#application-process"
