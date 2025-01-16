@@ -1,23 +1,32 @@
 import { FaBars } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 import closeIcon from '@/public/images/icons/close.svg';
-import blueprintLogo from '@/public/images/logo-white.png';
+import whiteLogo from '@/public/images/logo-white.png';
+import defaultLogo from '@/public/images/logo.png';
+
+type NavbarProps = {
+  theme: 'nav-white' | 'default';
+};
 
 // TODO: Add mobile nav bar state
-export default function Navbar() {
+export default function Navbar({ theme }: NavbarProps) {
   return (
-    <nav className="bp-nav nav-white">
-      <div className="container">
+    <nav className={`bp-nav ${theme}`}>
+      <div className="container max-w-[1170px]">
         <div
           className="logo-container nav-link"
           style={{ animation: '400ms 700ms both slideDown' }}
         >
-          <a href="/">
+          <Link href="/">
             <div className="logo">
-              <Image src={blueprintLogo} alt="blueprint logo" />
+              <Image
+                src={theme == 'nav-white' ? whiteLogo : defaultLogo}
+                alt="blueprint logo"
+              />
             </div>
             blueprint
-          </a>
+          </Link>
         </div>
         <button className="mobile-nav-btn mobile-nav-show">
           <FaBars />
@@ -30,33 +39,31 @@ export default function Navbar() {
             className="nav-link"
             style={{ animation: '400ms 750ms both slideDown' }}
           >
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li
             className="nav-link"
             style={{ animation: '400ms 800ms both slideDown' }}
           >
-            <a href="/chapters">Chapters</a>
+            <Link href="/chapters">Chapters</Link>
           </li>
           <li
             className="nav-link"
             style={{ animation: '400ms 850ms both slideDown' }}
           >
-            <a href="/projects">Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li
             className="nav-link"
             style={{ animation: '400ms 900ms both slideDown' }}
           >
-            <a target="_blank" href="https://medium.com/blueprint">
-              Blog
-            </a>
+            <Link href="https://medium.com/blueprint">Blog</Link>
           </li>
           <li
             className="nav-link"
             style={{ animation: '400ms 950ms both slideDown' }}
           >
-            <a href="/apply">Apply</a>
+            <Link href="/apply">Apply</Link>
           </li>
         </ul>
       </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 type ProjectCardProps = {
   name: string;
   banner_image: string;
@@ -15,7 +17,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="project-card-column">
-      <a className="project-card" href={`/projects/${name}`}>
+      <Link className="project-card" href={`/projects/${name}`}>
         <div
           className="project-card--image"
           style={{
@@ -27,7 +29,7 @@ export default function ProjectCard({
         <div className="card-button" style={{ color: `#${color}` }}>
           Read More
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

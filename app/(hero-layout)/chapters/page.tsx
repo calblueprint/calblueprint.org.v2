@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
 import Navbar from '@/components/Navbar/Navbar';
 import PageNav from '@/components/PageNav/PageNav';
@@ -48,7 +49,7 @@ export default function ChapterPage() {
         <div className="max-w-[1430px] mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {chapters.chapters.map((chapter: BlueprintChapter, i) => (
             <div className="chapter-card-column col-span-1" key={i}>
-              <a className="chapter-card" href={chapter.url}>
+              <Link className="chapter-card" href={chapter.url}>
                 <div
                   className="chapter-card--image"
                   style={{
@@ -57,7 +58,7 @@ export default function ChapterPage() {
                 />
                 <h3 className="chapter-card--title">{chapter.name}</h3>
                 <p className="chapter-card--summary">{chapter.description}</p>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -136,15 +137,15 @@ export default function ChapterPage() {
                   our team will reach out to you to get the process started! If
                   you have any questions or concerns about anything in this
                   timeline, please email{' '}
-                  <a href="mailto:team@calblueprint.org">
+                  <Link href="mailto:team@calblueprint.org">
                     team@calblueprint.org
-                  </a>
+                  </Link>
                   .
                 </div>
                 <div className="timeline-row-btn">
-                  <a className="bp-btn" href="/chapters#interest">
+                  <Link className="bp-btn" href="/chapters#interest">
                     Interest Form
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
