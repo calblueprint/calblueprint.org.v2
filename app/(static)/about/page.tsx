@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Hero from '@/components/Hero/Hero';
 import Members from '@/components/Members/Members';
+import Navbar from '@/components/Navbar/Navbar';
 import PageNav from '@/components/PageNav/PageNav';
 import carouselImage4 from '@/public/images/about/4.jpg';
 import carouselImage5 from '@/public/images/about/5.jpg';
@@ -12,17 +13,17 @@ import carouselImage10 from '@/public/images/about/10.jpg';
 import fullClubImage from '@/public/images/home/group_photo_2021.jpg';
 
 export default function AboutPage() {
-  const aboutTitle = 'About The Club';
-  const aboutBody =
+  const title = 'About The Club';
+  const body =
     'We’re a club at UC Berkeley that develops pro-bono apps for nonprofits and promotes tech for social good.';
   const buttonText = 'Read More';
   const buttonLink = '/about#mission';
-
-  const aboutSections = [
+  const sections = [
     { text: 'Mission', sectionScrollHref: 'mission' },
     { text: 'Values', sectionScrollHref: 'value' },
     { text: 'The Team', sectionScrollHref: 'team' },
   ];
+
   const carouselImages = [
     carouselImage10,
     carouselImage9,
@@ -34,15 +35,18 @@ export default function AboutPage() {
   ];
 
   return (
-    <>
+    <div className="content pages pages-about">
+      <Navbar />
+
       <Hero
-        title={aboutTitle}
-        body={aboutBody}
+        title={title}
+        body={body}
         buttonText={buttonText}
         buttonLink={buttonLink}
         heroImage={fullClubImage}
+        className={'static-page-hero about-page-hero'}
       >
-        <PageNav sections={aboutSections} />
+        <PageNav sections={sections} />
       </Hero>
 
       <section className="about-page-mission-section" id="mission">
@@ -134,6 +138,6 @@ export default function AboutPage() {
       </section>
 
       <Members />
-    </>
+    </div>
   );
 }

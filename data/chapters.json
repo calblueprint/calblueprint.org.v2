@@ -1,0 +1,52 @@
+{
+  "chapters": [
+    {
+      "name": "University of Waterloo",
+      "description": "UWaterloo is our first Blueprint chapter, founded in 2015 🍁",
+      "url": "https://uwblueprint.org/",
+      "image": "images/chapters/waterloo.png"
+    },
+    {
+      "name": "UCLA",
+      "description": "Blueprint at the University of California, Los Angeles was established in 2019 🚀",
+      "url": "https://lablueprint.org/",
+      "image": "images/chapters/ucla.png"
+    },
+    {
+      "name": "University of Toronto",
+      "description": "We were very excited to establish the second Canadian chapter in 2020 🌿",
+      "url": "http://uoftblueprint.org/",
+      "image": "images/chapters/toronto.png"
+    },
+    {
+      "name": "UC Irvine",
+      "description": "Our second Southern California Blueprint chapter was established in 2020 ♥️",
+      "url": "https://uciblueprint.org/#/",
+      "image": "images/chapters/uci.png"
+    },
+    {
+      "name": "Carleton University",
+      "description": "Our third Blueprint chapter in Canada 🍂",
+      "url": "https://carletonblueprint.org",
+      "image": "images/chapters/carleton.png"
+    },
+    {
+      "name": "University of Alabama",
+      "description": "We were very proud to bring yet another BP chapter across the country ✨",
+      "url": "https://website.sdwight.workers.dev/",
+      "image": "images/chapters/alabama.png"
+    },
+    {
+      "name": "University of Colorado Boulder",
+      "description": "Blueprint Boulder is our first chapter in the Rockies, established in 2020 💕",
+      "url": "https://blueprintboulder.org",
+      "image": "images/chapters/colorado.png"
+    },
+    {
+      "name": "Simon Fraser University",
+      "description": "Established in 2023, SFU Blueprint is our newest chapter in Canada🍁",
+      "url": "https://sfublueprint.org/",
+      "image": "images/chapters/sfu.png"
+    }
+  ]
+}

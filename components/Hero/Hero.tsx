@@ -8,6 +8,7 @@ type HeroProps = {
   buttonText: string;
   buttonLink: string;
   heroImage: StaticImageData;
+  className?: string;
   children: React.ReactNode; // Used to pass in the page nav
 };
 
@@ -17,11 +18,12 @@ export default function Hero({
   heroImage,
   buttonText,
   buttonLink,
+  className = '',
   children,
 }: HeroProps) {
   return (
     <section
-      className="static-page-hero about-page-hero"
+      className={className}
       style={{ backgroundImage: `url(${heroImage.src})` }}
     >
       <div className="static-hero-gradient" />

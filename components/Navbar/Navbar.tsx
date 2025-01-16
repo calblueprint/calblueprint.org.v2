@@ -4,7 +4,7 @@ import closeIcon from '@/public/images/icons/close.svg';
 import blueprintLogo from '@/public/images/logo-white.png';
 
 // TODO: Add mobile nav bar state
-export default function NavBar() {
+export default function Navbar() {
   return (
     <nav className="bp-nav nav-white">
       <div className="container">
