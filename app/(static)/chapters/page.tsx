@@ -30,9 +30,7 @@ export default function ChapterPage() {
   ];
 
   return (
-    <div className="content pages pages-about">
-      <Navbar />
-
+    <>
       <Hero
         title={title}
         body={body}
@@ -298,6 +296,6 @@ export default function ChapterPage() {
           style={{ background: 'transparent', border: '1px solid #ccc' }}
         />
       </section>
-    </div>
+    </>
   );
 }

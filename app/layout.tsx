@@ -76,7 +76,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <div className="content pages pages-about">
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

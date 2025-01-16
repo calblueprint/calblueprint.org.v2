@@ -35,9 +35,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="content pages pages-about">
-      <Navbar />
-
+    <>
       <Hero
         title={title}
         body={body}
@@ -138,6 +136,6 @@ export default function AboutPage() {
       </section>
 
       <Members />
-    </div>
+    </>
   );
 }

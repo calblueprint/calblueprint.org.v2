@@ -9,7 +9,7 @@ type HeroProps = {
   buttonLink: string;
   heroImage: StaticImageData;
   className?: string;
-  children: React.ReactNode; // Used to pass in the page nav
+  children?: React.ReactNode; // Used to pass in the page nav
 };
 
 export default function Hero({
@@ -38,7 +38,7 @@ export default function Hero({
           </Link>
         </div>
       </div>
-      <div className="page-nav">{children}</div>
+      {children && <div className="page-nav">{children}</div>}
     </section>
   );
 }

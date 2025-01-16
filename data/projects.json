@@ -1,0 +1,409 @@
+ {
+  "projects": {
+    "projects_list": {
+      "ocf": {
+        "status": "current",
+        "title": "Our City Forest",
+        "short_summary": "Our City Forest is the leading nonprofit in Silicon Valley for urban forestry and environmental education. They provide drought-tolerant trees to local residents, schools, and parks, and have a nursery where they educate their community on how to plant and care for trees.\n",
+        "org_link": "https://www.ourcityforest.org/home-programs",
+        "color": "314E25",
+        "banner_image": "images/projects/ocf.png",
+        "full_description": "Our Project\n-----------\nA mobile application to help Our City Forest manage their tree inventory and visualize planted trees in the community. Each of their trees will have a unique QR code. Staff and volunteers can scan this code to view and modify the tree’s properties (whether it’s sick or healthy, its location, whether it’s been sold or planted, etc). Anyone from the general public can scan a tree or shrub’s QR code to see its information and care guide. The app will also include a map to display the locations of the trees Our City Forest has planted in their community. This will both help them maintain these trees and measure their impact while applying to grants. \n"
+      },
+      "jdi": {
+        "status": "current",
+        "title": "Just Detention International",
+        "short_summary": "Just Detention International (JDI) is a human rights organization that seeks to end sexual abuse in detention. Their work is guided by three core goals: to hold government officials accountable for sexual abuse in detention; to promote public attitudes that value the safety and dignity of incarcerated people; and to ensure that survivors of sexual abuse get the help they need. \n",
+        "org_link": "https://justdetention.org/who-we-are/our-mission/",
+        "color": "E37F1C",
+        "banner_image": "images/projects/jdi.png",
+        "full_description": "Our Project\n-----------\nAn application for prison tablets, which incarcerated survivors can use to access resources from JDI. These resources include counseling from advocates at JDI, educational materials about the crisis of sexual abuse in detention, and healing / mediation guides. The scope may also be increased to include customized resources for released survivors, to better support their transition back into their communities.  \n"
+      },
+      "ace": {
+        "status": "current",
+        "title": "The Alliance for Clean Energy",
+        "short_summary": "ACE NY seeks to encourage the use of renewable energy and energy efficiency in New York State in order to help decrease pollution and improve public health. The organization works towards its goals through public policy advocacy, education, outreach, research, and coalition-building. They work closely with state legislature to increase the use of renewable energy. \n",
+        "org_link": "https://www.aceny.org/mission",
+        "color": "0472BB",
+        "banner_image": "images/projects/ace.png",
+        "full_description": "Our Project\n-----------\nA web application that displays an interactive map of renewable energy projects in New York. Different stakeholders can easily visualize the projects, and view further information and specific project details (i.e. size, capacity, status, impact of pro). An admin flow will enable staff to add or edit the information on the map. In addition, the app will include a web scraper to gather data about renewable energy projects, reducing the time ACE NY spends manually finding such information.\n"
+      },
+      "breadandroses": {
+        "status": "current",
+        "title": "Bread & Roses Presents",
+        "short_summary": "Bread & Roses Presents aims to uplift the human spirit by providing free, live, quality entertainment to communities. They are a cultural cornerstone in the Bay Area, producing 500+ shows annually — particularly for vulnerable populations unable to experience the enriching power of art. In its commitment to inclusivity, Bread & Roses Presents brings the joy and inspiration of live music and performing arts to those who need it most.\n",
+        "org_link": "https://www.breadandroses.org/who-we-are",
+        "color": "E73D30",
+        "banner_image": "images/projects/breadandroses.png",
+        "full_description": "Our Project\n-----------\nA web application to streamline the processes of organizing and delivering live performances. Facilities will be able to submit their availability and find entertainment that accommodates their schedule. Volunteers can browse event calendars, sign up to perform or host shows, and submit availability. Administrators can then review these requests and carefully select volunteers. These features will simplify event coordination, ensuring each show is a strong fit for the facility’s needs and the volunteers' talents.\n"
+      },
+      "trapgarden": {
+        "status": "current",
+        "title": "Trap Garden",
+        "short_summary": "Trap Garden’s mission is to uplift food-insecure communities by creating and supporting community gardens and promoting healthy eating. They believe that community gardens serve not only to increase availability and access to healthy foods, but also as safe spaces for community interaction, empowerment and nutritional education for the public.\n",
+        "org_link": "https://trapgarden.org/about",
+        "color": "0B9444",
+        "banner_image": "images/projects/trapgarden.png",
+        "full_description": "Our Project\n-----------\nA mobile application that empowers beginners to build their own gardens. Starting community gardens from scratch require significant financial resources, spatial availability, gardening knowledge, among other factors, which pose a significant barrier to beginner gardeners. This project will enable gardeners to access garden-maintenance resources (seasonal planting guide, notifications, tracking system for garden tasks such as watering and weeding), empowering more individuals and small organizations like schools alike to start their own community gardens.\n"
+      },
+      "impactfund": {
+        "status": "past",
+        "title": "Impact Fund",
+        "short_summary": "Impact fund is a Berkeley based NPO that provides grants, advocacy, and education to support impact litigation on behalf of communities seeking economic, environmental, racial, and social justice.\n",
+        "org_link": "https://www.impactfund.org/aboutus/",
+        "color": "EE0024",
+        "banner_image": "images/projects/impactfund.png",
+        "full_description": "Our Project\n-----------\nThe project involves creating a mobile application that equips lower-income Americans with class action lawsuit information, guidance through claims, and legal rights details. Once a user receives a class action, the app will allow them to navigate case-related information, track updates, learn about their rights, and engage with important legal processes. We will also create an admin facing web application to allow administrators to upload new cases and update current case information. The project hopes to break the disconnect between lower income Americans and critical class action proceedings and their legal rights by making such information readily available through a mobile application!\n"
+      },
+      "phs": {
+        "status": "past",
+        "title": "Peninsula Humane Society & SPCA",
+        "short_summary": "Peninsula Humane Society & SCPA is dedicated to animal welfare and is one of the largest humane organizations in the US. PHS/SPCA supports animal rescue, rehabilitation, and adoption.\n",
+        "org_link": "https://phs-spca.org/about/",
+        "color": "407300",
+        "banner_image": "images/projects/phs.png",
+        "full_description": "Our Project\n-----------\nWe will be building a companion application for their upcoming wildlife care facility. PHS/SPCA will use this to promote the facility to at-home users while also improving the in-person experience. The project will draw attention to their facility by allowing users to access press releases and videos on sick animals, experience virtual tours of the wildlife hospital, learn about their on-site endangered animal breeding programs, and be notified of seasonal events, volunteer opportunities, and docent tours.\n"
+      },
+      "shantiproject": {
+        "status": "past",
+        "title": "Shanti Project",
+        "short_summary": "Shanti Project is a nonprofit organization that offers support to underserved communities throughout the city of San Francisco. For over 50 years, Shanti Project has provided dozens of systems and programs centered around health and quality of life to ensure that those in need are not isolated and have someone to rely on.\n",
+        "org_link": "https://www.shanti.org/about-us/",
+        "color": "005283",
+        "banner_image": "images/projects/shantiproject.png",
+        "full_description": "Our Project\n-----------\nOur project aims to support the PAWS program: a program for those in need to receive support for their pets. We will build a client-facing e-commerce web application with accessibility features for users to purchase and schedule product deliveries. This application will streamline the purchase and delivery of products to those in need and allow admins to keep track of inventory and order statuses, significantly improving the current system and increasing the availability of services throughout the Bay Area.\n"
+      },
+      "gwn": {
+        "status": "past",
+        "title": "Girls Write Now",
+        "short_summary": "Girls Write Now (GWN) is a national nonprofit that breaks down barriers of gender, race, age and poverty to mentor and train the next generation of writers and leaders for life.\n",
+        "org_link": "https://girlswritenow.org/about/",
+        "color": "FF3721",
+        "banner_image": "images/projects/gwn.png",
+        "full_description": "Our Project\n-----------\nThe project involves creating a mobile application to make GWN’s archive of thousands of stories accessible to their wider community. The app will allow users to browse the latest published stories, get personalized recommendations, and engage with other readers over content. We aim to utilize personalization and a sleek user experience to boost the public’s engagement with the incredible work GWN’s mentees produce.\n"
+      },
+      "ijp": {
+        "status": "past",
+        "title": "Immigration Justice Project",
+        "short_summary": "The Immigration Justice Project (IJP) provides pro bono legal services to those in active immigration proceedings in San Diego, who do not have the right to government-funded counsel (by Section 292 of the Immigration and Nationality Act).\n",
+        "org_link": "https://www.americanbar.org/groups/public_interest/immigration/projects_initiatives/immigration-justice-project/",
+        "color": "00B2E3",
+        "banner_image": "images/projects/ijp.png",
+        "full_description": "Our Project\n-----------\nThe project is building a web portal for pro-bono attorneys and volunteers (translators) to be matched to active cases being handled by the IJP. Attorneys and volunteers will use the portal to browse through cases and indicate their interest, and IJP administrators will create and delete cases, and assign interested attorneys and volunteers to them. The portal will also handle onboarding the attorneys and volunteers, which includes signing confidentiality forms and agreements, scheduling interviews, and training with LegalServer.\n"
+      },
+      "cnsc": {
+        "status": "past",
+        "title": "Chinese Newcomers Service Center",
+        "short_summary": "Chinese Newcomers Service Center (CNSC) provides multilingual services that help Chinese Immigrants adapt to life in the United States. CNSC Serves as a bridge between the two cultures, enhancing the physical, mental, social, and economic well-being of immigrants, thus facilitating their efforts to become self-sufficient members of the community.\n",
+        "org_link": "https://chinesenewcomers.org/en/category/about-en/",
+        "color": "ca2027",
+        "banner_image": "images/projects/cnsc.png",
+        "full_description": "Our Project\n-----------\nThis project involves building a multilingual mobile application that allows Chinese immigrants to browse and apply to jobs. The app will also support employer and admin permissions for posting and updating opportunities. We aim to reduce the limitations of WeChat and spreadsheets currently used by CNSC.\n"
+      },
+      "v4v": {
+        "status": "past",
+        "title": "Vouchers 4 Veggies",
+        "short_summary": "Vouchers 4 Veggies (V4V) is a San Francisco based food program that aims to increase access to healthy and affordable foods for low-income individuals and families by providing free vouchers for fruit and vegetables. V4V partners with dozens of local grocers and farmers markets to address the unique food insecurity issues in San Francisco.\n",
+        "org_link": "https://eatsfvoucher.org/about-us/",
+        "color": "6e9b43",
+        "banner_image": "images/projects/v4v.png",
+        "full_description": "Our Project\n-----------\nThe project involves building a mobile application that allows vendors to submit voucher data via QR code. This app will allow administrators to see voucher data and update vendor invoices. This project will help streamline logistical operations for vendors and V4V admin, letting them better focus on people facing food insecurity.\n"
+      },
+      "culturalsurvival": {
+        "status": "past",
+        "title": "Cultural Survival",
+        "short_summary": "Cultural Survival is an Indigenous-led NGO that advocates for Indigenous Peoples' rights and supports Indigenous communities’ self-determination, cultures, and political resilience. For the past 50 years, Cultural Survival has partnered with Indigenous communities across 70+ countries, providing support through grants, advocacy, and community building.\n",
+        "org_link": "https://www.culturalsurvival.org/about",
+        "color": "c54701",
+        "banner_image": "images/projects/culturalsurvival.png",
+        "full_description": "Our Project\n-----------\nThe goal of our project is to build an offline-friendly mobile application to store indigenous audio content and community resources. The app will allow users to search, download, and listen to podcasts in their chosen language, aiming to replace Cultural Survival’s current method of distributing podcasts via USBs.\n"
+      },
+      "bsc": {
+        "status": "past",
+        "title": "Berkeley Student Cooperative",
+        "short_summary": "For nearly 90 years, the Berkeley Student Cooperative (BSC) has provided a quality, low-cost, cooperative housing community to university students who might not otherwise be able to afford a university education. BSC strongly prompts the values of anti-discrimination and access to education; it currently provides meals and/or housing to over 1300 Berkeley students.\n",
+        "org_link": "https://bsc.coop/about-us/our-mission",
+        "color": "7287ed",
+        "banner_image": "images/projects/bsc.png",
+        "full_description": "Our Project\n-----------\nThe goal of our project is to build a work shift management web application that will allow co-op students to submit their shift preferences, view assigned tasks, and submit proof upon completion. It will also allow admin to assign tasks to students and track their progress. We aim to streamline BSC’s task tracking to replace an outdated process and reduce their logistical burden.\n"
+      },
+      "alemany": {
+        "status": "past",
+        "title": "Friends of Alemany Farm",
+        "short_summary": "Alemany Farm is an unassuming urban farm tucked away in San Francisco. By growing 20,000lbs of food annually and making it available to food-insecure individuals for free, Alemany Farm enhances the food security of its local community. The farm employs sustainable farming practices and emphasizes the importance of respecting the biodiversity of its land.\n",
+        "org_link": "http://www.alemanyfarm.org/",
+        "color": "85c99a",
+        "banner_image": "images/projects/alemany.png",
+        "full_description": "Our Project\n-----------\nWe are building a mobile app to allow orchard staff and volunteers to record and view a tree's location and history so that they can better provide for the community.\n"
+      },
+      "siren": {
+        "status": "past",
+        "title": "SIREN",
+        "short_summary": "Services, Immigrant Rights and Education Network (SIREN) is a nonprofit organization committed to empowering low-income immigrants and refugees through community education and organizing, leadership development, policy advocacy, and civic engagement and legal services. Their work hopes to foster a new America where immigrants and refugees are successfully integrated to society and where the human rights of all people are honored.\n",
+        "org_link": "https://www.sirenimmigrantrights.org/",
+        "color": "d43535",
+        "banner_image": "images/projects/siren.png",
+        "full_description": "Our Project\n-----------\nWe are building a multilingual mobile application that allows immigrant and refugees to upload and access their legal information. The project seeks to support the day to day operations of SIREN staff and attorneys for handling potential clients.\n"
+      },
+      "sundayfriends": {
+        "status": "past",
+        "title": "Sunday Friends",
+        "short_summary": "Sunday Friends is a nonprofit providing programs for families in need in San Jose. Sunday Friends empowers families to break the generational cycle of poverty by fostering positive development in children while educating and guiding parents to support their children’s life success. They offer a unique, supportive economic environment in which families work together to earn basic necessities, discover inner strengths and self-worth, and know the satisfaction that comes from contributing to their community.\n",
+        "org_link": "https://www.sundayfriends.org/",
+        "color": "7287ed",
+        "banner_image": "images/projects/sundayfriends.png",
+        "full_description": "Our Project\n-----------\nWe are creating a web platform and mobile app for Sunday Friends that allow families to better track their progress and help staff to more effectively guide families towards economic mobility.\n"
+      },
+      "iteam": {
+        "status": "past",
+        "title": "Integration",
+        "short_summary": "Integration (”I-team”) is a team dedicated to ensuring the success of project delivery. Our goal is to make sure all of Blueprint's projects make it into production! I-team works with non-profits from past projects to support their transition towards the ability to independently maintain their newly built applications. I-team also creates sustainable practice for app deployment in current and future projects.\n",
+        "color": "945ebd",
+        "banner_image": "images/projects/iteam.png",
+        "full_description": ""
+      },
+      "ogsc": {
+        "status": "past",
+        "title": "Oakland Genesis Soccer Club",
+        "short_summary": "Oakland Genesis Soccer Club is a Bay Area based nonprofit that provides socially and economically disadvantaged youth with free academic support and athletic programs. Their three main services involve free access to club soccer programs, free academic support and college advising to players, and free transportation to and from team practices and games.\n",
+        "org_link": "https://www.oaklandgenesis.org/",
+        "color": "b2d2ee",
+        "banner_image": "images/projects/ogsc.png",
+        "full_description": "Our Project\n-----------\nWe are building an online portal allowing Oakland Genesis staff to track participants’ personal progress and communicate with all stakeholders (participants, parents, volunteers, donors) on student progress and activities.\n"
+      },
+      "nbjc": {
+        "status": "past",
+        "title": "National Black Justice Coalition",
+        "short_summary": "National Black Justice Coalition (NBJC) is a civil rights organization based in Washington, D.C. dedicated to empowering Black LGBTQ/SGL plus people and people living with HIV/AIDS by making it their mission to end racism, homophobia, and LGBTQ/SGL bias and stigma through federal public policy advocacy. They have a number of different initiatives they are advocating ranging from employment non-discrimination to criminal justice.\n",
+        "org_link": "http://nbjc.org/",
+        "color": "805fa7",
+        "banner_image": "images/projects/nbjc.png",
+        "full_description": "Our Project\n-----------\nWe’re building a web platform for NBJC that will enable people to easily find and engage with various organizations that focus on helping Black LGBTQ/SGL and other marginalized communities.\n"
+      },
+      "meepanyar": {
+        "status": "past",
+        "title": "Mee Panyar",
+        "short_summary": "Mee Panyar supports rural communities in Myanmar in the operation and maintenance of decentralized solar mini-grids that provide reliable, sustainable energy. This work aims to not only help rural electricians transition from diesel to solar (reducing carbon emissions by 60% and electricity prices by 50%) but to ensure long-term maintenance and proper operation of these new systems through the provision of formal education and support to rural electricians.\n",
+        "org_link": "https://www.meepanyar.com/",
+        "color": "fc4e09",
+        "banner_image": "images/projects/meepanyar.png",
+        "full_description": "Our Project\n-----------\nWe’re building an instructional mobile app with offline functionality for local technicians/engineers in rural areas to help them operate and maintain decentralized solar mini-grids that provide reliable, sustainable energy.\n"
+      },
+      "wecaresolar": {
+        "status": "past",
+        "title": "We Care Solar",
+        "short_summary": "We Care Solar is a nonprofit saving lives in childbirth through the design, delivery, and installation of rugged, compact solar suitcases. Hundreds of thousands of health facilities lack reliable electricity, and the consequences are often tragic. The organization works closely with partners such as the Ministries of Health, UN agencies, and international non-government organizations to promote clean energy for safe motherhood.\n",
+        "org_link": "https://wecaresolar.org/",
+        "color": 643501,
+        "banner_image": "images/projects/wecaresolar.png",
+        "full_description": "Our Project\n-----------\nWe’re building a low-bandwidth friendly mobile app for health workers to access educational resources, important communications, and personalized support so they can make the most impact with each solar suitcase.\n"
+      },
+      "kamehamehaschools": {
+        "status": "past",
+        "title": "Kamehameha Schools",
+        "short_summary": "Kamehameha Schools (KS) is more than just a network of schools, but an active player in shaping the socio-economic landscape in the Hawaiian islands. KS leverages it’s massive land-ownership in Hawai’i to fund early education programs, support agricultural endeavors, operate retail spaces, and more. KS is a complex conglomerate — a mix of global diversified financial assets and an educational network for native Hawaiians.\n",
+        "org_link": "https://www.ksbe.edu/",
+        "color": "03224c",
+        "banner_image": "images/projects/ks.png",
+        "full_description": "Our Project\n-----------\nWe’re building a web dashboard for farmers and land asset managers to crowd-source and report relevant metrics on the health and productivity of Kamehameha Schools’ agricultural lands.\n"
+      },
+      "1951coffee": {
+        "status": "past",
+        "title": "1951 Coffee Company",
+        "short_summary": "1951 Coffee is a non-profit coffee organization that provides job training and employment to refugees, asylums, and special immigrant visa holders in the Bay Area. Many newly resettled refugees struggle to attain living-wage jobs — 1951 Coffees hopes to provide opportunity amongst lacking resources and language barriers through its barista training program.\n",
+        "org_link": "https://1951coffee.com/",
+        "github_link": "https://medium.com/@anniezheng/1951-coffee-mobile-app-a-case-study-e4bbede9054",
+        "color": "ed195b",
+        "banner_image": "images/projects/1951.png",
+        "full_description": "The Problem\n-----------\n1951 Coffee runs two-week long training programs that teach students the essential skills to be successful in barista roles. During this program, individual texting makes up 80-90% of communications with trainees. 1951 Coffee is in need for a central, scaleable method for administrators to communicate with its trainees and graduates with limited technology experience.\n\nThe Solution\n-----------\nBlueprint developed a mobile communication platform to connect 1951 Coffee's staff and alumni. This mobile application features ways to display internal announcements, job postings, events, and resources — an essential tool for information and forming digital community.\n"
+      },
+      "dckitchen": {
+        "status": "past",
+        "title": "DC Central Kitchen",
+        "short_summary": "DC Central Kitchen develops innovative social ventures targeting the cycle of hunger and poverty. They create opportunities for meaningful careers, expand access to healthy food, and test innovative solutions to systemic failures. DC Central Kitchen's Healthy Corners initiative sustainably expands healthy food access in DC’s food deserts by delivering fresh produce at discount prices to corner stores in DC’s low-income communities.\n",
+        "org_link": "https://dccentralkitchen.org/",
+        "github_link": "https://healthycorners.calblueprint.org/",
+        "color": "008550",
+        "banner_image": "images/projects/dckitchen.png",
+        "full_description": "The Problem\n-----------\nHealthy Corners provides many benefits to their customers, but since they operate in partnership with the 50+ stores in their network, the Healthy Corners team lacked a direct channel of communication with the customers they serve. Healthy Corners needed a new customer engagement strategy that would allow the team to serve customers more directly.\n\nThe Solution\n-----------\nBlueprint developed a customer rewards program to give Healthy Corners a direct channel to engage and serve their customers.  This includes a [customer-facing mobile app](https://tiny.cc/HealthyCornersApp) with a store and product locator, as well as a [tablet app for store clerks](https://play.google.com/store/apps/details?id=org.calblueprint.HealthyCornersClerk) to record purchases and points to redeem free produce rewards.\n"
+      },
+      "peoplepower": {
+        "status": "past",
+        "title": "People Power Solar Collective",
+        "short_summary": "People Power Solar Cooperative is building a movement toward expanding access to affordable  residential solar power in California. To do so, they crowdsource investments from low-income  communities to install solar panels on homes and then distribute any revenue generated by the  solar panels back to the community as dividend. By implementing this novel community-owned  revenue-sharing model, People Power is on a mission to uplift communities using the power of renewable energy.\n",
+        "org_link": "https://www.peoplepowersolar.org/",
+        "github_link": "https://github.com/calblueprint/peoplepower-web",
+        "color": "cd6795",
+        "banner_image": "images/projects/peoplepower.png",
+        "full_description": "The Problem\n-----------\nPeople Power Solar Cooperative is leading the way to a just, community-led future with renewable energy. They provide the financial, logistical, and legal backbone for communities to organize and invest in community solar. Facilitating this process and providing transparency into the cooperative for all invested owners is difficult to manage and does not scale well. \n\nThe Solution\n------------\nBlueprint developed a platform that lets people sign on and begin investing in the cooperative. Owners of the cooperative can use it to  track their investments, keep up to date with news, and see their impact. This will help PPSC scale quickly and help support more communities!\n"
+      },
+      "rlc": {
+        "status": "past",
+        "title": "Rescuing Leftover Cuisine",
+        "short_summary": "Rescuing Leftover Cuisine is a national 501(c)3 non-profit food rescue organization, operating in 16 cities and headquartered in New York City, that provides solutions to prevent excess wholesome cuisine from being wasted. RLC provides services such as food waste consulting, excess food delivery, co-branding services, and tax credit assistance.\n",
+        "org_link": "https://www.rescuingleftovercuisine.org/",
+        "github_link": "https://tiny.cc/RescuingLeftoverCuisine",
+        "color": "4dc9ec",
+        "banner_image": "images/projects/rlc.png",
+        "full_description": "The Problem\n-----------\nRescuing Leftover Cuisine is a national 501(c)3 non-profit food rescue organization, operating in 16 cities and headquartered in New York City, that provides solutions to prevent excess wholesome cuisine from being wasted. RLC provides services such as food waste consulting, excess food delivery, co-branding services, and tax credit assistance.\n\nThe Solution\n------------\nBlueprint developed a mobile app to give Rescuing Leftover Cuisine a direct channel to engage with their volunteers. The app helps connect volunteers at RLC to food rescuing missions around their city, enabling them to sign up for, withdraw from, and complete missions in an intuitive and user-friendly manner.\n"
+      },
+      "unloop": {
+        "status": "past",
+        "title": "Unloop",
+        "short_summary": "Unloop is providing a pipeline from prison to tech through education, support, and opportunity. They partner with community colleges to educate students in Washington State prisons, giving them the skills and knowledge they need to pursue careers in web development. In addition to education, Unloop connects students with resources that address barriers to their professional success, and creates opportunities for students after release by bringing together employers, professionals, and educators.\n",
+        "org_link": "https://www.un-loop.org",
+        "github_link": "https://github.com/calblueprint/unloop",
+        "color": "059fae",
+        "banner_image": "images/projects/unloop.png",
+        "full_description": "The Problem\n-----------\nUnloop is providing a pipeline from prison to tech through education, support, and opportunity. They partner with community colleges to educate students in Washington State prisons, giving them the skills and knowledge they need to pursue careers in web development. In addition to education, Unloop connects students with resources that address barriers to their professional success, and creates opportunities for students after release by bringing together employers, professionals, and educators.\n\nThe Solution\n-----------\nBlueprint created a web-based portal for both Unloop staff and participants that will allow Unloop to better organize their assignments/notes and increase transparency between members of their organization. This new dashboard includes features that track student growth and streamline every step of the education pipeline, ultimately allowing staff to focus their time and energy on moving Unloop forward and ensuring student success.\n"
+      },
+      "risingtides": {
+        "status": "past",
+        "title": "Rising Tides",
+        "banner_image": "images/projects/arctic.png",
+        "short_summary": "The Arctic Institute is a Washington, D.C. based non-profit, which helps many coastal communities  in the American Arctic to recover from climate change disasters. The affected communities need volunteers,  who would guide them through adaptation and cultural preservation.\n",
+        "link": "https://risingtides.calblueprint.org",
+        "github_link": "https://github.com/calblueprint/rising-tides",
+        "org_link": "https://www.facebook.com/ArcticInstituteOrg",
+        "full_description": "Blueprint's developers build a skills-based matchmaking platform, where volunteers could \nconnect with coastal communities to complete all the projects more efficiently.\n"
+      },
+      "fsf": {
+        "status": "past",
+        "title": "Free Software Foundation",
+        "banner_image": "images/projects/fsf.png",
+        "short_summary": "Free Software Foundation (FSF) is a non-profit in Boston, MA with a mission to promote computer user freedom.  The organization aims to secure freedom for computer users by promoting the development and use of free software  and documentation—particularly the GNU operating system—and by campaigning against threats to computer user freedom  like Digital Restrictions Management (DRM) and software patents.\n",
+        "org_link": "https://www.fsf.org",
+        "github_link": "https://github.com/calblueprint/fsf-mobile",
+        "full_description": "Blueprint builds a mobile app that brings digital rights activism to people's fingertips. With the app, people will \nbe able to stay informed with the latest news in digital rights and take action against rights infringements by \nsigning petitions or donating.\n"
+      },
+      "sfai": {
+        "status": "past",
+        "title": "San Francisco Art Institute",
+        "banner_image": "images/projects/sfai.png",
+        "short_summary": "SFAI is a non-profit college with a diverse community of artists and scholars, dedicated to the intrinsic value  of art. Technology is always redefining creativity and art in many different forms. But, how can we make it more  accessible to everyone? We are partnering with the San Francisco Art Institute to tackle this challenge by contributing  to the development of the digital art market.\n",
+        "link": "https://registry.sfai.edu/",
+        "github_link": "https://github.com/SFAI/artistregistry",
+        "org_link": "https://www.sfai.edu",
+        "full_description": "Blueprint's solution is a web-based online gallery, making it more simple for college students at SFAI to showcase and\nsell their artworks. Prospective buyers, in this way, will be able to easily browse those pieces online before purchasing, \nas it would be in a store.\n"
+      },
+      "homepointr": {
+        "status": "past",
+        "title": "HomePointr",
+        "banner_image": "images/projects/homepointr.png",
+        "short_summary": "How do we provide the homeless with quality shelter no matter where they are in the world? HomePointr CIC is a Scotland  based non-profit that connects housing providers with referral agencies to efficiently pair homeless to the most suitable  housing options.\n",
+        "org_link": "https://homepointr.com/ome",
+        "github_link": "https://github.com/calblueprint/HomePointrCIC",
+        "full_description": "Blueprint's developers focus on building an easy-to-use platform that will store data, removing the time involved in \nsifting through paperwork. We organize and streamline the application process to allow referral agencies to match homeless \nand vulnerable individuals to the best landlord's home.\n"
+      },
+      "rmi": {
+        "status": "past",
+        "title": "Rocky Mountain Institute",
+        "short_summary": "RMI seeks to transform global energy use to create a cleaner, low-carbon future. To do this, they collect large amounts  of detailed information on commercial buildings in order to analyze and suggest policies for reducing energy consumption.  Our project aims to help RMI collect this immense amount of valuable data in a flexible, efficient way.\n",
+        "link": "https://github.com/calblueprint/RMI",
+        "github_link": "https://github.com/calblueprint/RMI",
+        "color": "15438C",
+        "banner_image": "images/projects/rmi.jpg",
+        "full_description": "Read more about how we're helping tackle climate change with RMI:\n\n[_How We’re Helping Tackle Climate Change_](https://medium.com/blueprint/how-were-helping-tackle-climate-change-2115d11379a6)\n"
+      },
+      "re-plate": {
+        "status": "past",
+        "title": "Re-Plate",
+        "short_summary": "Re-Plate is a Berkeley nonprofit that aims to use technology to eliminate food waste and hunger in the community. They collect surplus food donations from businesses and deliver the food to homeless shelters and people in need.\n",
+        "org_link": "https://www.re-plate.org",
+        "github_link": "https://github.com/calblueprint/replate-business",
+        "color": "29B681",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/replate_banner.jpg",
+        "full_description": "The Problem\n-----------\nRe-Plate currently acts as a middleman for all transactions and relies on a\nfleet of drivers to ship food around. As they scale, Re-Plate needs a more direct\nsystem for donors and recipients to communicate with each other.\n\nThe Solution\n------------\nBlueprint’s team is developing an online marketplace for food donations. This\nsystem will allow anybody with surplus food — not just businesses — to post a\ndonation and for nearby recipients to claim the donation. Re-Plate’s staff would be\nable to facilitate the process and monitor the marketplace. Through this system,\nRe-Plate doesn’t have to manually track each donation, which would allow them to\nscale to cities across the US and potentially feed thousands of additional individuals.\n"
+      },
+      "dream": {
+        "status": "past",
+        "title": "The DREAM Project",
+        "short_summary": "The DREAM Project is a nonprofit focused on education located in the Dominican Republic. The goal of DREAM is to provide high quality, holistic, and sustainable education to children, youth, and young adults in communities where there may not exist programs or opportunities for them to effectively take part in otherwise.\n",
+        "link": "https://github.com/calblueprint/dream-mobile",
+        "github_link": "https://github.com/calblueprint/dream-rails",
+        "color": "FFEB42",
+        "banner_image": "images/projects/dream.png",
+        "full_description": "The Problem\n-----------\nDREAM is rapidly growing in both the number of teachers and students and it has become crucial for DREAM to digitalize student enrollment and attendance tracking so that they can meet the rising demand for their educational programs.\n\nThe Solution\n-----------\nBlueprint is creating a React Native mobile application for DREAM to help teachers manage their classes, students, and attendances offline. The importance of offline access is due to inconsistent internet/electricity access at schools and program sites. We hope to be able to alleviate the growing pains of the nonprofit and help them impact thousands of more students.\n"
+      },
+      "veterans-360": {
+        "status": "past",
+        "title": "Veterans 360",
+        "short_summary": "Veterans 360 is a nonprofit organization founded in 2011 by Rick Collins. It is an organization that has had six years of active operations helping young veterans cope with transition and PTS/TBI challenges and has supported hundreds of young veterans with everything from simple financial support to complete PTS and mental health support.\n",
+        "link": "https://github.com/calblueprint/veterans360-mobile",
+        "github_link": "https://github.com/calblueprint/veterans360-web",
+        "color": "13A370",
+        "banner_image": "images/projects/veterans-360.jpg",
+        "full_description": "The Problem\n-----------\nCurrently, veterans are provided hard copy resources which are easy to lose track of and they have a hard time connecting to each other and to the rest of society. Veteran organizations are not able to connect veterans early enough in order to avoid crises as they can only reach them when veterans call in for help.  The more Veterans 360 grows, the more important it becomes for them to maintain a centralized digital collection of resources that veterans can come back to as well as connect veterans to each other and to helpful organizations early on in order to prevent crises.\n\nThe Solution\n-----------\nBlueprint is working with Veterans 360 to create a web platform that allows Veterans 360 and partnering organizations to provide resources and support to these veterans. In order to help veterans have access to this information immediately, at any time and place, Blueprint has also created a mobile application through which veterans can read these resources and connect with other veterans and organizations in their area.\n"
+      },
+      "lava-mae": {
+        "status": "past",
+        "title": "Lava Mae",
+        "short_summary": "Lava Mae is a nonprofit organization founded in 2014 in San Francisco, CA. Lava Mae's main goal is to serve the city's homeless who lack access to basic sanitation.\n",
+        "link": "https://buildit.lavamae.org/",
+        "github_link": "https://github.com/calblueprint/lavamae",
+        "color": "16ACE6",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/lavamae_banner.jpg",
+        "full_description": "The Problem\n-----------\nIn order for Lava Mae to respond to an increasing number of inquiries worldwide about\nstarting a similar organization, they require a way to manage the network that can share\ninformation and connect organizations.\n\nThe Solution\n-----------\nBlueprint's project team will build this capability in a web application to help Lava Mae\ngrow and manage this network. It will consist of a discussion forum for people to ask questions\nand give responses, a page for Lava Mae to upload relevant toolkits and resources, and an\ninteractive map to showcase their growing network. Through this tool, Lava Mae can connect\nusers and continue to scale.\n"
+      },
+      "roots-of-success": {
+        "status": "past",
+        "title": "Roots of Success",
+        "short_summary": "Roots of Success is an international organization that provides educational resources to teachers who serve in communities impacted by poverty and unemployment.\n",
+        "link": "http://ros-student-staging.herokuapp.com/",
+        "github_link": "https://github.com/calblueprint/ros-student",
+        "color": "BFA325",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/ros_student_banner.jpg",
+        "full_description": "The Problem\n-----------\nMany students, including people in correctional facilities and untapped schools,\ndo not have the opportunity to access many educational materials and other related\nacademic resources.\n\nThe Solution\n------------\nBlueprint’s is partnering with Roots of Success to bring their material onto\nan accessible digital platform. The organization will be able to create online\nmodules, consolidating their materials into one central location. This can reach\nstudents who have traditionally not been included in such education programs, including\npeople in correctional facilities and untapped schools. By creating this app, Blueprint\nhopes to ease educational access for students and potentially impact thousands of individuals.\n"
+      },
+      "data-science": {
+        "status": "past",
+        "title": "UC Berkeley Data Science Education Program",
+        "short_summary": "The Data Science Education Program is an initiative at UC Berkeley that aims to expand data science learning for undergrads, and is designed for students from non-technical backgrounds.\n",
+        "link": "https://zero-to-jupyterhub.readthedocs.io/en/latest/",
+        "github_link": "https://github.com/data-8/",
+        "color": "3C4858",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/data_science_banner.jpg",
+        "full_description": "The Problem\n-----------\nFew other colleges teach data science as an intro course, not because the content is challenging\nso much as because the student set-up time is so high. Many packages and tools — such as Jupyter,\nPandas, and Matplotlib —need to be configured for students to adequately learn key concepts.\nThis presents a serious barrier to entry for non-technical students.\n\nThe Solution\n------------\nBlueprint’s project team will be creating a new deployment system that is easy for other classes\nand universities to use. This new system will deploy in one step with minimal configuration. be\neasily monitored for traffic and errors, and work across multiple cloud providers, including Google\nCloud, Microsoft Azure, Amazon Web Services. Blueprint’s completed application will potentially\nimpact thousands of students in Berkeley alone — and if it is used by other universities, countless\nmore students will be exposed to the power of data science.\n"
+      },
+      "forte": {
+        "status": "past",
+        "title": "Forte",
+        "short_summary": "Forte is a Berkeley nonprofit that strives to make music lessons more affordable for children from underserved communities. They match K-12 students with college-age teachers, and offer over 12 instruments.\n",
+        "link": "https://www.forteacademy.org/",
+        "github_link": "https://github.com/calblueprint/forte",
+        "color": "F89406",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/forte_banner.jpg",
+        "full_description": "The Problem\n-----------\nAs Forte scales their operations to cater to more students and teachers, they can no longer\nmanage to do everything manually, including accepting applications, matching up suitable\nteachers with students, and scheduling individual music lessons.\n\nThe Solution\n------------\nBlueprint’s Forte team will build a web application to help automate a large part of this\nprocess. This web application will include an application system for interested students and\nteachers, a scheduling dashboard for students and teachers to see upcoming and past lessons,\nand profiles for individual students and teachers. Through this system, Forte will be able to\nhandle more demand, ultimately fostering lifelong passions for music.\n"
+      },
+      "bpsf": {
+        "status": "past",
+        "title": "Berkeley Public Schools Fund",
+        "short_summary": "Provides a way for Berkeley public school teachers to fund classroom projects.\n",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/bpsf.png",
+        "full_description": "The Problem\n-----------\nEvery year, the schools fund would review hundreds of grant applications\nby hand in a very time consuming process. Grants would then only be\nawarded once a year for teachers, even though the teachers needed the\nfunds throughout the year.\n\nThe Solution\n------------\nBlueprint was able to work with the Schools Fund to create Friends and\nFamily, a local crowdfunding platform for Berkeley School District\nteachers to utilize. With this new platform, teachers have been able to\nraise almost $30,000 thus far.\n"
+      },
+      "phc": {
+        "status": "past",
+        "title": "Project Homeless Connect",
+        "short_summary": "Provides a secure way for the homeless to sign up for services and for volunteers to collect data.\n",
+        "link": "https://medium.com/@blueprint/tackling-problems-with-technology-d77b42b0b3a#.appc0099n",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/phc.png",
+        "full_description": "The Problem\n-----------\nProject Homeless Connect runs approximately five events a year where they\nprovide the homeless population of San Francisco with services such as\nhair cuts and wheelchair repairs. Every event the clients fill out a paper\nform with their personal information such as their SSN, and carry around a\ncarbon copy during the event. This runs the risk of the client losing\ntheir carbon copy and exposing their personal information, while also\naccruing a large time debt for the organization to copy information from\nthe paper form into their Salesforce CRM.\n\nThe Solution\n------------\nBlueprint was able to work with Project Homeless Connect by developing an\nAndroid application that allowed clients to check in to the event. The\napplication removed the cost of carbon copy paper, while adding the\nsecurity of not carrying their personal information along with them, but\nrather a QR code associated with their information. The Android\napplication also entered the data directly to their Salesforce CRM while\nreducing the number of duplicate entries, thus saving them countless hours\nof data entry every event.\n"
+      },
+      "odalc": {
+        "status": "past",
+        "title": "Oakland Digital Arts and Literacy",
+        "short_summary": "Allows tech and design professionals around the Bay Area to teach courses at the Oakland Digital Office.\n",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/odalc.png",
+        "full_description": "The Problem\n-----------\nODALC aims to empower people with digital literacy education that will\nimprove their lives and the communities they live in, but struggled with\nhow to connect professionals in the tech and design industry with under\nresourced communities.\n\nThe Solution\n------------\nBlueprint was able to work with ODALC to create a platform that seamlessly\nbridges technology, design and low-income communities. This platform\nserves to empower individuals to harness the digital tools to succeed in\nthe 21st century.\n"
+      },
+      "ros": {
+        "status": "past",
+        "title": "Roots of Success",
+        "short_summary": "Provides a way for Roots of Success teachers to manage various curricula and classes.\n",
+        "banner_image": "https://s3.amazonaws.com/calblueprint-prod/images/rootsofsuccess.png",
+        "full_description": "The Problem\n-----------\nRoots of Success strives to connect youth and adults from communities with\nhigh rates of poverty and unemployment to environmental careers and post-\nsecondary education. With Roots of Success gaining more traction, it\nneeded a way to efficiently manage more communities, teachers and\nstudents.\n\nThe Solution\n------------\nBlueprint was able to work with Roots of Success to create a platform that\nallows teachers to gracefully manage multiple classrooms, modules and\nsurveys.\n"
+      }
+    }
+  }
+}
