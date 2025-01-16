@@ -52,12 +52,15 @@
     .img-container {
       animation-delay: 300ms;
     }
+
     h1 {
       animation-delay: 350ms;
     }
+
     p {
       animation-delay: 400ms;
     }
+
     .homepage-link {
       animation-delay: 450ms;
     }
@@ -67,12 +70,15 @@
     .img-container {
       animation-delay: 500ms;
     }
+
     h1 {
       animation-delay: 550ms;
     }
+
     p {
       animation-delay: 600ms;
     }
+
     .homepage-link {
       animation-delay: 650ms;
     }
@@ -116,6 +122,7 @@
 
 // Student and NPO Apply Page
 @media (min-width: 1200px) {
+
   // Override bootstrap container style for about page
   .apply-students .container,
   .apply-nonprofits .container {
@@ -169,6 +176,7 @@
 }
 
 $timeline-num-width: 200px;
+
 .student-timeline {
   margin: 0 auto;
   max-width: 800px;
@@ -360,7 +368,7 @@ $timeline-num-width: 200px;
     position: relative;
 
     &:before {
-      background-image: image_url("apply/quote.png");
+      // background-image: url("/public/images/apply/quote.png");
       background-size: contain;
       background-repeat: no-repeat;
       content: "";

@@ -19,9 +19,9 @@ export default function AboutPage() {
   const buttonText = 'Read More';
   const buttonLink = '/about#mission';
   const sections = [
-    { text: 'Mission', sectionScrollHref: 'mission' },
-    { text: 'Values', sectionScrollHref: 'value' },
-    { text: 'The Team', sectionScrollHref: 'team' },
+    { text: 'Mission', href: 'mission' },
+    { text: 'Values', href: 'value' },
+    { text: 'The Team', href: 'team' },
   ];
 
   const carouselImages = [

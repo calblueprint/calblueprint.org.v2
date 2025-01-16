@@ -1,6 +1,6 @@
 type Section = {
   text: string;
-  sectionScrollHref: string; // Used to scroll to the section
+  href: string; // Used to scroll to the section
 };
 
 type PageNavProps = {
@@ -11,12 +11,8 @@ export default function PageNav({ sections }: PageNavProps) {
   return (
     <div className="container">
       <ul>
-        {sections.map(({ text, sectionScrollHref }, i) => (
-          <li
-            key={i}
-            className="page-nav-link"
-            section-name={sectionScrollHref}
-          >
+        {sections.map(({ text, href }, i) => (
+          <li key={i} className="page-nav-link" section-name={href}>
             {text}
           </li>
         ))}

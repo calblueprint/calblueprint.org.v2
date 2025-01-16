@@ -24,10 +24,10 @@ export default function ChapterPage() {
   const buttonText = 'Submit Interest Form';
   const buttonLink = '/chapters#interest';
   const sections = [
-    { text: 'Current Chapters', sectionScrollHref: 'mission' },
-    { text: 'Why Blueprint', sectionScrollHref: 'value' },
-    { text: 'Establishment Process', sectionScrollHref: 'team' },
-    { text: 'FAQs', sectionScrollHref: 'team' },
+    { text: 'Current Chapters', href: 'mission' },
+    { text: 'Why Blueprint', href: 'value' },
+    { text: 'Establishment Process', href: 'team' },
+    { text: 'FAQs', href: 'team' },
   ];
 
   return (

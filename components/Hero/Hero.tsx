@@ -5,11 +5,11 @@ import Link from 'next/link';
 type HeroProps = {
   title: string;
   body: string;
-  buttonText: string;
-  buttonLink: string;
   heroImage: StaticImageData;
   className?: string;
   children?: React.ReactNode; // Used to pass in the page nav
+  buttonText: string;
+  buttonLink: string;
 };
 
 export default function Hero({
