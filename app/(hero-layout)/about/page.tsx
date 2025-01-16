@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Hero from '@/components/Hero/Hero';
+import HeroButton from '@/components/HeroButton/HeroButton';
 import Members from '@/components/Members/Members';
 import Navbar from '@/components/Navbar/Navbar';
 import PageNav from '@/components/PageNav/PageNav';
@@ -13,11 +14,6 @@ import carouselImage10 from '@/public/images/about/10.jpg';
 import fullClubImage from '@/public/images/home/group_photo_2021.jpg';
 
 export default function AboutPage() {
-  const title = 'About The Club';
-  const body =
-    'We’re a club at UC Berkeley that develops pro-bono apps for nonprofits and promotes tech for social good.';
-  const buttonText = 'Read More';
-  const buttonLink = '/about#mission';
   const sections = [
     { text: 'Mission', href: 'mission' },
     { text: 'Values', href: 'value' },
@@ -37,10 +33,13 @@ export default function AboutPage() {
   return (
     <>
       <Hero
-        title={title}
-        body={body}
-        buttonText={buttonText}
-        buttonLink={buttonLink}
+        title={'About The Club'}
+        body={
+          'We’re a club at UC Berkeley that develops pro-bono apps for nonprofits and promotes tech for social good.'
+        }
+        action={
+          <HeroButton buttonText={'Read More'} buttonLink={'/about#mission'} />
+        }
         heroImage={fullClubImage}
         className={'static-page-hero about-page-hero'}
       >

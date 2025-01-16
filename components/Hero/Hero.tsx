@@ -8,16 +8,14 @@ type HeroProps = {
   heroImage: StaticImageData;
   className?: string;
   children?: React.ReactNode; // Used to pass in the page nav
-  buttonText: string;
-  buttonLink: string;
+  action: React.ReactNode;
 };
 
 export default function Hero({
   title,
   body,
   heroImage,
-  buttonText,
-  buttonLink,
+  action,
   className = '',
   children,
 }: HeroProps) {
@@ -30,13 +28,7 @@ export default function Hero({
       <div className="container">
         <h1 className="static-page-title marginBot-xl">{title}</h1>
         <p className="static-page-subtitle light">{body}</p>
-        <div className="static-page-hero-btn-container marginTop-xl">
-          <Link href={buttonLink}>
-            <button className="bp-btn btn-white btn-lg read-more">
-              {buttonText}
-            </button>
-          </Link>
-        </div>
+        {action}
       </div>
       {children && <div className="page-nav">{children}</div>}
     </section>

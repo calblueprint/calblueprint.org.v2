@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
+import HeroButton from '@/components/HeroButton/HeroButton';
 import Navbar from '@/components/Navbar/Navbar';
 import PageNav from '@/components/PageNav/PageNav';
 import chapters from '@/data/chapters.json';
@@ -18,11 +19,6 @@ type BlueprintChapter = {
 };
 
 export default function ChapterPage() {
-  const title = 'Start A Blueprint Chapter';
-  const body =
-    'Blueprint was founded at UC Berkeley in Spring 2013. Since then we started scaling our impact and further mission by establishing chapters in different colleges around the world.';
-  const buttonText = 'Submit Interest Form';
-  const buttonLink = '/chapters#interest';
   const sections = [
     { text: 'Current Chapters', href: 'mission' },
     { text: 'Why Blueprint', href: 'value' },
@@ -33,10 +29,16 @@ export default function ChapterPage() {
   return (
     <>
       <Hero
-        title={title}
-        body={body}
-        buttonText={buttonText}
-        buttonLink={buttonLink}
+        title={'Start A Blueprint Chapter'}
+        body={
+          'Blueprint was founded at UC Berkeley in Spring 2013. Since then we started scaling our impact and further mission by establishing chapters in different colleges around the world.'
+        }
+        action={
+          <HeroButton
+            buttonText={'Submit Interest Form'}
+            buttonLink={'/chapters#interest'}
+          />
+        }
         heroImage={heroImage}
         className={'static-page-hero chapter-overview-hero'}
       >

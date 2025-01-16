@@ -2,9 +2,11 @@ import { FaAngleRight } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
+import HeroButton from '@/components/HeroButton/HeroButton';
+import HeroMessage from '@/components/HeroMessage/HeroMessage';
 import PageNav from '@/components/PageNav/PageNav';
 import data from '@/data/external_links.json';
-import settings from '@/data/settings.json';
+import settings from '@/data/nonprofit_applications.json';
 import carouselImage1 from '@/public/images/apply/nonprofits/carousel_1.jpg';
 import carouselImage2 from '@/public/images/apply/nonprofits/carousel_2.jpg';
 import carouselImage3 from '@/public/images/apply/nonprofits/carousel_3.jpg';
@@ -25,13 +27,17 @@ import unloopImage from '@/public/images/home/unloop.png';
 export default function NonprofitApplyPage() {
   const appsEnabled = settings.nonprofit_applications_enabled;
 
-  const title = 'For Nonprofits';
-  const body =
-    'As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge.';
-  const buttonText = appsEnabled ? 'Apply Now' : 'Applications Closed';
-  const buttonLink = appsEnabled
-    ? settings.nonprofit_application_link
-    : '/apply/nonprofits#';
+  const appsDisabledText =
+    'Applications for Blueprint are closed for this semester. We will recruit more nonprofit partners next summer. If you have any questions, contact us at team@calblueprint.org.';
+
+  const action = appsEnabled ? (
+    <HeroButton
+      buttonText={'Apply Now'}
+      buttonLink={settings.nonprofit_application_link}
+    />
+  ) : (
+    <HeroMessage text={appsDisabledText} />
+  );
 
   const sections = [
     { text: 'Our Services', href: '#services' },
@@ -51,10 +57,11 @@ export default function NonprofitApplyPage() {
   return (
     <>
       <Hero
-        title={title}
-        body={body}
-        buttonText={buttonText}
-        buttonLink={buttonLink}
+        title={'For Nonprofits'}
+        body={
+          'As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge.'
+        }
+        action={action}
         heroImage={fullClubImage}
         className={'static-page-hero about-page-hero'}
       >

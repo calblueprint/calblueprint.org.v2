@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero/Hero';
+import HeroButton from '@/components/HeroButton/HeroButton';
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
 import projects from '@/data/projects.json';
 import heroImage from '@/public/images/projects/background.png';
@@ -14,20 +15,21 @@ type ProjectData = {
 };
 
 export default function ProjectsPage() {
-  const title = 'Our Projects';
-  const body =
-    'All of Blueprint’s work is open source because we believe in building technology that makes us more open and connected.';
-  const buttonText = 'View Our Github';
-  const buttonLink = 'https://github.com/calblueprint/';
   const projectList = projects.projects.projects_list;
 
   return (
     <>
       <Hero
-        title={title}
-        body={body}
-        buttonText={buttonText}
-        buttonLink={buttonLink}
+        title={'Our Projects'}
+        body={
+          'All of Blueprint’s work is open source because we believe in building technology that makes us more open and connected.'
+        }
+        action={
+          <HeroButton
+            buttonText={'View Our Github'}
+            buttonLink={'https://github.com/calblueprint/'}
+          />
+        }
         heroImage={heroImage}
         className={'static-page-hero chapter-overview-hero'}
       />
