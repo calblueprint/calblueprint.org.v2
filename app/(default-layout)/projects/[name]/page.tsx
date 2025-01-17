@@ -9,6 +9,12 @@ type ProjectDetailsPageProps = {
   params: Promise<{ name: string }>;
 };
 
+export async function generateStaticParams() {
+  return Object.keys(projects.projects.projects_list).map(name => ({
+    name: name,
+  }));
+}
+
 export default async function ProjectDetailsPage({
   params,
 }: ProjectDetailsPageProps) {
