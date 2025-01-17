@@ -19,7 +19,7 @@ export default async function ProjectCard({
 }: ProjectCardProps) {
   let imageSrc = banner_image;
   if (!banner_image.includes('http')) {
-    imageSrc = env.NEXT_PUBLIC_BASE_PATH + banner_image;
+    imageSrc = env.NEXT_PUBLIC_BASE_PATH + '/' + banner_image;
   }
 
   return (

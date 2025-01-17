@@ -62,7 +62,7 @@ export default function ChapterPage() {
                   <Image
                     sizes="100vw"
                     fill
-                    src={env.NEXT_PUBLIC_BASE_PATH + chapter.image}
+                    src={env.NEXT_PUBLIC_BASE_PATH + '/' + chapter.image}
                     alt={chapter.name}
                     objectFit="cover"
                   />

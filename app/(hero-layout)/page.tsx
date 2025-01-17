@@ -88,7 +88,11 @@ export default function HomePage() {
                   <div className="project-img img-container">
                     <Image
                       alt={projectData.title}
-                      src={env.NEXT_PUBLIC_BASE_PATH + projectData.banner_image}
+                      src={
+                        env.NEXT_PUBLIC_BASE_PATH +
+                        '/' +
+                        projectData.banner_image
+                      }
                       fill
                     />
                   </div>
