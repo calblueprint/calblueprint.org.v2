@@ -4,6 +4,8 @@ import './globals.scss';
 import { Inter, Poppins, Roboto } from 'next/font/google';
 import Footer from '@/components/Footer/Footer';
 
+// Font must be assigned to consts or else the build will fail
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
@@ -11,6 +13,7 @@ const roboto = Roboto({
   weight: '400',
 });
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
@@ -18,6 +21,7 @@ const poppins = Poppins({
   weight: '400',
 });
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -25,6 +29,7 @@ const inter = Inter({
   weight: '400',
 });
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const bpText = localFont({
   variable: '--font-bptext',
   src: [

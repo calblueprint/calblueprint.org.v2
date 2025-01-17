@@ -276,7 +276,7 @@ export default function ChapterPage() {
             Members typically devote 9-12 hours a week to Cal Blueprint
             including general meetings and project team meetings. If the member
             is a project leader or in leadership they can expect to devote up to
-            15-20 hours a week to Cal Blueprint. But, again it's up to each
+            15-20 hours a week to Cal Blueprint. But, again it&apos;s up to each
             Chapter Leadership team to decide!
           </p>
           <h3>
@@ -292,15 +292,15 @@ export default function ChapterPage() {
             projects development?
           </h3>
           <p>
-            Usually it takes one semester to kick off the process, but it's up
-            to you! It also depends on each university academic system and
+            Usually it takes one semester to kick off the process, but it&apos;s
+            up to you! It also depends on each university academic system and
             policies. But we are here to help and resolve every roadblock you
             may encounter!
           </p>
           <h3>Are 5 projects required every year?</h3>
           <p>
             No! Usually early stage chapters start with 2-3 projects to see how
-            it's like:)
+            it&apos;s like:)
           </p>
         </div>
       </section>
