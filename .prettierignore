@@ -1,0 +1,8 @@
+.github/
+.vscode/
+.next/
+
+README.md
+package-lock.json
+pnpm-lock.yaml
+next-env.d.ts

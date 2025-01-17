@@ -1,0 +1,272 @@
+@media (min-width: 1200px) {
+
+  // Override bootstrap container style for about page
+  .pages-about .container {
+    width: 1150px;
+  }
+}
+
+.pages-about {
+  .bp-nav {
+    @extend .static-page-nav;
+  }
+}
+
+.about-page-hero {
+  // background-image: image_url("home/group_photo_2021.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.about-page-mission-section {
+  background: #F4F4F4;
+  overflow: hidden;
+  padding: 80px 0 430px;
+  position: relative;
+  text-align: center;
+
+  .mission {
+    color: $dark-gray-70;
+    font-family: $bptext-font;
+    font-size: 29px;
+    margin: 0 auto;
+    max-width: 730px;
+  }
+}
+
+.about-page-oval {
+  background: white;
+  border-radius: 100%;
+  height: 350px;
+  width: 120%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.about-page-values-section {
+  position: relative;
+  padding: 100px 0 60px;
+
+  .img-container {
+    box-shadow: 0 10px 40px $dark-gray-20;
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 650px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: -350px;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .values-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .value {
+      position: relative;
+      width: 30%;
+    }
+
+    .value-num {
+      color: $bp-blue-10;
+      font-family: $bptext-font;
+      font-size: 80px;
+      font-weight: 600;
+      position: absolute;
+      top: -20px;
+    }
+
+    .value-title {
+      color: $bp-blue;
+      font-family: $bptext-font;
+      font-size: 26px;
+      font-weight: 600;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      margin-left: 50px;
+    }
+
+    .value-desc {
+      color: $dark-gray-60;
+    }
+  }
+}
+
+.about-page-photo-carousel {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  .photo {
+    img {
+      width: 600px;
+      pointer-events: none;
+    }
+  }
+}
+
+.about-page-team-section {
+  padding: 50px 0;
+}
+
+.about-page-team-tab {
+  margin-bottom: 60px;
+
+  ul {
+    border-top: 1px solid $dark-gray-10;
+    display: flex;
+    flex-flow: row;
+  }
+
+  li {
+    color: $dark-gray-60;
+    margin: 0 8px;
+    margin-top: -1px;
+    padding: 10px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+  }
+
+  li.active {
+    border-top: 1px solid $bp-blue;
+    color: $bp-blue;
+    font-weight: 600;
+  }
+}
+
+.about-page-members ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.about-page-member-item {
+  margin-bottom: 30px;
+  // width: 17%;
+
+  about-page-member a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  figcaption {
+    display: flex;
+  }
+
+  .img-container {
+    background: $bp-blue-10;
+    border-radius: 3px;
+    height: 160px;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .text-container {
+    flex: 1;
+  }
+
+  .icon-container {
+    align-items: center;
+    display: flex;
+    padding-left: 6px;
+  }
+
+  .linkedin-icon {
+    object-fit: inherit;
+    opacity: 0.7;
+    width: 18px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .name {
+    font-family: $bptext-font;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .position {
+    color: $dark-gray-60;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: $breakpt-mobile) {
+  .about-page-mission-section {
+    padding: 70px 0 370px;
+
+    .mission {
+      font-size: 24px;
+    }
+  }
+
+  .about-page-oval {
+    width: 150%;
+  }
+
+  .about-page-values-section {
+    padding-top: 60px;
+
+    .img-container {
+      height: 250px;
+      width: 90%;
+      top: -300px;
+    }
+
+    .values-container {
+      display: block;
+
+      .value {
+        width: 100%;
+      }
+
+      .value-title {
+        margin-left: 100px;
+        margin-top: 60px;
+      }
+
+      .value-num {
+        top: -55px;
+      }
+    }
+  }
+
+  .about-page-photo-carousel {
+    padding: 30px 0 20px 20px;
+
+    .photo {
+      margin: 0 5px;
+
+      img {
+        width: 300px;
+      }
+    }
+  }
+
+  .about-page-team-section {
+    padding: 30px 0;
+  }
+
+  .about-page-member-item {
+    width: 31%;
+
+    .img-container {
+      height: 130px;
+    }
+  }
+}
