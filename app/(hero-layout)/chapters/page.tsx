@@ -6,6 +6,7 @@ import HeroButton from '@/components/HeroButton/HeroButton';
 import PageNav from '@/components/PageNav/PageNav';
 import chapters from '@/data/chapters.json';
 import externalLinks from '@/data/external_links.json';
+import { env } from '@/env.mjs';
 import impactImage from '@/public/images/apply/nonprofits/impact.png';
 import cultureImage from '@/public/images/apply/students/culture.png';
 import growthImage from '@/public/images/apply/students/growth.png';
@@ -61,7 +62,7 @@ export default function ChapterPage() {
                   <Image
                     sizes="100vw"
                     fill
-                    src={'/' + chapter.image}
+                    src={env.NEXT_PUBLIC_BASE_PATH + chapter.image}
                     alt={chapter.name}
                     objectFit="cover"
                   />

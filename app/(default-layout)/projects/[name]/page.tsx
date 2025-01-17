@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ProjectData } from '@/app/(hero-layout)/projects/page';
 import ProjectDescription from '@/components/ProjectDescription/ProjectDescription';
 import projects from '@/data/projects.json';
+import { env } from '@/env.mjs';
 
 type ProjectDetailsPageProps = {
   params: Promise<{ name: string }>;
@@ -24,7 +25,7 @@ export default async function ProjectDetailsPage({
   const data = projectList[name as keyof typeof projectList] as ProjectData;
   let imageSrc = data.banner_image;
   if (!data.banner_image.includes('http')) {
-    imageSrc = '/' + data.banner_image;
+    imageSrc = env.NEXT_PUBLIC_BASE_PATH + data.banner_image;
   }
 
   return (

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { env } from '@/env.mjs';
 
 type ProjectCardProps = {
   name: string;
@@ -18,7 +19,7 @@ export default async function ProjectCard({
 }: ProjectCardProps) {
   let imageSrc = banner_image;
   if (!banner_image.includes('http')) {
-    imageSrc = '/' + banner_image;
+    imageSrc = env.NEXT_PUBLIC_BASE_PATH + banner_image;
   }
 
   return (
