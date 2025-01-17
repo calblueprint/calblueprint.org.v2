@@ -1,4 +1,4 @@
-# Trigger this workflow on pushes to the specified branch
+name: Build Next.js app
 on:
   pull_request:
 
@@ -10,11 +10,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Cache
         uses: jongwooo/next-cache@v1
-        
+
       - name: Checkout code
         uses: actions/checkout@v2
 
