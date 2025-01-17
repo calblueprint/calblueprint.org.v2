@@ -14,9 +14,9 @@ export default function PageNav({ sections }: PageNavProps) {
     <div className="container">
       <ul>
         {sections.map(({ text, href }, i) => (
-          <a key={i} href={href} className="scroll-smooth">
+          <Link key={i} href={href}>
             <li className="page-nav-link">{text}</li>
-          </a>
+          </Link>
         ))}
       </ul>
     </div>

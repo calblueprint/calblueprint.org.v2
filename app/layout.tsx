@@ -3,7 +3,6 @@ import localFont from 'next/font/local';
 import './globals.scss';
 import { Inter, Poppins, Roboto } from 'next/font/google';
 import Footer from '@/components/Footer/Footer';
-import Navbar from '../components/Navbar/Navbar';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -74,7 +73,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang="en"
+      className="scroll-smooth"
+      style={{ scrollBehavior: 'smooth' }}
+    >
       <body className="scroll-smooth">
         {children}
         <Footer />

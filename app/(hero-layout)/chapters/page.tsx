@@ -50,7 +50,7 @@ export default function ChapterPage() {
         <PageNav sections={sections} />
       </Hero>
 
-      <section className="current-chapters scroll-smooth" id="current-chapters">
+      <section className="current-chapters" id="current-chapters">
         <h2 className="static-page-header marginBot-lg">Current Chapters</h2>
         {/* <div className="chapter-card-container"> */}
         <div className="max-w-[1430px] mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
