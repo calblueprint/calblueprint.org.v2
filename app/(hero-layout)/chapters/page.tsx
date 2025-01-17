@@ -57,12 +57,22 @@ export default function ChapterPage() {
           {chapters.chapters.map((chapter: BlueprintChapter, i) => (
             <div className="chapter-card-column col-span-1" key={i}>
               <Link className="chapter-card" href={chapter.url}>
-                <div
-                  className="chapter-card--image"
-                  style={{
-                    backgroundImage: `url(${chapter.image})`,
-                  }}
-                />
+                <div className="chapter-card--image flex justify-center align-middle relative">
+                  <Image
+                    sizes="100vw"
+                    fill
+                    src={'/' + chapter.image}
+                    alt={chapter.name}
+                    objectFit="cover"
+                  />
+                </div>
+
+                {/* <div */}
+                {/*   className="chapter-card--image" */}
+                {/*   style={{ */}
+                {/*     backgroundImage: `url(${chapter.image})`, */}
+                {/*   }} */}
+                {/* /> */}
                 <h3 className="chapter-card--title">{chapter.name}</h3>
                 <p className="chapter-card--summary">{chapter.description}</p>
               </Link>
