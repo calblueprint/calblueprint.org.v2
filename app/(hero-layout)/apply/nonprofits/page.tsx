@@ -1,4 +1,5 @@
 import { FaAngleRight } from 'react-icons/fa';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
@@ -24,6 +25,10 @@ import dcKitchenImage from '@/public/images/home/dckitchen.png';
 import fullClubImage from '@/public/images/home/group_photo_2021.jpg';
 import unloopImage from '@/public/images/home/unloop.png';
 
+export const metadata: Metadata = {
+  title: 'Nonprofits | Blueprint',
+};
+
 export default function NonprofitApplyPage() {
   const appsEnabled = settings.nonprofit_applications_enabled;
 
@@ -41,9 +46,12 @@ export default function NonprofitApplyPage() {
   );
 
   const sections = [
-    { text: 'Our Services', href: '#services' },
-    { text: 'Application Process', href: '#process' },
-    { text: 'Previous Work', href: '#work' },
+    { text: 'Our Services', href: '#our-services' },
+    {
+      text: 'Application Process',
+      href: '#application-process',
+    },
+    { text: 'Previous Work', href: '#previous-work' },
     { text: 'FAQs', href: '#faqs' },
   ];
 

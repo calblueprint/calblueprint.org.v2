@@ -1,8 +1,8 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
-import Navbar from '@/components/Navbar/Navbar';
 import PageNav from '@/components/PageNav/PageNav';
 import chapters from '@/data/chapters.json';
 import externalLinks from '@/data/external_links.json';
@@ -10,6 +10,10 @@ import impactImage from '@/public/images/apply/nonprofits/impact.png';
 import cultureImage from '@/public/images/apply/students/culture.png';
 import growthImage from '@/public/images/apply/students/growth.png';
 import heroImage from '@/public/images/projects/background.png';
+
+export const metadata: Metadata = {
+  title: 'Chapters | Blueprint',
+};
 
 type BlueprintChapter = {
   name: string;
@@ -20,10 +24,10 @@ type BlueprintChapter = {
 
 export default function ChapterPage() {
   const sections = [
-    { text: 'Current Chapters', href: 'mission' },
-    { text: 'Why Blueprint', href: 'value' },
-    { text: 'Establishment Process', href: 'team' },
-    { text: 'FAQs', href: 'team' },
+    { text: 'Current Chapters', href: '#current-chapters' },
+    { text: 'Why Blueprint', href: '#why-blueprint' },
+    { text: 'Establishment Process', href: '#establishment-process' },
+    { text: 'FAQs', href: '#faqs' },
   ];
 
   return (
@@ -46,7 +50,7 @@ export default function ChapterPage() {
         <PageNav sections={sections} />
       </Hero>
 
-      <section className="current-chapters" id="current-chapters">
+      <section className="current-chapters scroll-smooth" id="current-chapters">
         <h2 className="static-page-header marginBot-lg">Current Chapters</h2>
         {/* <div className="chapter-card-container"> */}
         <div className="max-w-[1430px] mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

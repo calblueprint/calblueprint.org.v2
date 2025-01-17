@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 type Section = {
   text: string;
   href: string; // Used to scroll to the section
@@ -12,9 +14,9 @@ export default function PageNav({ sections }: PageNavProps) {
     <div className="container">
       <ul>
         {sections.map(({ text, href }, i) => (
-          <li key={i} className="page-nav-link" section-name={href}>
-            {text}
-          </li>
+          <a key={i} href={href} className="scroll-smooth">
+            <li className="page-nav-link">{text}</li>
+          </a>
         ))}
       </ul>
     </div>

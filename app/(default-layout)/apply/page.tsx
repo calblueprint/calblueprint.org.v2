@@ -1,8 +1,13 @@
 import { FaAngleRight } from 'react-icons/fa';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import studentImage from '@/public/images/apply/students/students.jpg';
 import nonprofitImage from '@/public/images/home/nonprofits.jpg';
+
+export const metadata: Metadata = {
+  title: 'Apply | Blueprint',
+};
 
 export default function ApplyPage() {
   return (

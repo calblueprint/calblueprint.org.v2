@@ -19,7 +19,7 @@ export default function Navbar({ theme }: NavbarProps) {
           style={{ animation: '400ms 700ms both slideDown' }}
         >
           <Link href="/">
-            <div className="logo">
+            <div className="logo p-[2px]">
               <Image
                 src={theme == 'nav-white' ? whiteLogo : defaultLogo}
                 alt="blueprint logo"

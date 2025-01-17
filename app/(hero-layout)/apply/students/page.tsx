@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
@@ -12,6 +13,10 @@ import growthImage from '@/public/images/apply/students/growth.png';
 import passionImage from '@/public/images/apply/students/passion.png';
 import studentsImage from '@/public/images/apply/students/students.jpg';
 import teamworkImage from '@/public/images/apply/students/teamwork.png';
+
+export const metadata: Metadata = {
+  title: 'Students | Blueprint',
+};
 
 export default function StudentApplyPage() {
   const appsEnabled = settings.student_applications_enabled;
@@ -32,7 +37,7 @@ export default function StudentApplyPage() {
     { text: 'Developer', href: '#developer' },
     { text: 'External', href: '#external' },
     { text: 'Designer', href: '#designer' },
-    { text: 'Decision Criteria', href: '#criteria' },
+    { text: 'Decision Criteria', href: '#decision-criteria' },
     { text: 'FAQs', href: '#faqs' },
   ];
 
@@ -50,11 +55,8 @@ export default function StudentApplyPage() {
         <PageNav sections={sections} />
       </Hero>
 
-      <section className="application-process-section">
-        <div
-          className="container marginBot-lg"
-          id="developer-application-process"
-        >
+      <section className="application-process-section" id="developer">
+        <div className="container marginBot-lg">
           <h2 className="static-page-header marginBot-sm">
             Developer Application Process
           </h2>
@@ -168,10 +170,8 @@ export default function StudentApplyPage() {
             </div>
           </div>
         </div>
-        <div
-          className="container marginTop-xxl"
-          id="external-application-process"
-        >
+
+        <div className="container marginTop-xxl" id="external">
           <h2 className="static-page-header marginBot-sm">
             External Application Process
           </h2>
@@ -272,10 +272,7 @@ export default function StudentApplyPage() {
             </div>
           </div>
         </div>
-        <div
-          className="container marginTop-xxl"
-          id="designer-application-process"
-        >
+        <div className="container marginTop-xxl" id="designer">
           <h2 className="static-page-header marginBot-sm">
             Designer Application Process
           </h2>

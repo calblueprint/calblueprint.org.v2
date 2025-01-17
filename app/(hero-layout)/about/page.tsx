@@ -1,8 +1,8 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import Members from '@/components/Members/Members';
-import Navbar from '@/components/Navbar/Navbar';
 import PageNav from '@/components/PageNav/PageNav';
 import carouselImage4 from '@/public/images/about/4.jpg';
 import carouselImage5 from '@/public/images/about/5.jpg';
@@ -13,11 +13,15 @@ import carouselImage9 from '@/public/images/about/9.jpg';
 import carouselImage10 from '@/public/images/about/10.jpg';
 import fullClubImage from '@/public/images/home/group_photo_2021.jpg';
 
+export const metadata: Metadata = {
+  title: 'About | Blueprint',
+};
+
 export default function AboutPage() {
   const sections = [
-    { text: 'Mission', href: 'mission' },
-    { text: 'Values', href: 'value' },
-    { text: 'The Team', href: 'team' },
+    { text: 'Mission', href: '/about#mission' },
+    { text: 'Values', href: '/about/#values' },
+    { text: 'The Team', href: '/about#team' },
   ];
 
   const carouselImages = [

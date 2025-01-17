@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
 import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
 import projects from '@/data/projects.json';
 import heroImage from '@/public/images/projects/background.png';
+
+export const metadata: Metadata = {
+  title: 'Projects | Blueprint',
+};
 
 export type ProjectData = {
   status: 'current' | 'past';

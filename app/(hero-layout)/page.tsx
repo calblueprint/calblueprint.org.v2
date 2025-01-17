@@ -40,7 +40,7 @@ export default function HomePage() {
         }
       />
 
-      <section className="about-section">
+      <section className="about-section" id="about">
         <div className="container">
           <h2 className="static-page-header marginBot-lg">About Us</h2>
           <h3 className="homepage-mission-statement">
