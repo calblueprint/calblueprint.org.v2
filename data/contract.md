@@ -10,15 +10,10 @@ Our projects require a large time investment for our developers and designers (s
 
 ### Examples of Accepted Projects
 
-- A web portal for Black, LGBTQ+/SGL, and other marginalized communities to find and connect with organizations nationwide. See the <a href="http://nbjc-staging.herokuapp.com/" target="_blank" rel="noopener noreferrer">demo</a>, or <a href="https://medium.com/blueprint/national-black-justice-coalition-a-project-recap-119189865a5f" target="_blank" rel="noopener noreferrer">see National Black Justice Coalition’s project recap →</a>
-- A progressive web application with offline capability to help electricians maintain solar powered grids. This app was handed off for internal use, but check out our custom <a href="https://github.com/calblueprint/meepanyar/wiki" target="_blank" rel="noopener noreferrer">documentation</a> for users and developers! <a href="https://medium.com/blueprint/mee-panyar-a-project-recap-8b3c95d6040c" target="_blank" rel="noopener noreferrer">See Mee Panyar Project Recap →</a>
-- A customer rewards program and store locator mobile app (<a href="https://tiny.cc/HealthyCornersApp" target="_blank" rel="noopener noreferrer">see it on the App Store</a>) aimed at increasing accessibility to affordable healthy food in DC's food deserts through DC Central Kitchen's Healthy Corners stores. <a href="https://medium.com/blueprint/expanding-access-to-healthy-food-in-food-deserts-fa83f4810fca" target="_blank" rel="noopener noreferrer">See DC Central Kitchen Case Study →</a>
-- And <a href="https://calblueprint.org/projects" target="_blank" rel="noopener noreferrer"> more of our past projects on our website</a> or more <a href="https://medium.com/blueprint/projects/home" target="_blank" rel="noopener noreferrer"> detailed recaps on our Medium →</a>
-
-<!-- - A mobile app for navigating and troubleshooting a solar powered suitcase used by midwives in rural areas. <a href="https://docs.google.com/presentation/d/e/2PACX-1vSQ_DumV0ErS2wzg12aCCsSVFWQ8n27MDkkTRks44BnkO_136Y71g3D0CZsDT08YeDg9gEX__YUPwgd/pub?start=true&loop=false&delayms=3000#slide=id.p" target="_blank" rel="noopener noreferrer">See We Care Solar →</a>
-- A web portal for Black, LGBTQ+/SGL, and other marginalized communities to find and connect with organizations nationwide. <a href="https://nbjc-staging.herokuapp.com/" target="_blank" rel="noopener noreferrer">See National Black Justice Coalition →</a>
-- A customer rewards program and store locator mobile app (<a href="https://apps.apple.com/us/app/healthy-corners-rewards/id1503424404" target="_blank" rel="noopener noreferrer">see it on the App Store</a>) to increase access to affordable healthy food in DC's food deserts through DC Central Kitchen's Healthy Corners stores. <a href="https://calblueprint.org/projects/dckitchen" target="_blank" rel="noopener noreferrer">See DC Central Kitchen →</a>
-- And <a href="https://calblueprint.org/projects" target="_blank" rel="noopener noreferrer">more of our past projects</a> -->
+- A web portal for Black, LGBTQ+/SGL, and other marginalized communities to find and connect with organizations nationwide. See the [demo](http://nbjc-staging.herokuapp.com/), or [see National Black Justice Coalition’s project recap →](https://medium.com/blueprint/national-black-justice-coalition-a-project-recap-119189865a5f)
+- A progressive web application with offline capability to help electricians maintain solar powered grids. This app was handed off for internal use, but check out our custom [documentation](https://github.com/calblueprint/meepanyar/wiki) for users and developers! [See Mee Panyar Project Recap →](https://medium.com/blueprint/mee-panyar-a-project-recap-8b3c95d6040c)
+- A customer rewards program and store locator mobile app ([see it on the App Store](https://tiny.cc/HealthyCornersApp)) aimed at increasing accessibility to affordable healthy food in DC's food deserts through DC Central Kitchen's Healthy Corners stores. [See DC Central Kitchen Case Study →](https://medium.com/blueprint/expanding-access-to-healthy-food-in-food-deserts-fa83f4810fca)
+- And [more of our past projects on our website](https://calblueprint.org/projects) or more [detailed recaps on our Medium →](https://medium.com/blueprint/projects/home)
 
 **Examples of projects that will NOT be accepted:** Redesigning a static website, refactoring old codebases to use newer technology, creating a mobile app "version" of already existing technology that is already effectively solving the problem.
 
@@ -26,7 +21,7 @@ Our projects require a large time investment for our developers and designers (s
 
 Blueprint's developers have created many kinds of software. We specialize in **web application and mobile application development**, but these are by no means strict limitations. We are eager to hear your proposals.
 
-For the tech savvy, our projects usually run on a <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a> or <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer">React Native</a> frontend. Recently, we've also started to use <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</a> syntax and <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a> as a backend for some of our web and mobile apps. We strive to use the latest and most accessible technology, and this past year, we've had success building web apps using a combination of <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">NextJS</a> and <a href="https://retool.com//" target="_blank" rel="noopener noreferrer">Retool</a>.
+For the tech savvy, our projects usually run on a [React](https://reactjs.org/) or [React Native](https://reactnative.dev/) frontend. Recently, we've also started to use [Typescript](https://www.typescriptlang.org/) syntax and [Supabase](https://supabase.com/) as a backend for some of our web and mobile apps. We strive to use the latest and most accessible technology, and this past year, we've had success building web apps using a combination of [NextJS](https://nextjs.org/) and [Retool](https://retool.com//).
 
 ## Timeline and Development Cycle
 
@@ -80,4 +75,4 @@ Blueprint's services are offered **completely pro bono**. Our developers and des
 
 Looking forward to working with you,
 
-<img src="https://user-images.githubusercontent.com/5278006/32311415-bcdef6f6-bf55-11e7-9e8c-e43e786685cf.png" alt="drawing" width="250px"/>
+![Blueprint Logo](https://user-images.githubusercontent.com/5278006/32311415-bcdef6f6-bf55-11e7-9e8c-e43e786685cf.png)
