@@ -5,7 +5,7 @@ import CenteredHero from '@/components/Hero/CenteredHero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import projects from '@/data/projects.json';
 import bidsImage from '@/public/images/home/bids.png';
-import groupPhoto from '@/public/images/home/group_photo_2021.jpg';
+import groupPhoto from '@/public/images/home/group_photo_2024.jpg';
 import nibImage from '@/public/images/home/nib.png';
 import nonprofitImage from '@/public/images/home/nonprofits.jpg';
 import tbgImage from '@/public/images/home/tbg.png';

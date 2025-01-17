@@ -22,7 +22,7 @@ import technicalFitImage from '@/public/images/apply/nonprofits/technical_fit.pn
 import webImage from '@/public/images/apply/nonprofits/web.png';
 import coffeeImage from '@/public/images/home/1951.png';
 import dcKitchenImage from '@/public/images/home/dckitchen.png';
-import fullClubImage from '@/public/images/home/group_photo_2021.jpg';
+import fullClubImage from '@/public/images/home/group_photo_2024.jpg';
 import unloopImage from '@/public/images/home/unloop.png';
 
 export const metadata: Metadata = {

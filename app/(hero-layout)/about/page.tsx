@@ -11,7 +11,7 @@ import carouselImage7 from '@/public/images/about/7.jpg';
 import carouselImage8 from '@/public/images/about/8.jpg';
 import carouselImage9 from '@/public/images/about/9.jpg';
 import carouselImage10 from '@/public/images/about/10.jpg';
-import fullClubImage from '@/public/images/home/group_photo_2021.jpg';
+import fullClubImage from '@/public/images/home/group_photo_2024.jpg';
 
 export const metadata: Metadata = {
   title: 'About | Blueprint',
