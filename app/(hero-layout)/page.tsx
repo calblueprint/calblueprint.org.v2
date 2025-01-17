@@ -61,10 +61,10 @@ export default function HomePage() {
           <h2 className="static-page-header marginBot-lg">Our Projects</h2>
           <p className="static-page-desc marginBot-xl">
             Each year, teams of five students work with non-profit organizations
-            on projects to help them better serve their communities. We've
-            designed and built a crowdfunding application for Berkeley's public
-            schools, a professional development platform for digital literacy in
-            Oakland, and much more!
+            on projects to help them better serve their communities. We&apos;ve
+            designed and built a crowdfunding application for Berkeley&apos;s
+            public schools, a professional development platform for digital
+            literacy in Oakland, and much more!
           </p>
           <Link className="homepage-link marginBot-xl" href="/projects">
             <div className="flex flex-row">

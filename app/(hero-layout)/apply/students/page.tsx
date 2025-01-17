@@ -104,14 +104,15 @@ export default function StudentApplyPage() {
                 </div>
                 <div className="timeline-row-description">
                   The application includes 3 short response questions to help us
-                  understand your connection to Blueprint's mission and values.{' '}
+                  understand your connection to Blueprint&apos;s mission and
+                  values.
                   <strong>
                     The application is due on September 5th, 11:59 PM PDT
                     (midnight).
-                  </strong>{' '}
+                  </strong>
                   Decisions will be released via email on September 7th by
                   midnight. Note that all applications are reviewed after the
-                  deadline, so there's no advantage to submitting early.
+                  deadline, so there&apos;s no advantage to submitting early.
                 </div>
                 <div className="timeline-row-btn">
                   <div className="timeline-row-notice">
@@ -220,14 +221,15 @@ export default function StudentApplyPage() {
                 </div>
                 <div className="timeline-row-description">
                   The application includes 3 short response questions to help us
-                  understand your connection to Blueprint's mission and values.{' '}
+                  understand your connection to Blueprint&apos;s mission and
+                  values.{' '}
                   <strong>
                     The application is due on September 5th, 11:59 PM PDT
                     (midnight).
                   </strong>{' '}
                   Decisions will be released via email on September 7th by
                   midnight. Note that all applications are reviewed after the
-                  deadline, so there's no advantage to submitting early.
+                  deadline, so there&apos;s no advantage to submitting early.
                 </div>
                 <div className="timeline-row-btn">
                   <div className="timeline-row-btn">
@@ -321,14 +323,15 @@ export default function StudentApplyPage() {
                 </div>
                 <div className="timeline-row-description">
                   The application includes 3 short response questions to help us
-                  understand your connection to Blueprint's mission and values.{' '}
+                  understand your connection to Blueprint&apos;s mission and
+                  values.{' '}
                   <strong>
                     The application is due on September 5th, 11:59 PM PDT
                     (midnight).
                   </strong>{' '}
                   Decisions will be released via email on September 7th by
                   midnight. Note that all applications are reviewed after the
-                  deadline, so there's no advantage to submitting early.
+                  deadline, so there&apos;s no advantage to submitting early.
                 </div>
                 <div className="timeline-row-btn">
                   <div className="timeline-row-notice">
@@ -454,7 +457,7 @@ export default function StudentApplyPage() {
               <h3>Teamwork</h3>
               <p>
                 Do you enjoy collaborating and learning with others? Do you
-                value others' perspectives and experiences?
+                value others&apos; perspectives and experiences?
               </p>
             </li>
             <li className="decision-criteria-item">
@@ -476,11 +479,11 @@ export default function StudentApplyPage() {
           <h2 className="static-page-header marginBot-xl">
             Frequently Asked Questions
           </h2>
-          <h3>What is Blueprint's structure?</h3>
+          <h3>What is Blueprint&apos;s structure?</h3>
           <p>
-            Blueprint's project structure consists of 5 project teams, each with
-            a Project Leader, a designer, and 4-5 developers. Each project team
-            is dedicated to one of our nonprofit and community partners and
+            Blueprint&apos;s project structure consists of 5 project teams, each
+            with a Project Leader, a designer, and 4-5 developers. Each project
+            team is dedicated to one of our nonprofit and community partners and
             works closely with our points of contact to create equitable
             solutions through design and development. <br />
             <br /> Blueprint’s External team consists of 6 directors and the
@@ -497,8 +500,8 @@ export default function StudentApplyPage() {
             Our partners each have dedicated internal point(s) of contact who
             meet with our project teams on a regular (weekly or bi-weekly)
             basis. Because interactions vary based on partner capacity,
-            timezones, internet access, and more, it's important to note that
-            each partner relationship looks a little different. Broadly
+            timezones, internet access, and more, it&apos;s important to note
+            that each partner relationship looks a little different. Broadly
             speaking, these meetings help ensure that our partners are on the
             same page as our project teams, and that the solutions we design and
             develop will actually be able to help the partner and communities in
@@ -524,10 +527,10 @@ export default function StudentApplyPage() {
             and expectations as clear as possible throughout the semester.{' '}
             <br />
             <br /> On top of everything, Blueprint is full of people who
-            naturally want to help each other - on any given day or night, it's
-            easy to find members squashing bugs together, holding informal
-            critique sessions, DMing teammates for insight into other parts of
-            Blueprint, or lending a listening ear. <br />
+            naturally want to help each other - on any given day or night,
+            it&apos;s easy to find members squashing bugs together, holding
+            informal critique sessions, DMing teammates for insight into other
+            parts of Blueprint, or lending a listening ear. <br />
             <br /> Even beyond college, our extensive alumni network remains in
             touch and are often continuing to give back to Blueprint by sharing
             their post-graduation professional experiences.
