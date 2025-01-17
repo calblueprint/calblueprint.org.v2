@@ -2,6 +2,9 @@ name: Build Next.js app
 on:
   pull_request:
 
+env:
+  NEXT_PUBLIC_BASE_PATH: /${{ github.repository }}
+
 jobs:
   build:
     runs-on: ubuntu-latest

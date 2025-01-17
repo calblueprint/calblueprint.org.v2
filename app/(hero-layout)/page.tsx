@@ -4,6 +4,7 @@ import Link from 'next/link';
 import CenteredHero from '@/components/Hero/CenteredHero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import projects from '@/data/projects.json';
+import { env } from '@/env.mjs';
 import bidsImage from '@/public/images/home/bids.png';
 import groupPhoto from '@/public/images/home/group_photo_2024.jpg';
 import nibImage from '@/public/images/home/nib.png';
@@ -87,7 +88,7 @@ export default function HomePage() {
                   <div className="project-img img-container">
                     <Image
                       alt={projectData.title}
-                      src={'/' + projectData.banner_image}
+                      src={env.NEXT_PUBLIC_BASE_PATH + projectData.banner_image}
                       fill
                     />
                   </div>
