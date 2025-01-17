@@ -7,7 +7,7 @@ export default function HeroLayout({
 }>) {
   return (
     <div className="content pages pages-about">
-      <Navbar theme="nav-white" />
+      <Navbar variant="nav-white" />
       {children}
     </div>
   );

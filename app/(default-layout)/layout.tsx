@@ -7,7 +7,7 @@ export default function WhiteLayout({
 }>) {
   return (
     <div className="content apply apply-show">
-      <Navbar theme="default" />
+      <Navbar variant="default" />
       {children}
     </div>
   );

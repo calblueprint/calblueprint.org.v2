@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
         pathname: '/avatar/**',
         search: '?s=300&d=404',
       },
+      {
+        protocol: 'https',
+        hostname: 's3.amazonaws.com',
+        port: '',
+        pathname: '/calblueprint-prod/images/**',
+        search: '',
+      },
     ],
   },
   sassOptions: {

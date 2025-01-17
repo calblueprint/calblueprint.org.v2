@@ -6,13 +6,13 @@ import whiteLogo from '@/public/images/logo-white.png';
 import defaultLogo from '@/public/images/logo.png';
 
 type NavbarProps = {
-  theme: 'nav-white' | 'default';
+  variant: 'nav-white' | 'default';
 };
 
 // TODO: Add mobile nav bar state
-export default function Navbar({ theme }: NavbarProps) {
+export default function Navbar({ variant }: NavbarProps) {
   return (
-    <nav className={`bp-nav ${theme}`}>
+    <nav className={`bp-nav ${variant}`}>
       <div className="container max-w-[1170px]">
         <div
           className="logo-container nav-link"
@@ -21,7 +21,7 @@ export default function Navbar({ theme }: NavbarProps) {
           <Link href="/">
             <div className="logo p-[2px]">
               <Image
-                src={theme == 'nav-white' ? whiteLogo : defaultLogo}
+                src={variant == 'nav-white' ? whiteLogo : defaultLogo}
                 alt="blueprint logo"
               />
             </div>
