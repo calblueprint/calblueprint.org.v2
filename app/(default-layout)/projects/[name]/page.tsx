@@ -9,6 +9,12 @@ type ProjectDetailsPageProps = {
   params: Promise<{ name: string }>;
 };
 
+export async function generateStaticParams() {
+  return Object.keys(projects.projects.projects_list).map(name => ({
+    name: name,
+  }));
+}
+
 export default async function ProjectDetailsPage({
   params,
 }: ProjectDetailsPageProps) {
@@ -27,7 +33,7 @@ export default async function ProjectDetailsPage({
         <h1 className="static-page-header marginBot-md">{data.title}</h1>
         <p>{data.short_summary}</p>
         <div className="project-article-links-container marginBot-md">
-          <Link className="homepage-link" href={data.org_link}>
+          <Link className="homepage-link" href={data.org_link ?? ''}>
             <div className="flex flex-row">
               Learn More
               <FaAngleRight className="my-auto font-normal" />
