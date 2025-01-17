@@ -157,11 +157,11 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-description">
                   One of our Project Managers will reach out to you to schedule
                   a 15 - 30 minute informational phone call that will help you
-                  get to know the work we do, and vice versa! We'll also be able
-                  to answer any questions you have about the application
-                  process. If you decide that you'd like to potentially work
-                  with us and we feel our services could fit your needs, we'll
-                  open up the second part of our application.
+                  get to know the work we do, and vice versa! We&apos;ll also be
+                  able to answer any questions you have about the application
+                  process. If you decide that you&apos;d like to potentially
+                  work with us and we feel our services could fit your needs,
+                  we&apos;ll open up the second part of our application.
                 </div>
               </div>
             </div>
@@ -176,12 +176,12 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-date">July 12</div>
                 <div className="timeline-row-description">
                   The second part of our application helps us understand what
-                  you need from Blueprint. You'll have the opportunity to
+                  you need from Blueprint. You&apos;ll have the opportunity to
                   explain why our services could be helpful to your
                   organization, identify any pain points within your current
-                  operations, and expand on what you'd like us to build for you.
-                  If your proposed project sounds like something we can build,
-                  we'll be in touch for a final interview.
+                  operations, and expand on what you&apos;d like us to build for
+                  you. If your proposed project sounds like something we can
+                  build, we&apos;ll be in touch for a final interview.
                 </div>
                 {/* <div className="timeline-row-btn"> */}
                 {/*   <Link className="bp-btn" href="/nonprofit_applications"> */}
@@ -199,10 +199,10 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-date">July 15 - July 26</div>
                 <div className="timeline-row-description">
                   The final interview will be with a handful of our Project
-                  Managers and Designers. Together, we'll dive into more detail
-                  about your proposed project, discuss how it could be designed
-                  to best fit your needs, and leave room for any remaining
-                  questions.
+                  Managers and Designers. Together, we&apos;ll dive into more
+                  detail about your proposed project, discuss how it could be
+                  designed to best fit your needs, and leave room for any
+                  remaining questions.
                 </div>
               </div>
             </div>
@@ -214,8 +214,8 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-title">Decisions Released</div>
                 <div className="timeline-row-date">July 29</div>
                 <div className="timeline-row-description">
-                  We'll reach out and let you know whether your organization has
-                  been selected to work with Blueprint!
+                  We&apos;ll reach out and let you know whether your
+                  organization has been selected to work with Blueprint!
                 </div>
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function NonprofitApplyPage() {
           <q>
             Working with Blueprint has been an incredible pleasure. We have used
             their application to raise hundreds of thousands of dollars for
-            Berkeley's teachers.
+            Berkeley&apos;s teachers.
           </q>
           <h5 className="reference">- Berkeley Public Schools Fund</h5>
         </div>
@@ -313,7 +313,7 @@ export default function NonprofitApplyPage() {
         <div className="container">
           <h2 className="static-page-header marginBot-lg">Previous Work</h2>
           <p className="static-page-desc marginBot-lg">
-            Some of the applications we've developed for previous clients.
+            Some of the applications we&apos;ve developed for previous clients.
           </p>
           <Link className="homepage-link marginBot-xl" href="/projects">
             <div className="flex flex-row">
@@ -323,7 +323,7 @@ export default function NonprofitApplyPage() {
           </Link>
 
           <div className="projects-container">
-            <a href="/projects/1951coffee">
+            <Link href="/projects/1951coffee">
               <div className="project-item" id="coffee">
                 <div className="project-img img-container">
                   <Image alt="1951 Coffee Company" src={coffeeImage} />
@@ -334,8 +334,8 @@ export default function NonprofitApplyPage() {
                   possible.
                 </p>
               </div>
-            </a>
-            <a href="/projects/unloop">
+            </Link>
+            <Link href="/projects/unloop">
               <div className="project-item" id="unloop">
                 <div className="project-img img-container">
                   <Image alt="Unloop" src={unloopImage} />
@@ -343,8 +343,8 @@ export default function NonprofitApplyPage() {
                 <h4>Unloop</h4>
                 <p>Building a pipeline from prison to tech.</p>
               </div>
-            </a>
-            <a href="/projects/dckitchen">
+            </Link>
+            <Link href="/projects/dckitchen">
               <div className="project-item" id="dckitchen">
                 <div className="project-img img-container">
                   <Image alt="DC Central Kitchen" src={dcKitchenImage} />
@@ -355,7 +355,7 @@ export default function NonprofitApplyPage() {
                   stores.
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -375,10 +375,10 @@ export default function NonprofitApplyPage() {
           </p>
           <h3>What is the client-team interaction like?</h3>
           <p>
-            The team works alongside the client's vision for the organization.
-            We hope that our project has significant impact on the
-            organization's efficiency and reach, so the alignment of goals is
-            crucial. At our meetings, we discuss updates on project features,
+            The team works alongside the client&apos;s vision for the
+            organization. We hope that our project has significant impact on the
+            organization&apos;s efficiency and reach, so the alignment of goals
+            is crucial. At our meetings, we discuss updates on project features,
             check the timeline, and have discussion on the progress of the
             project and the nonprofit itself.
           </p>
