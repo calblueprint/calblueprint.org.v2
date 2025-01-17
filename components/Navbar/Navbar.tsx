@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,6 +14,8 @@ type NavbarProps = {
 
 // TODO: Add mobile nav bar state
 export default function Navbar({ variant }: NavbarProps) {
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
   return (
     <nav className={`bp-nav ${variant}`}>
       <div className="container max-w-[1170px]">
@@ -28,11 +33,17 @@ export default function Navbar({ variant }: NavbarProps) {
             blueprint
           </Link>
         </div>
-        <button className="mobile-nav-btn mobile-nav-show">
+        <button
+          className="mobile-nav-btn mobile-nav-show"
+          onClick={() => setShowMobileNav(true)}
+        >
           <FaBars />
         </button>
-        <ul className="link-container">
-          <button className="mobile-nav-btn mobile-nav-close">
+        <ul className={`link-container ${showMobileNav && 'mobile-show'}`}>
+          <button
+            className="mobile-nav-btn mobile-nav-close"
+            onClick={() => setShowMobileNav(false)}
+          >
             <Image alt="close menu" src={closeIcon} />
           </button>
           <li
