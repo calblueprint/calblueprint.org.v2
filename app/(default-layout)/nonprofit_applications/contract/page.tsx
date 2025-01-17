@@ -1,5 +1,5 @@
 import Markdown from 'react-markdown';
-import contract from '@/data/contract.md';
+import { contract } from '@/data/contract';
 
 export default function ContractPage() {
   return (

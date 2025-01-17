@@ -1,29 +1,6 @@
 import type { NextConfig } from 'next';
-import createMDX from '@next/mdx';
 
 const nextConfig: NextConfig = {
-  webpack: (config, options) => {
-    config.module.rules.push({
-      test: /\.md/,
-      use: [
-        {
-          loader: 'raw-loader',
-        },
-      ],
-    });
-
-    return config;
-  },
-  experimental: {
-    turbo: {
-      rules: {
-        '*.md': {
-          loaders: ['raw-loader'],
-          as: '*.js',
-        },
-      },
-    },
-  },
   images: {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
@@ -93,6 +70,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-const withMDX = createMDX({});
-
-export default withMDX(nextConfig);
+export default nextConfig;
