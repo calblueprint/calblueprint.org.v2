@@ -108,9 +108,9 @@ export default function StudentApplyPage() {
                   values.
                   <strong>
                     The application is due on {config.application_deadline}.
-                  </strong>
+                  </strong>{' '}
                   Decisions will be released via email on
-                  {config.written_round_decision_date}. Note that all
+                  {' '}{config.written_round_decision_date}. Note that all
                   applications are reviewed after the deadline, so there&apos;s
                   no advantage to submitting early.
                 </div>
@@ -210,7 +210,7 @@ export default function StudentApplyPage() {
                   {config.infosession_dates}, and there will be multiple virtual
                   infosessions on {config.virtual_infosessions_date}. These
                   sessions will give you a chance to ask questions and talk to
-                  our members in a comfortable setting!&nbsp; Take a look at our{' '}
+                  our members in a comfortable setting! Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
                     infosession schedule
                   </Link>{' '}
@@ -232,7 +232,7 @@ export default function StudentApplyPage() {
                   understand your connection to Blueprint&apos;s mission and
                   values.{' '}
                   <strong>
-                    The application is due on {config.application_deadline}{' '}
+                    The application is due on {config.application_deadline}.
                   </strong>{' '}
                   Decisions will be released via email on{' '}
                   {config.written_round_decision_date}. Note that all
@@ -319,7 +319,7 @@ export default function StudentApplyPage() {
                   {config.infosession_dates}, and there will be multiple virtual
                   infosessions on {config.virtual_infosessions_date}. These
                   sessions will give you a chance to ask questions and talk to
-                  our members in a comfortable setting!&nbsp; Take a look at our{' '}
+                  our members in a comfortable setting! Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
                     infosession schedule
                   </Link>{' '}
@@ -341,7 +341,7 @@ export default function StudentApplyPage() {
                   understand your connection to Blueprint&apos;s mission and
                   values.{' '}
                   <strong>
-                    The application is due on {config.application_deadline}
+                    The application is due on {config.application_deadline}.
                   </strong>{' '}
                   Decisions will be released via email on{' '}
                   {config.written_round_decision_date} by midnight. Note that
