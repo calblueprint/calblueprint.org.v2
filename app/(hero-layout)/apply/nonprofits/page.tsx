@@ -7,7 +7,7 @@ import HeroButton from '@/components/HeroButton/HeroButton';
 import HeroMessage from '@/components/HeroMessage/HeroMessage';
 import PageNav from '@/components/PageNav/PageNav';
 import data from '@/data/external_links.json';
-import settings from '@/data/nonprofit_applications.json';
+import config from '@/data/nonprofit_applications.json';
 import carouselImage1 from '@/public/images/apply/nonprofits/carousel_1.jpg';
 import carouselImage2 from '@/public/images/apply/nonprofits/carousel_2.jpg';
 import carouselImage3 from '@/public/images/apply/nonprofits/carousel_3.jpg';
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export default function NonprofitApplyPage() {
-  const appsEnabled = settings.nonprofit_applications_enabled;
+  const appsEnabled = config.nonprofit_applications_enabled;
 
   const appsDisabledText =
     'Applications for Blueprint are closed for this semester. We will recruit more nonprofit partners next summer. If you have any questions, contact us at team@calblueprint.org.';
@@ -38,7 +38,7 @@ export default function NonprofitApplyPage() {
   const action = appsEnabled ? (
     <HeroButton
       buttonText={'Apply Now'}
-      buttonLink={settings.nonprofit_application_link}
+      buttonLink={config.nonprofit_application_link}
       className="mt-[40px]"
     />
   ) : (
@@ -132,7 +132,9 @@ export default function NonprofitApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Interest Form Open</div>
-                <div className="timeline-row-date">June 9 - July 12</div>
+                <div className="timeline-row-date">
+                  {config.interest_form_release_dates}
+                </div>
                 <div className="timeline-row-description">
                   The first part of our application is an interest form where
                   you will provide contact and basic information about your
@@ -153,7 +155,9 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-title">
                   Informational Phone Call
                 </div>
-                <div className="timeline-row-date">June 9 - July 12</div>
+                <div className="timeline-row-date">
+                  {config.phone_call_dates}
+                </div>
                 <div className="timeline-row-description">
                   One of our Project Managers will reach out to you to schedule
                   a 15 - 30 minute informational phone call that will help you
@@ -173,7 +177,9 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-title">
                   Written Application Due
                 </div>
-                <div className="timeline-row-date">July 12</div>
+                <div className="timeline-row-date">
+                  {config.written_application_due}
+                </div>
                 <div className="timeline-row-description">
                   The second part of our application helps us understand what
                   you need from Blueprint. You&apos;ll have the opportunity to
@@ -196,7 +202,9 @@ export default function NonprofitApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Final Interviews</div>
-                <div className="timeline-row-date">July 15 - July 26</div>
+                <div className="timeline-row-date">
+                  {config.final_interview_dates}
+                </div>
                 <div className="timeline-row-description">
                   The final interview will be with a handful of our Project
                   Managers and Designers. Together, we&apos;ll dive into more
@@ -212,7 +220,9 @@ export default function NonprofitApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Decisions Released</div>
-                <div className="timeline-row-date">July 29</div>
+                <div className="timeline-row-date">
+                  {config.decision_released_date}
+                </div>
                 <div className="timeline-row-description">
                   We&apos;ll reach out and let you know whether your
                   organization has been selected to work with Blueprint!
@@ -225,7 +235,9 @@ export default function NonprofitApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Project Scoping</div>
-                <div className="timeline-row-date">July 29 - Mid August</div>
+                <div className="timeline-row-date">
+                  {config.project_scoping_dates}
+                </div>
                 <div className="timeline-row-description">
                   If selected, your organization will have the opportunity to
                   work with us on a project over the course of the school year

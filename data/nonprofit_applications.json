@@ -1,4 +1,11 @@
 {
   "nonprofit_applications_enabled": false,
-  "nonprofit_application_link": "https://airtable.com/apphgIg5yDsaeF5R8/shrNg7ItqtZTJKwSd"
+  "nonprofit_application_link": "https://airtable.com/apphgIg5yDsaeF5R8/shrNg7ItqtZTJKwSd",
+
+  "interest_form_release_dates": "June 9 - July 12",
+  "phone_call_dates": "June 9 - July 12",
+  "written_application_due": "July 12",
+  "final_interview_dates": "July 15 - July 26",
+  "decision_released_date": "July 29",
+  "project_scoping_dates": "July 29 - Mid August"
 }
