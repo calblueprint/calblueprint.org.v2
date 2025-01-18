@@ -1,7 +1,21 @@
 {
   "semester": "Spring 2025",
+  "student_applications_enabled": true,
+  "student_application_link": "https://airtable.com/apphgIg5yDsaeF5R8/shrNg7ItqtZTJKwSd",
+
   "application_release_date": "Tuesday, January 21st",
-  "application_deadline": "Thursday, January 30th at 11:59 PM PDT (midnight)",
-  "student_applications_enabled": false,
-  "student_application_link": "https://airtable.com/apphgIg5yDsaeF5R8/shrNg7ItqtZTJKwSd"
+  "application_deadline": "Thursday, January 30th at 11:59 PM PDT",
+
+  "infosession_dates": "Tuesday, January 28th and Wednesday, January 29th",
+  "virtual_infosessions_date": "Saturday, January 25th",
+
+  "bp_games_date": "Sunday, February 2nd",
+  "mtc_dates": "February 5th - 6th",
+  "bwbp_dates": "February 4th - 7th",
+  "external_interview_dates": "February 4th - 7th",
+  "designer_interview_dates": "February 4th - 7th",
+  "design_challenge_due_date": "February 8th, 10:00AM PST",
+
+  "written_round_decision_date": "Saturday, February 1st by midnight",
+  "bp_games_decision_date": "Tuesday, February 4th by midnight"
 }

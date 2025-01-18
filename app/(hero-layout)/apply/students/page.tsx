@@ -5,7 +5,7 @@ import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import HeroMessage from '@/components/HeroMessage/HeroMessage';
 import PageNav from '@/components/PageNav/PageNav';
-import settings from '@/data/students_applications.json';
+import config from '@/data/students_applications.json';
 import adaptabilityImage from '@/public/images/apply/students/adaptability.png';
 import attitudeImage from '@/public/images/apply/students/attitude.png';
 import cultureImage from '@/public/images/apply/students/culture.png';
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
 };
 
 export default function StudentApplyPage() {
-  const appsEnabled = settings.student_applications_enabled;
+  const appsEnabled = config.student_applications_enabled;
 
-  const appsDisabledText = `Our student applications for the ${settings.semester} semester will open ${settings.application_release_date}, and close on ${settings.application_deadline}.`;
+  const appsDisabledText = `Our student applications for the ${config.semester} semester will open ${config.application_release_date}, and close on ${config.application_deadline}.`;
 
   const action = appsEnabled ? (
     <HeroButton
       buttonText={'Apply Now'}
-      buttonLink={settings.student_application_link}
+      buttonLink={config.student_application_link}
       className="mt-[40px]"
     />
   ) : (
@@ -81,11 +81,11 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Infosession Series</div>
                 <div className="timeline-row-description">
-                  We will host a general in-person infosession on Tuesday,
-                  September 3rd, and there will be multiple virtual infosessions
-                  on Friday, Aug 30 and Tuesday, Sep 3. These sessions will give
-                  you a chance to ask questions and talk to our members in a
-                  comfortable setting!&nbsp; Take a look at our{' '}
+                  We will host a general in-person infosession on
+                  {config.infosession_dates}, and there will be multiple virtual
+                  infosessions on {config.virtual_infosessions_date}. These
+                  sessions will give you a chance to ask questions and talk to
+                  our members in a comfortable setting! Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
                     infosession schedule
                   </Link>{' '}
@@ -100,24 +100,34 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Applications Due</div>
                 <div className="timeline-row-date">
-                  Thursday September 5th, 11:59 PM PDT
+                  {config.application_deadline}
                 </div>
                 <div className="timeline-row-description">
                   The application includes 3 short response questions to help us
                   understand your connection to Blueprint&apos;s mission and
                   values.
                   <strong>
-                    The application is due on September 5th, 11:59 PM PDT
-                    (midnight).
+                    The application is due on {config.application_deadline}.
                   </strong>
-                  Decisions will be released via email on September 7th by
-                  midnight. Note that all applications are reviewed after the
-                  deadline, so there&apos;s no advantage to submitting early.
+                  Decisions will be released via email on
+                  {config.written_round_decision_date}. Note that all
+                  applications are reviewed after the deadline, so there&apos;s
+                  no advantage to submitting early.
                 </div>
                 <div className="timeline-row-btn">
-                  <div className="timeline-row-notice">
-                    Student applications will be open on Wednesday, August 28th.
-                  </div>
+                  {config.student_applications_enabled ? (
+                    <Link
+                      className="bp-btn"
+                      href={config.student_application_link}
+                    >
+                      Start Application
+                    </Link>
+                  ) : (
+                    <div className="timeline-row-notice">
+                      Student applications will be open on{' '}
+                      {config.application_release_date}.
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -127,15 +137,15 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Blueprint Games</div>
-                <div className="timeline-row-date">Sunday, September 8th</div>
+                <div className="timeline-row-date">{config.bp_games_date}</div>
                 <div className="timeline-row-description">
                   A fun, interactive teamwork session involving a series of
                   challenges and puzzles that make you think critically. It will
                   simulate working on a Blueprint project team and the
                   collaborative nature of being a developer. This round is by
                   invitation only. Time and location will be emailed to invited
-                  candidates. Decisions after this round will be emailed on
-                  September 9th by midnight.
+                  candidates. Decisions after this round will be emailed on{' '}
+                  {config.bp_games_decision_date}.
                 </div>
               </div>
             </div>
@@ -145,9 +155,7 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Meet the Club</div>
-                <div className="timeline-row-date">
-                  Wednesday, September 11th &amp; Thursday, September 12th
-                </div>
+                <div className="timeline-row-date">{config.mtc_dates}</div>
                 <div className="timeline-row-description">
                   Meet the Club is an event for you to get to know and chat with{' '}
                   <Link href="/about#team">our members</Link> in a casual
@@ -161,7 +169,7 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Build with Blueprint</div>
-                <div className="timeline-row-date">September 11th - 13th</div>
+                <div className="timeline-row-date">{config.bwbp_dates}</div>
                 <div className="timeline-row-description">
                   A 1-hour technical challenge to give you a chance to showcase
                   your technical resourcefulness, growth, and adaptability. This
@@ -198,11 +206,11 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Infosession Series</div>
                 <div className="timeline-row-description">
-                  We will host a general in-person infosession on Tuesday,
-                  September 3rd, and there will be multiple virtual infosessions
-                  on Friday, Aug 30 and Tuesday, Sep 3. These sessions will give
-                  you a chance to ask questions and talk to our members in a
-                  comfortable setting!&nbsp; Take a look at our{' '}
+                  We will host a general in-person infosession on{' '}
+                  {config.infosession_dates}, and there will be multiple virtual
+                  infosessions on {config.virtual_infosessions_date}. These
+                  sessions will give you a chance to ask questions and talk to
+                  our members in a comfortable setting!&nbsp; Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
                     infosession schedule
                   </Link>{' '}
@@ -217,27 +225,34 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Applications Due</div>
                 <div className="timeline-row-date">
-                  Thursday September 5th, 11:59 PM PDT
+                  {config.application_deadline}
                 </div>
                 <div className="timeline-row-description">
                   The application includes 3 short response questions to help us
                   understand your connection to Blueprint&apos;s mission and
                   values.{' '}
                   <strong>
-                    The application is due on September 5th, 11:59 PM PDT
-                    (midnight).
+                    The application is due on {config.application_deadline}{' '}
                   </strong>{' '}
-                  Decisions will be released via email on September 7th by
-                  midnight. Note that all applications are reviewed after the
-                  deadline, so there&apos;s no advantage to submitting early.
+                  Decisions will be released via email on{' '}
+                  {config.written_round_decision_date}. Note that all
+                  applications are reviewed after the deadline, so there&apos;s
+                  no advantage to submitting early.
                 </div>
                 <div className="timeline-row-btn">
-                  <div className="timeline-row-btn">
+                  {config.student_applications_enabled ? (
+                    <Link
+                      className="bp-btn"
+                      href={config.student_application_link}
+                    >
+                      Start Application
+                    </Link>
+                  ) : (
                     <div className="timeline-row-notice">
-                      Student applications will be open on Wednesday, August
-                      28th.
+                      Student applications will be open on{' '}
+                      {config.application_release_date}.
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -247,7 +262,9 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">External Interviews</div>
-                <div className="timeline-row-date">September 9th - 13th</div>
+                <div className="timeline-row-date">
+                  {config.external_interview_dates}
+                </div>
                 <div className="timeline-row-description">
                   We will be conducting interviews for the external team
                   throughout the entire week. This event is by invitation only.
@@ -262,9 +279,7 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Meet the Club</div>
-                <div className="timeline-row-date">
-                  Wednesday, September 11th &amp; Thursday, September 12th
-                </div>
+                <div className="timeline-row-date">{config.mtc_dates}</div>
                 <div className="timeline-row-description">
                   Meet the Club is an event for you to get to know and chat with{' '}
                   <Link href="/about#team">our members</Link> in a casual
@@ -300,11 +315,11 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Infosession Series</div>
                 <div className="timeline-row-description">
-                  We will host a general in-person infosession on Tuesday,
-                  September 3rd, and there will be multiple virtual infosessions
-                  on Friday, Aug 30 and Tuesday, Sep 3. These sessions will give
-                  you a chance to ask questions and talk to our members in a
-                  comfortable setting!&nbsp; Take a look at our{' '}
+                  We will host a general in-person infosession on{' '}
+                  {config.infosession_dates}, and there will be multiple virtual
+                  infosessions on {config.virtual_infosessions_date}. These
+                  sessions will give you a chance to ask questions and talk to
+                  our members in a comfortable setting!&nbsp; Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
                     infosession schedule
                   </Link>{' '}
@@ -319,24 +334,34 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Applications Due</div>
                 <div className="timeline-row-date">
-                  Thursday September 5th, 11:59 PM PDT
+                  {config.application_deadline}
                 </div>
                 <div className="timeline-row-description">
                   The application includes 3 short response questions to help us
                   understand your connection to Blueprint&apos;s mission and
                   values.{' '}
                   <strong>
-                    The application is due on September 5th, 11:59 PM PDT
-                    (midnight).
+                    The application is due on {config.application_deadline}
                   </strong>{' '}
-                  Decisions will be released via email on September 7th by
-                  midnight. Note that all applications are reviewed after the
-                  deadline, so there&apos;s no advantage to submitting early.
+                  Decisions will be released via email on{' '}
+                  {config.written_round_decision_date} by midnight. Note that
+                  all applications are reviewed after the deadline, so
+                  there&apos;s no advantage to submitting early.
                 </div>
                 <div className="timeline-row-btn">
-                  <div className="timeline-row-notice">
-                    Student applications will be open on Wednesday, August 28th.
-                  </div>
+                  {config.student_applications_enabled ? (
+                    <Link
+                      className="bp-btn"
+                      href={config.student_application_link}
+                    >
+                      Start Application
+                    </Link>
+                  ) : (
+                    <div className="timeline-row-notice">
+                      Student applications will be open on{' '}
+                      {config.application_release_date}.
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -346,14 +371,17 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Designer Interviews</div>
-                <div className="timeline-row-date">September 9th - 10th</div>
+                <div className="timeline-row-date">
+                  {config.designer_interview_dates}
+                </div>
                 <div className="timeline-row-description">
                   We will ask you to brainstorm with us and sketch out
                   low-fidelity solutions in a design challenge. After the
                   interview, you will have a chance to refine your solutions and
-                  submit a final, higher-fidelity version by Thursday, September
-                  12. This round is by invitation only. Invited candidates will
-                  receive an interview sign-up link via email.
+                  submit a final, higher-fidelity version by{' '}
+                  {config.design_challenge_due_date}. This round is by
+                  invitation only. Invited candidates will receive an interview
+                  sign-up link via email.
                 </div>
               </div>
             </div>
@@ -363,9 +391,7 @@ export default function StudentApplyPage() {
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Meet the Club</div>
-                <div className="timeline-row-date">
-                  Wednesday, September 11th &amp; Thursday, September 12th
-                </div>
+                <div className="timeline-row-date">{config.mtc_dates}</div>
                 <div className="timeline-row-description">
                   Meet the Club is an event for you to get to know and chat with{' '}
                   <Link href="/about#team">our members</Link> in a casual
@@ -380,7 +406,7 @@ export default function StudentApplyPage() {
               <div className="text-col">
                 <div className="timeline-row-title">Design Challenge Due</div>
                 <div className="timeline-row-date">
-                  September 8th, 10:00 PM PDT
+                  {config.design_challenge_due_date}
                 </div>
                 <div className="timeline-row-description">
                   Building on top of your work from the interview, this
