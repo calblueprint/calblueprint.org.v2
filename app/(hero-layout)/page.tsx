@@ -241,7 +241,7 @@ export default function HomePage() {
             <div className="contact-btns">
               <Link
                 className="bp-btn marginRight-xs marginBot-xxs"
-                href="/contact_forms/new"
+                href="mailto:team@calblueprint.org"
               >
                 Email Us
               </Link>
