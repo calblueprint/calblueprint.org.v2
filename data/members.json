@@ -1,200 +1,83 @@
 {
-  "roles": {
-    "president": {
-      "role": "President"
-    },
-    "founder": {
-      "role": "President / Founder"
-    },
-    "internal": {
-      "role": "Internal VP"
-    },
-    "external": {
-      "role": "External VP"
-    },
-    "tech": {
-      "role": "VP of Technology"
-    },
-    "projects": {
-      "role": "VP of Projects"
-    },
-    "design": {
-      "role": "VP of Design"
-    },
-    "ops": {
-      "role": "VP of Operations"
-    },
-    "leader": {
-      "role": "Project Leader"
-    },
-    "pm": {
-      "role": "Project Manager"
-    },
-    "tl": {
-      "role": "Technical Lead"
-    },
-    "developer": {
-      "role": "Project Developer"
-    },
-    "designer": {
-      "role": "Designer"
-    },
-    "external_team": {
-      "role": "External Director"
-    },
-    "alumni_relations": {
-      "role": "Alumni Relations Director"
-    },
-    "community": {
-      "role": "Community Outreach Director"
-    },
-    "operations": {
-      "role": "Operations Director"
-    },
-    "marketing": {
-      "role": "Marketing Director"
-    },
-    "content": {
-      "role": "Content Director"
-    },
-    "outreach": {
-      "role": "Outreach Director"
-    },
-    "design_director": {
-      "role": "Design Director"
-    },
-    "intersocietal": {
-      "role": "Intersocietal Relations Director"
-    },
-    "media": {
-      "role": "Media Director"
-    },
-    "corporate": {
-      "role": "Corporate Relations Director"
-    },
-    "expansion": {
-      "role": "Director of Expansion"
-    },
-    "mentor": {
-      "role": "Mentor"
-    },
-    "historian": {
-      "role": "Historian"
-    },
-    "sponsor": {
-      "role": "Sponsor"
-    },
-    "inactive": {
-      "role": "Inactive"
-    },
-    "social": {
-      "role": "Social"
-    },
-    "shepherd": {
-      "role": "Free Thinker"
-    }
-  },
   "members": [
-    {
-      "first_name": "Allison",
-      "last_name": "Hong",
-      "email": "allisonhong1023@berkeley.edu",
-      "role": "President"
-    },
-    {
-      "first_name": "David",
-      "last_name": "Qing",
-      "email": "davidqing@berkeley.edu",
-      "role": "President"
-    },
-    {
-      "first_name": "Pragya",
-      "last_name": "Kallanagoudar",
-      "email": "pkallanagoudar@berkeley.edu",
-      "role": "VP of Projects"
-    },
-    {
-      "first_name": "Ronnie",
-      "last_name": "Beggs",
-      "email": "rbeggs@berkeley.edu",
-      "role": "VP of Technology"
-    },
-    {
-      "first_name": "Sarah",
-      "last_name": "Peng",
-      "email": "sarah.peng@berkeley.edu",
-      "role": "Internal VP"
-    },
-    {
-      "first_name": "Aida",
-      "last_name": "Abay",
-      "email": "aabayaida@berkeley.edu",
-      "role": "VP of External"
-    },
-    {
-      "first_name": "Claire",
-      "last_name": "Wang",
-      "email": "clairee_wang@berkeley.edu",
-      "role": "VP of Design"
-    },
-    {
-      "first_name": "Miha",
-      "last_name": "Bhaskaran",
-      "email": "athmiha@berkeley.edu",
-      "role": "VP of Operations"
-    },
     {
       "first_name": "Celine",
       "last_name": "Choi",
       "email": "celinejwchoi@berkeley.edu",
-      "role": "Project Leader"
+      "role": "President"
     },
     {
-      "first_name": "Chris",
-      "last_name": "Torres",
-      "email": "christophertorres@berkeley.edu",
-      "role": "Project Leader"
-    },
-    {
-      "first_name": "Catherine",
-      "last_name": "Tan",
-      "email": "ccatherinetan100222@berkeley.edu",
-      "role": "Project Leader"
-    },
-    {
-      "first_name": "Philip",
-      "last_name": "Ye",
-      "email": "philipye@berkeley.edu",
-      "role": "Free Thinker"
-    },
-    {
-      "first_name": "Monique",
-      "last_name": "Mabasa Cheng",
-      "email": "monique.mc@berkeley.edu",
-      "role": "Project Leader"
+      "first_name": "Charlotte",
+      "last_name": "Law",
+      "email": "charlottelaw@berkeley.edu",
+      "role": "VP of Operations"
     },
     {
       "first_name": "Iris",
       "last_name": "Myung",
       "email": "irismyung@berkeley.edu",
-      "role": "External Director"
+      "role": "VP of External"
     },
     {
-      "first_name": "Buyankhuu",
-      "last_name": "Tsolmonkhuu",
-      "email": "buyankhuuts@berkeley.edu",
-      "role": "Project Developer"
+      "first_name": "Joshua",
+      "last_name": "Chou",
+      "email": "joshchou@berkeley.edu",
+      "role": "VP of Design"
     },
     {
-      "first_name": "Piper",
-      "last_name": "Yu",
-      "email": "piperyu@berkeley.edu",
-      "role": "External Director"
+      "first_name": "Katy",
+      "last_name": "Nguyen",
+      "email": "katynguyen@berkeley.edu",
+      "role": "Internal VP"
     },
     {
-      "first_name": "Sarah",
-      "last_name": "Mou",
-      "email": "sarahmou@berkeley.edu",
+      "first_name": "Monique",
+      "last_name": "Mabasa Cheng",
+      "email": "monique.mc@berkeley.edu",
+      "role": "VP of Projects"
+    },
+    {
+      "first_name": "Aditya",
+      "last_name": "Pawar",
+      "email": "apawar@berkeley.edu",
+      "role": "VP of Technology"
+    },
+
+    {
+      "first_name": "Carolyn",
+      "last_name": "Zhuang",
+      "email": "cwz@berkeley.edu",
+      "role": "Project Leader"
+    },
+    {
+      "first_name": "Cody",
+      "last_name": "Garcia",
+      "email": "czgarcia@berkeley.edu",
+      "role": "Project Leader"
+    },
+    {
+      "first_name": "Justin",
+      "last_name": "Lee",
+      "email": "jjunseol04@berkeley.edu",
+      "role": "Project Leader"
+    },
+    {
+      "first_name": "Justin",
+      "last_name": "Xue",
+      "email": "justinxue@berkeley.edu",
+      "role": "Project Leader"
+    },
+    {
+      "first_name": "Kyle",
+      "last_name": "Ramachandran",
+      "email": "kyleramachandran@berkeley.edu",
+      "role": "Project Leader"
+    },
+
+    {
+      "first_name": "Dylan",
+      "last_name": "Toh",
+      "email": "dylantoh@berkeley.edu",
       "role": "External Director"
     },
     {
@@ -204,35 +87,18 @@
       "role": "External Director"
     },
     {
-      "first_name": "Dylan",
-      "last_name": "Toh",
-      "email": "dylantoh@berkeley.edu",
-      "role": "External Director"
-    },
-    {
       "first_name": "Kaleen",
       "last_name": "Chen",
       "email": "kaleenchen@berkeley.edu",
       "role": "External Director"
     },
     {
-      "first_name": "Kyrene",
-      "last_name": "Tam",
-      "email": "kyrenetam@berkeley.edu",
-      "role": "Designer"
+      "first_name": "Piper",
+      "last_name": "Yu",
+      "email": "piperyu@berkeley.edu",
+      "role": "External Director"
     },
-    {
-      "first_name": "Joshua",
-      "last_name": "Chou",
-      "email": "joshchou@berkeley.edu",
-      "role": "Designer"
-    },
-    {
-      "first_name": "Jinkang",
-      "last_name": "Fang",
-      "email": "jinkang.fang@berkeley.edu",
-      "role": "Designer"
-    },
+
     {
       "first_name": "Carys",
       "last_name": "Atmodjo",
@@ -246,46 +112,32 @@
       "role": "Designer"
     },
     {
-      "first_name": "Aditya",
-      "last_name": "Pawar",
-      "email": "apawar@berkeley.edu",
-      "role": "Project Developer"
+      "first_name": "Kyrene",
+      "last_name": "Tam",
+      "email": "kyrenetam@berkeley.edu",
+      "role": "Designer"
+    },
+
+    {
+      "first_name": "Allison",
+      "last_name": "Hong",
+      "email": "allisonhong1023@berkeley.edu",
+      "role": "Project Developer",
+      "prev_roles": "President"
     },
     {
-      "first_name": "Melissa",
-      "last_name": "Liu",
-      "email": "meiliu.13@berkeley.edu",
-      "role": "Project Developer"
+      "first_name": "Christopher",
+      "last_name": "Torres",
+      "email": "christophertorres@berkeley.edu",
+      "role": "Project Developer",
+      "prev_roles": "Project Leader"
     },
     {
-      "first_name": "Charlotte",
-      "last_name": "Law",
-      "email": "charlottelaw@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
-      "first_name": "Kyle",
-      "last_name": "Ramachandran",
-      "email": "kyleramachandran@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
-      "first_name": "Arfa",
-      "last_name": "Momin",
-      "email": "arfamomin@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
-      "first_name": "Justin",
-      "last_name": "Lee",
-      "email": "jjunseol04@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
-      "first_name": "Justin",
-      "last_name": "Xue",
-      "email": "justinxue@berkeley.edu",
-      "role": "Project Developer"
+      "first_name": "Philip",
+      "last_name": "Ye",
+      "email": "philipye@berkeley.edu",
+      "role": "Free Thinker",
+      "prev_roles": "Project Leader"
     },
     {
       "first_name": "Kevin",
@@ -300,12 +152,6 @@
       "role": "Project Developer"
     },
     {
-      "first_name": "Katy",
-      "last_name": "Nguyen",
-      "email": "katynguyen@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
       "first_name": "Aiden",
       "last_name": "Mathew",
       "email": "aidenmathew@berkeley.edu",
@@ -315,18 +161,6 @@
       "first_name": "Alex",
       "last_name": "Wang",
       "email": "alex-wang@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
-      "first_name": "Carolyn",
-      "last_name": "Zhuang",
-      "email": "cwz@berkeley.edu",
-      "role": "Project Developer"
-    },
-    {
-      "first_name": "Cody",
-      "last_name": "Garcia",
-      "email": "czgarcia@berkeley.edu",
       "role": "Project Developer"
     },
     {
@@ -365,62 +199,156 @@
       "email": "rchen2027@berkeley.edu",
       "role": "Project Developer"
     },
+
+    {
+      "first_name": "Pragya",
+      "last_name": "Kallanagoudar",
+      "email": "pkallanagoudar@berkeley.edu",
+      "role": "Senior Advisor",
+      "prev_roles": "VP of Projects"
+    },
+    {
+      "first_name": "Ronnie",
+      "last_name": "Beggs",
+      "email": "rbeggs@berkeley.edu",
+      "role": "Senior Advisor",
+      "prev_roles": "VP of Technology"
+    },
+    {
+      "first_name": "Claire",
+      "last_name": "Wang",
+      "email": "clairee_wang@berkeley.edu",
+      "role": "Senior Advisor",
+      "prev_roles": "VP of Design"
+    },
+    {
+      "first_name": "Catherine",
+      "last_name": "Tan",
+      "email": "ccatherinetan100222@berkeley.edu",
+      "role": "Senior Advisor",
+      "prev_roles": "Project Leader"
+    },
+    {
+      "first_name": "Jinkang",
+      "last_name": "Fang",
+      "email": "jinkang.fang@berkeley.edu",
+      "role": "Senior Advisor",
+      "prev_roles": "Project Developer & Designer"
+    },
+
+    {
+      "first_name": "Sarah",
+      "last_name": "Peng",
+      "email": "sarah.peng@berkeley.edu",
+      "role": "Social",
+      "prev_roles": "Internal VP"
+    },
+    {
+      "first_name": "Aida",
+      "last_name": "Abay",
+      "email": "aabayaida@berkeley.edu",
+      "role": "Social",
+      "prev_roles": "VP of External"
+    },
+    {
+      "first_name": "Buyankhuu",
+      "last_name": "Tsolmonkhuu",
+      "email": "buyankhuuts@berkeley.edu",
+      "role": "Social",
+      "prev_roles": "Project Leader"
+    },
+    {
+      "first_name": "Melissa",
+      "last_name": "Liu",
+      "email": "meiliu.13@berkeley.edu",
+      "role": "Social",
+      "prev_roles": "Project Developer"
+    },
+    {
+      "first_name": "Arfa",
+      "last_name": "Momin",
+      "email": "arfamomin@berkeley.edu",
+      "role": "Social",
+      "prev_roles": "Project Developer"
+    },
+
     {
       "first_name": "Andrei",
       "last_name": "Tan",
       "email": "mantan.875@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "Project Leader"
     },
     {
       "first_name": "Alvaro",
       "last_name": "Ortiz",
       "email": "varortz@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "Project Leader"
     },
     {
       "first_name": "Ethan",
       "last_name": "Auyeung",
       "email": "ethanauyeung@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "Project Leader"
     },
     {
       "first_name": "Marcos",
       "last_name": "Hernandez",
       "email": "marcosh@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "Project Developer"
     },
     {
       "first_name": "Mia",
       "last_name": "Chou",
       "email": "miachou@berkeley.edu",
-      "role": "Social"
-    },
-    {
-      "first_name": "Brian",
-      "last_name": "Wen",
-      "email": "brianwen100@berkeley.edu",
-      "role": "Social"
-    },
-    {
-      "first_name": "Nikki",
-      "last_name": "Suzani",
-      "email": "nikkisuzani@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "Project Developer & Designer"
     },
     {
       "first_name": "Danielle",
       "last_name": "Wong",
       "email": "daniellenwong@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "VP of Design"
     },
     {
       "first_name": "Sauhard",
       "last_name": "Jain",
       "email": "sauhard@berkeley.edu",
-      "role": "Social"
+      "role": "Social",
+      "prev_roles": "VP of Projects"
+    },
+    {
+      "first_name": "Brian",
+      "last_name": "Wen",
+      "email": "brianwen100@berkeley.edu",
+      "role": "Social",
+      "prev_roles": "External Director"
     }
   ],
   "alumni": [
+    {
+      "first_name": "David",
+      "last_name": "Qing",
+      "email": "davidqing@berkeley.edu",
+      "role": "President"
+    },
+    {
+      "first_name": "Miha",
+      "last_name": "Bhaskaran",
+      "email": "athmiha@berkeley.edu",
+      "role": "VP of Operations"
+    },
+    {
+      "first_name": "Sarah",
+      "last_name": "Mou",
+      "email": "sarahmou@berkeley.edu",
+      "role": "External Director"
+    },
+
     {
       "first_name": "Andrew",
       "last_name": "Wang",
