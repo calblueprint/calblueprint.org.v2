@@ -1,4 +1,7 @@
 {
+  "banner_text": "📣 Our application for Spring 2025 is now open. 📣",
+  "banner_enabled": true,
+
   "semester": "Spring 2025",
   "student_applications_enabled": true,
   "student_application_link": "https://airtable.com/apphgIg5yDsaeF5R8/shrNg7ItqtZTJKwSd",

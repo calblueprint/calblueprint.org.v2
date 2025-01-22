@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.scss';
 import { Inter, Poppins, Roboto } from 'next/font/google';
+import Banner from '@/components/Banner/Banner';
 import Footer from '@/components/Footer/Footer';
+import config from '@/data/students_applications.json';
 
 // Font must be assigned to consts or else the build will fail
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -84,6 +86,7 @@ export default function RootLayout({
       style={{ scrollBehavior: 'smooth' }}
     >
       <body className="scroll-smooth">
+        {config.banner_enabled && <Banner />}
         {children}
         <Footer />
       </body>
