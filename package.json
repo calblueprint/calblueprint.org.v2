@@ -13,7 +13,7 @@
     "@t3-oss/env-nextjs": "^0.11.1",
     "bootstrap": "^5.3.3",
     "crypto-js": "^4.2.0",
-    "next": "15.1.4",
+    "next": "15.2.3",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
