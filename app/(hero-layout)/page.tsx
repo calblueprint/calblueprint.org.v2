@@ -83,7 +83,7 @@ export default function HomePage() {
 
             if (projectData.status !== 'current') return null;
             return (
-              <Link href="/projects/ocf" key={projectData.title}>
+              <Link href={`/projects/${name}`} key={projectData.title}>
                 <div className="project-item" id={name}>
                   <div className="project-img img-container">
                     <Image
