@@ -13,6 +13,9 @@ type MemberSectionProps = {
 };
 
 export default function MemberList({ data, title }: MemberSectionProps) {
+  const today = new Date();
+  const isAprFools = today.getMonth() === 4 && today.getDate() === 1;
+
   return (
     <section className="about-page-team-section" id="team">
       <div className="container max-w-[940px]">
@@ -33,7 +36,7 @@ export default function MemberList({ data, title }: MemberSectionProps) {
                       <div className="name">
                         {member.first_name} {member.last_name}
                       </div>
-                      <div className="position">{member.role}</div>
+                      <div className="position">{isAprFools ? 'Free Thinker' : member.role}</div>
                     </div>
                   </figcaption>
                 </figure>
