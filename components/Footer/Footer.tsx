@@ -1,6 +1,13 @@
-import { FaFacebookF, FaGithubAlt, FaMedium, FaTwitter } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaGithubAlt,
+  FaInstagram,
+  FaMedium,
+  FaTwitter,
+} from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
+import data from '@/data/external_links.json';
 import blueprintLogo from '@/public/images/logo-white.png';
 
 export default function Footer() {
@@ -22,10 +29,10 @@ export default function Footer() {
           <Link className="footer-link" href="/projects">
             Projects
           </Link>
-          <Link className="footer-link" href="mailto:team@calblueprint.org">
+          <Link className="footer-link" href={data.email}>
             Contact
           </Link>
-          <Link className="footer-link" href="https://medium.com/blueprint">
+          <Link className="footer-link" href={data.medium}>
             Blog
           </Link>
         </div>
@@ -64,28 +71,31 @@ export default function Footer() {
         </div>
         <div className="footer-col">
           <h4 className="footer-header">Social Media</h4>
-          <Link
-            className="footer-link"
-            href="https://www.facebook.com/calblueprint"
-          >
+          <Link className="footer-link" href={data.facebook}>
             <div className="flex flex-row gap-2">
               <FaFacebookF className="my-auto" />
               Facebook
             </div>
           </Link>
-          <Link className="footer-link" href="https://twitter.com/calblueprint">
+          <Link className="footer-link" href={data.twitter}>
             <div className="flex flex-row gap-2">
               <FaTwitter className="my-auto" />
               Twitter
             </div>
           </Link>
-          <Link className="footer-link" href="https://github.com/calblueprint/">
+          <Link className="footer-link" href={data.instagram}>
+            <div className="flex flex-row gap-2">
+              <FaInstagram className="my-auto" />
+              Instagram
+            </div>
+          </Link>
+          <Link className="footer-link" href={data.github}>
             <div className="flex flex-row gap-2">
               <FaGithubAlt className="my-auto" />
               Github
             </div>
           </Link>
-          <Link className="footer-link" href="https://medium.com/blueprint">
+          <Link className="footer-link" href={data.medium}>
             <div className="flex flex-row gap-2">
               <FaMedium className="my-auto" />
               Blog

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
+import externalLinks from '@/data/external_links.json';
 import projects from '@/data/projects.json';
 import heroImage from '@/public/images/projects/background.png';
 
@@ -33,7 +34,7 @@ export default function ProjectsPage() {
         action={
           <HeroButton
             buttonText={'View Our Github'}
-            buttonLink={'https://github.com/calblueprint/'}
+            buttonLink={externalLinks.github}
             className="mt-[40px]"
           />
         }

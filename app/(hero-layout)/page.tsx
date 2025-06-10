@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CenteredHero from '@/components/Hero/CenteredHero';
 import HeroButton from '@/components/HeroButton/HeroButton';
+import externalLinks from '@/data/external_links.json';
 import projects from '@/data/projects.json';
 import { env } from '@/env.mjs';
 import bidsImage from '@/public/images/home/bids.png';
@@ -114,8 +115,8 @@ export default function HomePage() {
               <p className="static-page-desc marginBot-lg">
                 Applications will open for student developers at the beginning
                 of each semester. Follow our{' '}
-                <Link href="//facebook.com/calblueprint">Facebook page</Link> to
-                stay updated!
+                <Link href={externalLinks.facebook}>Facebook page</Link> to stay
+                updated!
               </p>
               <Link className="homepage-link" href="/apply/students">
                 <div className="flex flex-row">
@@ -138,8 +139,8 @@ export default function HomePage() {
                 If you’re a nonprofit organization with a project in mind, we
                 encourage you to apply! We accept NPO applications every June.
                 Follow our{' '}
-                <Link href="//facebook.com/calblueprint">Facebook page</Link> to
-                stay updated!
+                <Link href={externalLinks.facebook}>Facebook page</Link> to stay
+                updated!
               </p>
               <Link className="homepage-link" href="/apply/nonprofits">
                 <div className="flex flex-row">
@@ -241,13 +242,13 @@ export default function HomePage() {
             <div className="contact-btns">
               <Link
                 className="bp-btn marginRight-xs marginBot-xxs"
-                href="mailto:team@calblueprint.org"
+                href={externalLinks.email}
               >
                 Email Us
               </Link>
               <Link
                 className="bp-btn btn-white marginBot-xxs"
-                href="https://facebook.com/calblueprint"
+                href={externalLinks.facebook}
               >
                 Facebook Page
               </Link>

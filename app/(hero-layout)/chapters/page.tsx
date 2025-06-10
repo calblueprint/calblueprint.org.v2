@@ -155,10 +155,7 @@ export default function ChapterPage() {
                   our team will reach out to you to get the process started! If
                   you have any questions or concerns about anything in this
                   timeline, please email{' '}
-                  <Link href="mailto:team@calblueprint.org">
-                    team@calblueprint.org
-                  </Link>
-                  .
+                  <Link href={externalLinks.email}>team@calblueprint.org</Link>.
                 </div>
                 <div className="timeline-row-btn">
                   <Link className="bp-btn" href="/chapters#interest">

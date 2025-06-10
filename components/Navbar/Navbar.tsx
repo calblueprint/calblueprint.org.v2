@@ -7,6 +7,7 @@ import Link from 'next/link';
 import closeIcon from '@/public/images/icons/close.svg';
 import whiteLogo from '@/public/images/logo-white.png';
 import defaultLogo from '@/public/images/logo.png';
+import externalLinks from '@/data/external_links.json';
 
 type NavbarProps = {
   variant: 'nav-white' | 'default';
@@ -68,7 +69,7 @@ export default function Navbar({ variant }: NavbarProps) {
             className="nav-link"
             style={{ animation: '400ms 900ms both slideDown' }}
           >
-            <Link href="https://medium.com/blueprint">Blog</Link>
+            <Link href={externalLinks.medium}>Blog</Link>
           </li>
           <li
             className="nav-link"
