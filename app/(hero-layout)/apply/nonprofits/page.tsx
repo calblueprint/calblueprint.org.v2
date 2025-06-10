@@ -89,7 +89,7 @@ export default function NonprofitApplyPage() {
             >
               recording
             </Link>{' '}
-            of our most recent info-session with Blake Nathan's Nonprofit
+            of our most recent info-session with Blake Nathan&apos;s Nonprofit
             Academy!
           </p>
         }
