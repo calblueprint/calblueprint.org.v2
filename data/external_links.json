@@ -1,4 +1,10 @@
 {
   "chapter_interest_form": "https://airtable.com/embed/shr7TDi3IBx5eDbZP?backgroundColor=pinkLight",
-  "nonprofit_sample_application": "https://docs.google.com/document/d/1jkg2r7FN9Du4H3zUf7opNoQsBk9Z93X189vBT_POV14"
+  "nonprofit_sample_application": "https://docs.google.com/document/d/1jkg2r7FN9Du4H3zUf7opNoQsBk9Z93X189vBT_POV14",
+  "facebook": "https://www.facebook.com/calblueprint",
+  "instagram": "https://www.instagram.com/calblueprint/",
+  "twitter": "https://twitter.com/calblueprint",
+  "github": "https://github.com/calblueprint/",
+  "medium": "https://medium.com/@blueprint",
+  "email": "mailto:team@calblueprint.org"
 }
