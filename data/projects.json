@@ -9,7 +9,7 @@
         "org_link": "https://www.ourcityforest.org/home-programs",
         "color": "314E25",
         "banner_image": "images/projects/ocf.png",
-        "full_description": "Our Project\n-----------\nA mobile application to help Our City Forest manage their tree inventory and visualize planted trees in the community. Each of their trees will have a unique QR code. Staff and volunteers can scan this code to view and modify the tree’s properties (whether it’s sick or healthy, its location, whether it’s been sold or planted, etc). Anyone from the general public can scan a tree or shrub’s QR code to see its information and care guide. The app will also include a map to display the locations of the trees Our City Forest has planted in their community. This will both help them maintain these trees and measure their impact while applying to grants. \n"
+        "full_description": "Our Project\n-----------\nA [mobile application](https://apps.apple.com/us/app/our-city-forest/id6738364690) to help Our City Forest manage their tree inventory and visualize planted trees in the community. Each of their trees will have a unique QR code. Staff and volunteers can scan this code to view and modify the tree’s properties (whether it’s sick or healthy, its location, whether it’s been sold or planted, etc). Anyone from the general public can scan a tree or shrub’s QR code to see its information and care guide. The app also contains a history feature, where admins can view the health trends species and sources of trees for better inventory care. Finally, the app includes a bookmarking feature for easier access to key tree and shrub species. \n"
       },
       "jdi": {
         "status": "current",
@@ -29,7 +29,7 @@
         "org_link": "https://www.aceny.org/mission",
         "color": "0472BB",
         "banner_image": "images/projects/ace.png",
-        "full_description": "Our Project\n-----------\nA web application that displays an interactive map of renewable energy projects in New York. Different stakeholders can easily visualize the projects, and view further information and specific project details (i.e. size, capacity, status, impact of pro). An admin flow will enable staff to add or edit the information on the map. In addition, the app will include a web scraper to gather data about renewable energy projects, reducing the time ACE NY spends manually finding such information.\n"
+        "full_description": "Our Project\n-----------\nA [web application](https://ace-ny.vercel.app/) that displays an interactive map of renewable energy projects in New York. Different stakeholders can easily visualize the projects, and view further information and specific project details (i.e. size, capacity, status, impact of pro). An admin flow will enable staff to add or edit the information on the map. In addition, the app will include a web scraper to gather data about renewable energy projects, reducing the time ACE NY spends manually finding such information.\n"
       },
       "breadandroses": {
         "status": "current",
@@ -39,7 +39,7 @@
         "org_link": "https://www.breadandroses.org/who-we-are",
         "color": "E73D30",
         "banner_image": "images/projects/breadandroses.png",
-        "full_description": "Our Project\n-----------\nA web application to streamline the processes of organizing and delivering live performances. Facilities will be able to submit their availability and find entertainment that accommodates their schedule. Volunteers can browse event calendars, sign up to perform or host shows, and submit availability. Administrators can then review these requests and carefully select volunteers. These features will simplify event coordination, ensuring each show is a strong fit for the facility’s needs and the volunteers' talents.\n"
+        "full_description": "Our Project\n-----------\nA [web application](https://bread-and-roses.vercel.app/) to streamline the processes of organizing and delivering live performances. Facilities will be able to submit their availability and find entertainment that accommodates their schedule. Volunteers can browse event calendars and sign up to perform or host shows. Administrators can then review these requests and carefully select volunteers. These features will simplify event coordination, ensuring each show is a strong fit for the facility’s needs and the volunteers' talents.\n"
       },
       "trapgarden": {
         "status": "current",
@@ -49,7 +49,7 @@
         "org_link": "https://trapgarden.org/about",
         "color": "0B9444",
         "banner_image": "images/projects/trapgarden.png",
-        "full_description": "Our Project\n-----------\nA mobile application that empowers beginners to build their own gardens. Starting community gardens from scratch require significant financial resources, spatial availability, gardening knowledge, among other factors, which pose a significant barrier to beginner gardeners. This project will enable gardeners to access garden-maintenance resources (seasonal planting guide, notifications, tracking system for garden tasks such as watering and weeding), empowering more individuals and small organizations like schools alike to start their own community gardens.\n"
+        "full_description": "Our Project\n-----------\nA progressive [web application](https://growtogetherhub.vercel.app/) that empowers beginners to build their own gardens. Starting community gardens from scratch requires significant financial resources, spatial availability, gardening knowledge, among other factors, which pose a significant barrier to beginner gardeners. This project will enable gardeners to maintain a garden 'digital twin' and access garden-maintenance resources (planting timeline, gardening tips, tracking system for garden tasks such as watering and weeding), empowering more individuals and small organizations like schools alike to start their own community gardens.\n"
       },
       "impactfund": {
         "status": "past",
