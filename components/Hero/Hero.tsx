@@ -7,6 +7,7 @@ type HeroProps = {
   heroImage: StaticImageData;
   className?: string;
   children?: React.ReactNode; // Used to pass in the page nav
+  additionalInfo?: React.ReactNode;
   action: React.ReactNode;
 };
 
@@ -17,6 +18,7 @@ export default function Hero({
   action,
   className = '',
   children,
+  additionalInfo,
 }: HeroProps) {
   return (
     <section
@@ -28,6 +30,7 @@ export default function Hero({
         <h1 className="static-page-title marginBot-xl">{title}</h1>
         <p className="static-page-subtitle light">{body}</p>
         {action}
+        {additionalInfo}
       </div>
       {children && <div className="page-nav">{children}</div>}
     </section>
