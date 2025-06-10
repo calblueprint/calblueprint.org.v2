@@ -209,6 +209,10 @@ export default function NonprofitApplyPage() {
                   {config.written_application_due}
                 </div>
                 <div className="timeline-row-description">
+                  <p style={{ fontStyle: 'italic' }}>
+                    Update: as of June 10, the deadline has changed from July 12
+                    to July 11.
+                  </p>
                   Your response helps us understand what you need from
                   Blueprint. You&apos;ll have the opportunity to explain why our
                   services could be helpful to your organization, identify any
