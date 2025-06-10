@@ -67,12 +67,32 @@ export default function NonprofitApplyPage() {
     <>
       <Hero
         title={'For Nonprofits'}
-        body={
-          'As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge.'
-        }
+        body={`As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge.`}
         action={action}
         heroImage={fullClubImage}
         className={'static-page-hero about-page-hero'}
+        additionalInfo={
+          <p className="static-page-additional-info light marginBot-md marginTop-md">
+            For more information, please see our info-session{' '}
+            <Link
+              className="text-[#f9fafccc] underline"
+              href={config.infosession_slides_link}
+              target="_blank"
+            >
+              slide-deck
+            </Link>
+            . You can also watch a{' '}
+            <Link
+              className="text-[#f9fafccc] underline"
+              href={config.infosession_recording_link}
+              target="_blank"
+            >
+              recording
+            </Link>{' '}
+            of our most recent info-session with Blake Nathan&apos;s Nonprofit
+            Academy!
+          </p>
+        }
       >
         <PageNav sections={sections} />
       </Hero>
@@ -126,7 +146,7 @@ export default function NonprofitApplyPage() {
             Nonprofit Application Process
           </h2>
           <div className="npo-timeline">
-            <div className="timeline-row">
+            {/* <div className="timeline-row">
               <div className="num-col">
                 <div className="timeline-num">01</div>
               </div>
@@ -146,10 +166,10 @@ export default function NonprofitApplyPage() {
                   .
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="timeline-row">
               <div className="num-col">
-                <div className="timeline-num">02</div>
+                <div className="timeline-num">01</div>
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">
@@ -159,19 +179,27 @@ export default function NonprofitApplyPage() {
                   {config.phone_call_dates}
                 </div>
                 <div className="timeline-row-description">
-                  One of our Project Managers will reach out to you to schedule
-                  a 15 - 30 minute informational phone call that will help you
-                  get to know the work we do, and vice versa! We&apos;ll also be
-                  able to answer any questions you have about the application
-                  process. If you decide that you&apos;d like to potentially
-                  work with us and we feel our services could fit your needs,
-                  we&apos;ll open up the second part of our application.
+                  You can schedule a 15 - 30 minute informational phone call
+                  with one of our Project Leads{' '}
+                  <Link
+                    href={config.phone_call_availabilities_link}
+                    target="_blank"
+                  >
+                    here
+                  </Link>{' '}
+                  to help you get to know the work we do, and vice versa!
+                  We&apos;ll also be able to answer any questions you have about
+                  the application process and help you brainstorm and gauge the
+                  feasibility of potential technical solutions. If you decide
+                  that you&apos;d like to potentially work with us and we feel
+                  our services could fit your needs, we encourage you to fill
+                  out the written application.
                 </div>
               </div>
             </div>
             <div className="timeline-row">
               <div className="num-col">
-                <div className="timeline-num">03</div>
+                <div className="timeline-num">02</div>
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">
@@ -181,13 +209,13 @@ export default function NonprofitApplyPage() {
                   {config.written_application_due}
                 </div>
                 <div className="timeline-row-description">
-                  The second part of our application helps us understand what
-                  you need from Blueprint. You&apos;ll have the opportunity to
-                  explain why our services could be helpful to your
-                  organization, identify any pain points within your current
-                  operations, and expand on what you&apos;d like us to build for
-                  you. If your proposed project sounds like something we can
-                  build, we&apos;ll be in touch for a final interview.
+                  Your response helps us understand what you need from
+                  Blueprint. You&apos;ll have the opportunity to explain why our
+                  services could be helpful to your organization, identify any
+                  pain points within your current operations, and expand on what
+                  you&apos;d like us to build for you. If your proposed project
+                  sounds like something we can build, we&apos;ll be in touch for
+                  a final interview.
                 </div>
                 {/* <div className="timeline-row-btn"> */}
                 {/*   <Link className="bp-btn" href="/nonprofit_applications"> */}
@@ -198,7 +226,7 @@ export default function NonprofitApplyPage() {
             </div>
             <div className="timeline-row">
               <div className="num-col">
-                <div className="timeline-num">04</div>
+                <div className="timeline-num">03</div>
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Final Interviews</div>
@@ -206,17 +234,17 @@ export default function NonprofitApplyPage() {
                   {config.final_interview_dates}
                 </div>
                 <div className="timeline-row-description">
-                  The final interview will be with a handful of our Project
-                  Managers and Designers. Together, we&apos;ll dive into more
-                  detail about your proposed project, discuss how it could be
-                  designed to best fit your needs, and leave room for any
-                  remaining questions.
+                  The final interview will be with some of our Project Leads and
+                  Designers. Together, we&apos;ll dive into more detail about
+                  your proposed project, discuss how it could be designed to
+                  best fit your needs, and leave room for any remaining
+                  questions.
                 </div>
               </div>
             </div>
             <div className="timeline-row">
               <div className="num-col">
-                <div className="timeline-num">05</div>
+                <div className="timeline-num">04</div>
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Decisions Released</div>
@@ -231,7 +259,7 @@ export default function NonprofitApplyPage() {
             </div>
             <div className="timeline-row">
               <div className="num-col">
-                <div className="timeline-num">06</div>
+                <div className="timeline-num">05</div>
               </div>
               <div className="text-col">
                 <div className="timeline-row-title">Project Scoping</div>
@@ -241,7 +269,7 @@ export default function NonprofitApplyPage() {
                 <div className="timeline-row-description">
                   If selected, your organization will have the opportunity to
                   work with us on a project over the course of the school year
-                  (August - May). Each Project Manager and Designer will choose
+                  (August - May). Each Project Leader and Designer will choose
                   an organization, and over the course of August, they will work
                   with you to finalize the plans for your project.
                 </div>

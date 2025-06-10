@@ -1,7 +1,7 @@
 export const contract = `
 # Blueprint: Contract and Terms of Work
 
-_Last updated: June 2024_
+_Last updated: June 2025_
 
 This document serves as a repository for Blueprint's general terms of work with its nonprofit partners. It should set the expectations for Blueprint's **specialization of work**, **development cycle**, and **work contract**, so you can see if your organization is a good fit for Blueprint's services. Once an organization is selected to work with Blueprint, a customized version of this contract, along with all details of the project deliverables, will be signed by both parties.
 
@@ -72,7 +72,8 @@ Project teams and their nonprofits will try to meet every other week to give bri
 
 ## Cost
 
-Blueprint's services are offered **completely pro bono**. Our developers and designers are highly-skilled individuals who have had experience working at Silicon Valley's leading tech companies, but we're also students who share a concern for improving our community. We choose to donate our free time towards these humanitarian causes because we are confident that we can build the technology to help you realize your goals. **All we ask is your continued commitment towards us throughout the year we work together.**
+Blueprint's services are offered **completely pro bono**. However, optionally, if you would like to further support us, we accept donations through [this](https://donate.stripe.com/6oEeYJ5CX6Ay5a03cl) link. (Please input “Blueprint, Technology for Nonprofits” in the "Student Organization” field.) 
+Our developers and designers are highly-skilled individuals who have had experience working at Silicon Valley's leading tech companies, but we're also students who share a concern for improving our community. We choose to donate our free time towards these humanitarian causes because we are confident that we can build the technology to help you realize your goals. **All we ask is your continued commitment towards us throughout the year we work together and that our projects are exclusively used for not-for-profit purposes after handoff.**
 
 Looking forward to working with you,
 
