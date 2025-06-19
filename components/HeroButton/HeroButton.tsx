@@ -15,12 +15,13 @@ export default function HeroButton({
 }: HeroButtonProps) {
   return (
     <div className={`static-page-hero-btn-container ${className}`}>
-      <Link href={buttonLink}>
-        <button
-          className={`bp-btn ${variant === 'white' ? 'btn-white' : 'btn-white--clear'} btn-lg read-more`}
-        >
-          {buttonText}
-        </button>
+      <Link
+        href={buttonLink}
+        className={`border-bp-white border-[1px] rounded-[2px] cursor-pointer inline-block font-bptext font-semibold text-[19px] px-[15px] py-[10px]
+        leading-normal opacity-90 hover:opacity-100 focus:opacity-100 disabled:cursor-not-allowed disabled:opacity-50 
+        ${variant === 'white' ? 'bg-bp-white text-dark-gray' : 'bg-bp-white/20 text-bp-white'}`}
+      >
+        {buttonText}
       </Link>
     </div>
   );

@@ -14,9 +14,19 @@ export default {
         'bp-blue': '#187BE5',
         'dark-gray': '#2C3E50',
         smoke: '#C0C7CF',
-        white: '#F9FAFC',
+        'bp-white': '#F9FAFC',
         red: '#E74C3C',
         'off-white': '#F8F8F8',
+      },
+      fontFamily: {
+        bptext: ['var(--font-bptext)'],
+      },
+      animation: {
+        slideLeft: 'slideLeft 0.5s both',
+        slideUp: 'slideUp 0.5s both',
+      },
+      boxShadow: {
+        'dark-gray-20': '0 10px 40px rgba(#2C3E50, 0.20)',
       },
     },
   },
