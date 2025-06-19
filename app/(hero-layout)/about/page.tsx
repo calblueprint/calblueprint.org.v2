@@ -75,8 +75,10 @@ export default function AboutPage() {
         id="values"
       >
         <div className="container mx-auto px-[12px]">
-          {/* TODO: shadow not working */}
-          <div className="shadow-[0_10px_40px_rgba(#2C3E50,0.2)] my-0 mx-auto max-w-[650px] h-[250px] sm:h-[350px] absolute left-[50%] top-[-300px] sm:top-[-350px] -translate-x-[50%] w-[90%] sm:w-full">
+          <div
+            className="my-0 mx-auto max-w-[650px] h-[250px] sm:h-[350px] absolute left-[50%] top-[-300px] sm:top-[-350px] -translate-x-[50%] w-[90%] sm:w-full"
+            style={{ boxShadow: '0px 10px 40px rgba(44, 62, 80, 0.20) ' }}
+          >
             <Image
               alt="Full Club Image"
               src={fullClubImage}
@@ -162,15 +164,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="relative pb-[20px] pl-0 pt-[30px] pr-[20px] sm:pt-[50px] sm:pr-0">
-        {/* TODO: Fix gradient at right side of carousel */}
-        <div
-          className="absolute top-0 right-0 h-full w-[200px] pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(to right, rgba(black, 0) 0%, rgba(white, 0.80) 100%)',
-          }}
-        />
+      <section className="relative pb-[20px] pl-0 pt-[30px] pr-[20px] sm:pt-[50px] sm:pr-0 after:content-[''] after:absolute after:top-0 after:right-0 after:w-[200px] after:h-full after:pointer-events-none after:bg-gradient-to-r after:from-transparent after:to-white/80">
         <div
           className="flex flex-row overflow-scroll gap-4 px-[10%]"
           style={{ cursor: 'grab' }}

@@ -22,7 +22,7 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section
-      className={`flex flex-row flex-wrap h-[90vh] max-h-[650px] min-h-[520px] overflow-hidden pt-[50px] relative ${className}`}
+      className={`flex flex-row flex-wrap h-[90vh] max-h-[600px] sm:max-h-[650px] min-h-[520px] overflow-hidden pt-[50px] relative ${className}`}
       style={{ backgroundImage: `url(${heroImage.src})` }}
     >
       <div
