@@ -1,0 +1,21 @@
+.homepage-link {
+  transition: 300ms;
+
+  &:before {
+    transition:
+      width 0s ease,
+      background 0.5s ease;
+  }
+
+  &:after {
+    transition: width 0.5s ease;
+  }
+
+  &:hover:before {
+    transition: width 0.5s ease;
+  }
+
+  &:hover:after {
+    transition: all 0s ease;
+  }
+}

@@ -20,13 +20,25 @@ export default {
       },
       fontFamily: {
         bptext: ['var(--font-bptext)'],
+        'poppins-roboto': ['Poppins', 'Roboto'],
       },
       animation: {
         slideLeft: 'slideLeft 0.5s both',
         slideUp: 'slideUp 0.5s both',
+        scaleIn: 'scaleIn 0.5s both',
       },
       boxShadow: {
-        'dark-gray-20': '0 10px 40px rgba(#2C3E50, 0.20)',
+        'project-item': '3px 3px 20px rgba(44, 62, 80, 0.10)',
+        'project-item-hover': '3px 3px 30px rgba(44, 62, 80, 0.20)',
+        'dark-gray-10': '3px 3px 30px rgba(44, 62, 80, 0.10)',
+        'dark-gray-20': '0 10px 40px rgba(44, 62, 80, 0.20)',
+        'dark-gray-20-small': '0 2px 15px rgba(44, 62, 80, 0.20)',
+      },
+      scale: {
+        2: '2',
+        1.8: '1.8',
+        1.5: '1.5',
+        1.1: '1.1',
       },
     },
   },
