@@ -30,6 +30,8 @@ export default {
       boxShadow: {
         'project-item': '3px 3px 20px rgba(44, 62, 80, 0.10)',
         'project-item-hover': '3px 3px 30px rgba(44, 62, 80, 0.20)',
+        'project-card-hover': '2px 2px 15px rgba(44, 62, 80, 0.10)',
+        'project-description': '0 5px 30px rgba(44, 62, 80, 0.10)',
         'dark-gray-10': '3px 3px 30px rgba(44, 62, 80, 0.10)',
         'dark-gray-20': '0 10px 40px rgba(44, 62, 80, 0.20)',
         'dark-gray-20-small': '0 2px 15px rgba(44, 62, 80, 0.20)',

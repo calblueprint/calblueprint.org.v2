@@ -39,13 +39,15 @@ export default function ProjectsPage() {
           />
         }
         heroImage={heroImage}
-        className={'static-page-hero chapter-overview-hero'}
+        className={'bg-center bg-cover bg-no-repeat relative'}
       />
 
-      <section className="current-projects-section">
+      <section className="bg-off-white py-[50px] px-0">
         <div className="max-w-[1200px] mx-auto px-[30px]">
-          <h2 className="static-page-header marginBot-xxl">Current Projects</h2>
-          <div className="project-card-container">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[54px]">
+            Current Projects
+          </h2>
+          <div className="flex flex-row flex-wrap">
             {Object.keys(projectList).map(name => {
               const projectData = projectList[
                 name as keyof typeof projectList
@@ -67,10 +69,12 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="past-projects-section">
+      <section className="py-[50px] px-0">
         <div className="max-w-[1200px] mx-auto px-[30px]">
-          <h2 className="static-page-header marginBot-xxl">Past Projects</h2>
-          <div className="project-card-container">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[54px]">
+            Past Projects
+          </h2>
+          <div className="flex flex-row flex-wrap">
             {Object.keys(projectList).map(name => {
               const projectData = projectList[
                 name as keyof typeof projectList
