@@ -10,7 +10,7 @@ nav.bp-nav {
   }
 
   .logo-container {
-    font-family: "Poppins", "Roboto";
+    font-family: 'Poppins', 'Roboto';
     font-size: 20px;
     transition: 100ms;
 
@@ -129,7 +129,6 @@ nav.bp-nav.nav-home {
 
 // For use on dark or colored backgrounds
 nav.bp-nav.nav-white {
-
   .logo-container {
     a {
       color: $white;
@@ -197,7 +196,7 @@ nav.bp-nav-fixed {
 }
 
 @media (max-width: 700px) {
-  .notify-bar-link+.content>nav.bp-nav .link-container {
+  .notify-bar-link + .content > nav.bp-nav .link-container {
     top: -100px;
   }
 
@@ -274,6 +273,6 @@ nav.bp-nav {
   padding: 8px 0;
 }
 
-.notify-bar-container:hover {
-  background-color: $bp-blue-10;
-}
+// .notify-bar-container:hover {
+//   background-color: $bp-blue-10;
+// }
