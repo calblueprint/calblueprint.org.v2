@@ -5,7 +5,9 @@ import Link from 'next/link';
 import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import HeroMessage from '@/components/HeroMessage/HeroMessage';
+import HomepageLink from '@/components/HomepageLink/HomepageLink';
 import PageNav from '@/components/PageNav/PageNav';
+import TimelineItem from '@/components/TimelineItem/TimelineItem';
 import data from '@/data/external_links.json';
 import config from '@/data/nonprofit_applications.json';
 import carouselImage1 from '@/public/images/apply/nonprofits/carousel_1.jpg';
@@ -70,9 +72,12 @@ export default function NonprofitApplyPage() {
         body={`As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge.`}
         action={action}
         heroImage={fullClubImage}
-        className={'static-page-hero about-page-hero'}
+        className="bg-center bg-cover bg-no-repeat relative"
         additionalInfo={
-          <p className="static-page-additional-info light marginBot-md marginTop-md">
+          <p
+            className="max-w-[600px] text-bp-white/80 font-bptext animate-slideLeft my-[24px]"
+            style={{ animationDelay: '0.4s' }}
+          >
             For more information, please see our info-session{' '}
             <Link
               className="text-[#f9fafccc] underline"
@@ -97,27 +102,33 @@ export default function NonprofitApplyPage() {
         <PageNav sections={sections} />
       </Hero>
 
-      <section className="application-our-services" id="our-services">
-        <div className="container">
-          <h2 className="static-page-header marginBot-xxl">Our Services</h2>
-          <div className="our-services-container">
-            <div className="item">
-              <div className="img-container">
+      <section className="py-[50px] px-0" id="our-services">
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[54px]">
+            Our Services
+          </h2>
+          <div className="block sm:flex sm:flex-row sm:flex-wrap">
+            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full sm:w-1/2">
+              <div className="mt-0 mx-auto mb-[20px] text-center w-1/2">
                 <Image alt="Web" src={webImage} />
               </div>
-              <h3>Web Development</h3>
-              <p>
+              <h3 className="font-bptext text-[23px] font-semibold mb-[16px]">
+                Web Development
+              </h3>
+              <p className="text-dark-gray/70 text-[18px]">
                 Web applications let your users access information from any
                 browser. This might be better for applications that need to be
                 publicly available or ones that help facilitate task management.
               </p>
             </div>
-            <div className="item">
-              <div className="img-container">
+            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full sm:w-1/2">
+              <div className="mt-0 mx-auto mb-[20px] text-center w-1/2">
                 <Image alt="Mobile" src={mobileImage} />
               </div>
-              <h3>Mobile Development</h3>
-              <p>
+              <h3 className="font-bptext text-[23px] font-semibold mb-[16px]">
+                Mobile Development
+              </h3>
+              <p className="text-dark-gray/70 text-[18px]">
                 Mobile applications let your users download an app and access it
                 on their phone. This might be better for applications that need
                 to be portable or accessed with no internet connection.
@@ -126,36 +137,34 @@ export default function NonprofitApplyPage() {
           </div>
         </div>
 
-        <div className="photo-carousel npo-photo-carousel">
+        <div className="relative pt-[100px] pb-[30px] after:content-[''] after:absolute after:top-0 after:right-0 after:w-[200px] after:h-full after:pointer-events-none after:bg-gradient-to-r after:from-transparent after:to-white/80">
           <div
             className="flex flex-row overflow-scroll gap-4 px-[10%]"
             style={{ cursor: 'grab' }}
           >
             {carouselImages.map((image, i) => (
               <div className="flex-shrink-0" key={i}>
-                <Image alt="Nonprofit Carousel Image" src={image} />
+                <Image
+                  className="w-[500px]"
+                  alt="Nonprofit Carousel Image"
+                  src={image}
+                />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="application-process-section" id="application-process">
-        <div className="container">
-          <h2 className="static-page-header marginBot-xxl">
+      <section
+        className="bg-off-white py-[50px] sm:py-[80px] px-0"
+        id="application-process"
+      >
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[54px]">
             Nonprofit Application Process
           </h2>
           <div className="npo-timeline">
-            {/* <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">01</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Interest Form Open</div>
-                <div className="timeline-row-date">
-                  {config.interest_form_release_dates}
-                </div>
-                <div className="timeline-row-description">
+            {/* Previous step 1:
                   The first part of our application is an interest form where
                   you will provide contact and basic information about your
                   organization. If you have any questions or concerns about
@@ -163,22 +172,14 @@ export default function NonprofitApplyPage() {
                   <Link href="mailto:projects@calblueprint.org">
                     projects@calblueprint.org
                   </Link>
-                  .
-                </div>
-              </div>
-            </div> */}
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">01</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">
-                  Informational Phone Call
-                </div>
-                <div className="timeline-row-date">
-                  {config.phone_call_dates}
-                </div>
-                <div className="timeline-row-description">
+                  . 
+                  */}
+            <TimelineItem
+              num="01"
+              title="Informational Phone Call"
+              date={config.phone_call_dates}
+              description={
+                <>
                   You can schedule a 15 - 30 minute informational phone call
                   with one of our Project Leads{' '}
                   <Link
@@ -194,21 +195,15 @@ export default function NonprofitApplyPage() {
                   that you&apos;d like to potentially work with us and we feel
                   our services could fit your needs, we encourage you to fill
                   out the written application.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">02</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">
-                  Written Application Due
-                </div>
-                <div className="timeline-row-date">
-                  {config.written_application_due}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="02"
+              title="Written Application Due"
+              date={config.written_application_due}
+              description={
+                <>
                   <p style={{ fontStyle: 'italic' }}>
                     Note: While the priority deadline is July 11, we have extended the deadline to July 18.
                   </p>
@@ -219,181 +214,256 @@ export default function NonprofitApplyPage() {
                   you&apos;d like us to build for you. If your proposed project
                   sounds like something we can build, we&apos;ll be in touch for
                   a final interview.
-                </div>
-                {/* <div className="timeline-row-btn"> */}
-                {/*   <Link className="bp-btn" href="/nonprofit_applications"> */}
-                {/*     View Application */}
-                {/*   </Link> */}
-                {/* </div> */}
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">03</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Final Interviews</div>
-                <div className="timeline-row-date">
-                  {config.final_interview_dates}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="03"
+              title="Final Interviews"
+              date={config.final_interview_dates}
+              description={
+                <>
                   The final interview will be with some of our Project Leads and
                   Designers. Together, we&apos;ll dive into more detail about
                   your proposed project, discuss how it could be designed to
                   best fit your needs, and leave room for any remaining
                   questions.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">04</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Decisions Released</div>
-                <div className="timeline-row-date">
-                  {config.decision_released_date}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="04"
+              title="Decisions Released"
+              date={config.decision_released_date}
+              description={
+                <>
                   We&apos;ll reach out and let you know whether your
                   organization has been selected to work with Blueprint!
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">05</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Project Scoping</div>
-                <div className="timeline-row-date">
-                  {config.project_scoping_dates}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="05"
+              title="Project Scoping"
+              date={config.project_scoping_dates}
+              description={
+                <>
                   If selected, your organization will have the opportunity to
                   work with us on a project over the course of the school year
                   (August - May). Each Project Leader and Designer will choose
                   an organization, and over the course of August, they will work
                   with you to finalize the plans for your project.
-                </div>
-              </div>
-            </div>
+                </>
+              }
+            />
           </div>
         </div>
       </section>
 
-      <section className="application-decision-criteria-section" id="criteria">
-        <div className="container">
-          <h2 className="static-page-header marginBot-lg">Decision Criteria</h2>
-          <p className="static-page-desc marginBot-lg">
+      <section className="py-[50px] px-0" id="criteria">
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[32px]">
+            Decision Criteria
+          </h2>
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] mb-[32px]">
             We want to help as many organizations as we possibly can.
             Unfortunately, we cannot take every project because of the large
             amount of resources each one requires. These are the primary
             criteria we use to determine project fit.
           </p>
-          <Link
-            className="homepage-link marginBot-xl"
+          <HomepageLink
+            buttonText="Sample Application"
             href={data.nonprofit_sample_application}
-          >
-            <div className="flex flex-row">
-              Sample Application
-              <FaAngleRight className="my-auto font-normal" />
-            </div>
-          </Link>
-          <ul className="decision-criteria-list-container npo-criteria-list marginTop-xl">
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Impact" src={impactImage} />
+            className="mb-[40px]"
+          />
+          <ul className="flex flex-row flex-wrap justify-around mb-0 mt-[40px]">
+            <li className="mb-[40px] w-[45%] sm:w-[28%]">
+              <div className="max-w-[100px] mb-[10px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Impact"
+                  src={impactImage}
+                />
               </div>
-              <h3>Impact</h3>
-              <p>How much will your project impact the community?</p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Impact
+              </h3>
+              <p className="text-dark-gray/70">
+                How much will your project impact the community?
+              </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Necessity" src={necessityImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%]">
+              <div className="max-w-[100px] mb-[10px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Necessity"
+                  src={necessityImage}
+                />
               </div>
-              <h3>Necessity</h3>
-              <p>How vital is your project to your non-profit organization?</p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Necessity
+              </h3>
+              <p className="text-dark-gray/70">
+                How vital is your project to your non-profit organization?
+              </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Scope" src={scopeImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%]">
+              <div className="max-w-[100px] mb-[10px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Scope"
+                  src={scopeImage}
+                />
               </div>
-              <h3>Scope</h3>
-              <p>Is your project achievable within the alloted timeline?</p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Scope
+              </h3>
+              <p className="text-dark-gray/70">
+                Is your project achievable within the alloted timeline?
+              </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Technical Fit" src={technicalFitImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%]">
+              <div className="max-w-[100px] mb-[10px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Technical Fit"
+                  src={technicalFitImage}
+                />
               </div>
-              <h3>Technical Fit</h3>
-              <p>Does your project use the capabilities of technology?</p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Technical Fit
+              </h3>
+              <p className="text-dark-gray/70">
+                Does your project use the capabilities of technology?
+              </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Credibility" src={credibilityImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%]">
+              <div className="max-w-[100px] mb-[10px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Credibility"
+                  src={credibilityImage}
+                />
               </div>
-              <h3>Credibility</h3>
-              <p>Is there evidence that your project will have an impact?</p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Credibility
+              </h3>
+              <p className="text-dark-gray/70">
+                Is there evidence that your project will have an impact?
+              </p>
             </li>
-            <li className="decision-criteria-item" />
+            <li className="mb-[40px] w-[45%] sm:w-[28%]" />
           </ul>
         </div>
       </section>
 
-      <section className="npo-apply-quote">
-        <div className="container">
-          <q>
+      <section className="bg-bp-blue text-bp-white py-[50px] sm:pt-[80px] px-0 sm:pb-[70px]">
+        <div className="container mx-auto px-[12px]">
+          <q
+            className='block font-bptext text-[26px] sm:text-[35px] font-medium relative mb-[20px] sm:m-0 
+            before:bg-contain before:bg-no-repeat before:content-[""] before:opacity-20 before:absolute before:-left-[30px] before:top-0 before:h-[70px] before:w-[70px]'
+          >
             Working with Blueprint has been an incredible pleasure. We have used
             their application to raise hundreds of thousands of dollars for
             Berkeley&apos;s teachers.
           </q>
-          <h5 className="reference">- Berkeley Public Schools Fund</h5>
+          <h5 className="text-bp-white/80 float-right text-[20px] font-normal">
+            - Berkeley Public Schools Fund
+          </h5>
         </div>
       </section>
 
-      <section className="npo-apply-previous-work-section" id="previous-work">
-        <div className="container">
-          <h2 className="static-page-header marginBot-lg">Previous Work</h2>
-          <p className="static-page-desc marginBot-lg">
+      <section
+        className="bg-off-white pt-[70px] px-0 pb-[50px]"
+        id="previous-work"
+      >
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[32px]">
+            Previous Work
+          </h2>
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] mb-[32px]">
             Some of the applications we&apos;ve developed for previous clients.
           </p>
-          <Link className="homepage-link marginBot-xl" href="/projects">
-            <div className="flex flex-row">
-              View All Projects
-              <FaAngleRight className="my-auto font-normal" />
-            </div>
-          </Link>
+          <HomepageLink
+            buttonText="View All Projects"
+            href="/projects"
+            className="mb-[40px]"
+          />
 
-          <div className="projects-container">
-            <Link href="/projects/1951coffee">
-              <div className="project-item" id="coffee">
-                <div className="project-img img-container">
-                  <Image alt="1951 Coffee Company" src={coffeeImage} />
+          <div className="block sm:flex justify-between my-[30px] mx-auto max-w-[1350px] py-0 px-[15px] sm:px-[30px]">
+            <Link
+              className="block flex-1 p-0 sm:py-0 sm:px-[20px] mb-[20px] sm:m-0 no-underline backface-hidden transform-3d"
+              href="/projects/1951coffee"
+            >
+              <div
+                className="shadow-project-item bg-center bg-cover bg-no-repeat rounded-[3px] text-bp-white flex h-[200px] sm:h-[300px] justify-end overflow-hidden p-[20px] relative transition duration-200 flex-col w-full
+                before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[1]
+                hover:project-item-hover hover:-translate-y-[10px]"
+                id="coffee"
+              >
+                {/* TODO: fix hover scale */}
+                <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-hidden hover:scale-105">
+                  <Image
+                    className="w-full h-full my-0 mx-auto object-cover align-middle"
+                    alt="1951 Coffee Company"
+                    src={coffeeImage}
+                  />
                 </div>
-                <h4>1951</h4>
-                <p>
+                <h4 className="font-bptext text-[23px] font-semibold mb-[10px] relative z-[1]">
+                  1951
+                </h4>
+                <p className="text-bp-white/90 text-[18px] relative z-[1]">
                   Building communities to make successful refugee resettlement
                   possible.
                 </p>
               </div>
             </Link>
-            <Link href="/projects/unloop">
-              <div className="project-item" id="unloop">
-                <div className="project-img img-container">
-                  <Image alt="Unloop" src={unloopImage} />
+            <Link
+              className="block flex-1 p-0 sm:py-0 sm:px-[20px] mb-[20px] sm:m-0 no-underline backface-hidden transform-3d"
+              href="/projects/unloop"
+            >
+              <div
+                className="shadow-project-item bg-center bg-cover bg-no-repeat rounded-[3px] text-bp-white flex h-[200px] sm:h-[300px] justify-end overflow-hidden p-[20px] relative transition duration-200 flex-col w-full
+                before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[1]
+                hover:project-item-hover hover:-translate-y-[10px]"
+                id="unloop"
+              >
+                <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-hidden hover:scale-105">
+                  <Image
+                    className="w-full h-full my-0 mx-auto object-cover align-middle"
+                    alt="Unloop"
+                    src={unloopImage}
+                  />
                 </div>
-                <h4>Unloop</h4>
-                <p>Building a pipeline from prison to tech.</p>
+                <h4 className="font-bptext text-[23px] font-semibold mb-[10px] relative z-[1]">
+                  Unloop
+                </h4>
+                <p className="text-bp-white/90 text-[18px] relative z-[1]">
+                  Building a pipeline from prison to tech.
+                </p>
               </div>
             </Link>
-            <Link href="/projects/dckitchen">
-              <div className="project-item" id="dckitchen">
-                <div className="project-img img-container">
-                  <Image alt="DC Central Kitchen" src={dcKitchenImage} />
+            <Link
+              className="block flex-1 p-0 sm:py-0 sm:px-[20px] mb-[20px] sm:m-0 no-underline backface-hidden transform-3d"
+              href="/projects/dckitchen"
+            >
+              <div
+                className="shadow-project-item bg-center bg-cover bg-no-repeat rounded-[3px] text-bp-white flex h-[200px] sm:h-[300px] justify-end overflow-hidden p-[20px] relative transition duration-200 flex-col w-full
+                before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[1]
+                hover:project-item-hover hover:-translate-y-[10px]"
+                id="dckitchen"
+              >
+                <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-hidden hover:scale-105">
+                  <Image
+                    className="w-full h-full my-0 mx-auto object-cover align-middle"
+                    alt="DC Central Kitchen"
+                    src={dcKitchenImage}
+                  />
                 </div>
-                <h4>DC Central Kitchen </h4>
-                <p>
+                <h4 className="font-bptext text-[23px] font-semibold mb-[10px] relative z-[1]">
+                  DC Central Kitchen{' '}
+                </h4>
+                <p className="text-bp-white/90 text-[18px] relative z-[1]">
                   Expanding access to affordable healthy food through corner
                   stores.
                 </p>
@@ -403,21 +473,25 @@ export default function NonprofitApplyPage() {
         </div>
       </section>
 
-      <section className="application-faqs-section" id="faqs">
-        <div className="container">
-          <h2 className="static-page-header marginBot-xl">
+      <section className="py-[50px] px-0" id="faqs">
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold marginBot-xl">
             Frequently Asked Questions
           </h2>
-          <h3>How often do project teams and nonprofits meet?</h3>
-          <p>
+          <h3 className="font-bptext text-[22px] font-medium mb-[5px]">
+            How often do project teams and nonprofits meet?
+          </h3>
+          <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             The client and the project manager meet on a weekly or biweekly
-            basis to ensure the project’s progress. There are project scoping
-            meetings with the project manager at the project start, a formal
-            midpoint presentation, and a final presentation where the project is
-            delivered.
+            basis to ensure the project&apos;s progress. There are project
+            scoping meetings with the project manager at the project start, a
+            formal midpoint presentation, and a final presentation where the
+            project is delivered.
           </p>
-          <h3>What is the client-team interaction like?</h3>
-          <p>
+          <h3 className="font-bptext text-[22px] font-medium mb-[5px]">
+            What is the client-team interaction like?
+          </h3>
+          <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             The team works alongside the client&apos;s vision for the
             organization. We hope that our project has significant impact on the
             organization&apos;s efficiency and reach, so the alignment of goals
@@ -425,8 +499,10 @@ export default function NonprofitApplyPage() {
             check the timeline, and have discussion on the progress of the
             project and the nonprofit itself.
           </p>
-          <h3>How does Blueprint ensure success?</h3>
-          <p>
+          <h3 className="font-bptext text-[22px] font-medium mb-[5px]">
+            How does Blueprint ensure success?
+          </h3>
+          <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             Our club recruits the brightest and most hard-working students at UC
             Berkeley, one of the best universities in computer science. Through
             effective leadership and frequent checkins with our clients we hope

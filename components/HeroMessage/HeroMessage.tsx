@@ -4,9 +4,14 @@ type HeroMessageProps = {
 
 export default function HeroMessage({ text }: HeroMessageProps) {
   return (
-    <div className="static-page-hero-btn-container marginTop-xl">
-      <div className="applications-closed">
-        <p className="hero-desc">{text}</p>
+    <div
+      className="animate-slideLeft mt-[40px]"
+      style={{ animationDelay: '0.4s' }}
+    >
+      <div>
+        <p className="text-bp-white text-[18px] font-medium max-w-[700px] mb-[20px]">
+          {text}
+        </p>
       </div>
     </div>
   );
