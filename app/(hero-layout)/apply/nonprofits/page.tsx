@@ -210,8 +210,7 @@ export default function NonprofitApplyPage() {
                 </div>
                 <div className="timeline-row-description">
                   <p style={{ fontStyle: 'italic' }}>
-                    Update: as of June 10, the deadline has changed from July 12
-                    to July 11.
+                    Note: While the priority deadline is July 11, we have extended the deadline to July 18.
                   </p>
                   Your response helps us understand what you need from
                   Blueprint. You&apos;ll have the opportunity to explain why our
