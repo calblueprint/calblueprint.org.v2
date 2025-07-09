@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         bptext: ['var(--font-bptext)'],
         'poppins-roboto': ['Poppins', 'Roboto'],
+        'sans-serif': ['Roboto', 'Inter', 'sans-serif'],
       },
       animation: {
         slideLeft: 'slideLeft 0.5s both',
