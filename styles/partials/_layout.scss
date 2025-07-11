@@ -11,8 +11,8 @@
 
 html,
 body {
-  color: $dark-gray;
-  font-family: $sans-serif;
+  color: #2C3E50; // dark-gray
+  font-family: 'Roboto', 'Helvetica', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -22,5 +22,5 @@ strong {
 }
 
 a {
-  color: $bp-blue;
+  color: #187BE5; //bp-blue
 }
