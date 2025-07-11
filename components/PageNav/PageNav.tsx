@@ -15,7 +15,7 @@ export default function PageNav({ sections }: PageNavProps) {
       <ul className="flex flex-row flex-wrap justify-center">
         {sections.map(({ text, href }, i) => (
           <Link key={i} href={href}>
-            <li className="text-bp-white cursor-pointer text-[19px] font-medium font-bptext mx-[5px] py-[15px] px-[10px]">
+            <li className="text-bp-white cursor-pointer text-[19px] font-medium font-bptext mx-[5px] py-[15px] px-[10px] hover:bg-bp-white/10">
               {text}
             </li>
           </Link>

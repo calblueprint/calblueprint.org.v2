@@ -6,7 +6,7 @@ export default function WhiteLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="content apply apply-show">
+    <div className="relative">
       <Navbar variant="default" />
       {children}
     </div>

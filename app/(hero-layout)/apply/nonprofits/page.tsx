@@ -401,7 +401,6 @@ export default function NonprofitApplyPage() {
                 hover:project-item-hover hover:-translate-y-[10px]"
                 id="coffee"
               >
-                {/* TODO: fix hover scale */}
                 <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-hidden hover:scale-105">
                   <Image
                     className="w-full h-full my-0 mx-auto object-cover align-middle"
@@ -429,6 +428,7 @@ export default function NonprofitApplyPage() {
                 id="unloop"
               >
                 <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-hidden hover:scale-105">
+                  <div className={`absolute inset-0 z-[1] unloop-gradient`} />
                   <Image
                     className="w-full h-full my-0 mx-auto object-cover align-middle"
                     alt="Unloop"
@@ -475,7 +475,7 @@ export default function NonprofitApplyPage() {
 
       <section className="py-[50px] px-0" id="faqs">
         <div className="container mx-auto px-[12px]">
-          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold marginBot-xl">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[40px]">
             Frequently Asked Questions
           </h2>
           <h3 className="font-bptext text-[22px] font-medium mb-[5px]">

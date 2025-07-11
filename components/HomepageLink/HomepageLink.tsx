@@ -18,10 +18,9 @@ export default function HomepageLink({
   return (
     // Animations are still imported from the css file in this folder in the homepage-link class
     <Link
-      className={`homepage-link text-bp-blue inline-block font-bptext text-[22px] font-[500] pr-[5px] relative no-underline transition-all ease-in-out duration-300 hover:-translate-x-[2px] 
+      className={`homepage-link text-bp-blue inline-block font-bptext text-[22px] font-[500] pr-[5px] relative no-underline hover:-translate-x-[2px] 
               before:content-[''] before:bg-bp-blue/10 before:block before:absolute before:left-[10px] before:-bottom-[2px] before:h-[20px] before-w-0 
               after:content-[''] after:bg-bp-blue/10 after:block after:absolute after:-right-[10px] after:-bottom-[2px] after:h-[20px] after-w-0
-              hover:before:w-full hover:after:w-full hover:after:bg-transparent
               ${className}`}
       href={href}
       style={style}

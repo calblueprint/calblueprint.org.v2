@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'home': '1200px',
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -18,16 +21,71 @@ export default {
         red: '#E74C3C',
         'off-white': '#F8F8F8',
       },
+      container: {
+        center: true,
+      },
       fontFamily: {
         bptext: ['var(--font-bptext)'],
         'poppins-roboto': ['Poppins', 'Roboto'],
-        'sans-serif': ['Roboto', 'Inter', 'sans-serif'],
+        'sans-serif': ['Roboto', 'Helvetica', 'sans-serif'],
+      },
+      keyframes: {
+        slideLeft: {
+          '0%': {
+            transform: 'translateX(-20px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
+        slideDown: {
+          '0%': {
+            transform: 'translateY(-20px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
+        slideUp: {
+          '0%': {
+            transform: 'translateY(20px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
+        scaleIn: {
+          '0%': {
+            transform: 'scale(0.8)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'scale(1)',
+            opacity: '1',
+          },
+        },
+        spin: {
+          '0%':{
+            transform: 'rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(359deg)',
+          }
+        }
       },
       animation: {
         slideLeft: 'slideLeft 0.5s both',
         slideUp: 'slideUp 0.5s both',
         scaleIn: 'scaleIn 0.5s both',
+        slideDown: 'slideDown 0.4s both',
         slideLeft400: 'slideLeft 400ms both',
+        spin: 'spin 0.75s both'
       },
       boxShadow: {
         'project-item': '3px 3px 20px rgba(44, 62, 80, 0.10)',

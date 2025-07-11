@@ -83,7 +83,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="bg-off-white py-0 px-[15px] sm:py-[0px] sm:px-[30px] block sm:flex justify-between my-[30px] mx-auto max-w-[1350px]">
+        <div className="bg-off-white py-0 px-[15px] sm:py-[0px] sm:px-[30px] block sm:grid sm:grid-cols-3 sm:gap-y-[20px] lg:flex lg:gap-0 justify-between my-[30px] mx-auto max-w-[1350px]">
           {Object.keys(projectList).map(name => {
             const projectData = projectList[
               name as keyof typeof projectList
@@ -98,12 +98,11 @@ export default function HomePage() {
               >
                 <div
                   className="bg-center bg-no-repeat bg-cover bg-position-[50%] shadow-project-item rounded-[3px] text-bp-white flex h-[200px] sm:h-[300px] justify-end overflow-hidden p-[20px] relative transition duration-200 flex-col flex-nowrap w-full 
-                  hover:-translate-y-[10px] hover:shadow-project-item-hover
-                  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-1"
+                  hover:-translate-y-[10px] hover:shadow-project-item-hover"
                   id={name}
                 >
                   <div className={`absolute inset-0 z-[1] ${name}-gradient`} />
-                  <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-hidden hover:scale-105">
+                  <div className="h-full left-0 absolute top-0 transition duration-200 w-full overflow-visible hover:scale-105">
                     <Image
                       alt={projectData.title}
                       src={

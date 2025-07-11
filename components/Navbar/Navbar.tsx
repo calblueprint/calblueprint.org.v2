@@ -30,8 +30,7 @@ export default function Navbar({ variant }: NavbarProps) {
             href="/"
             className={`${variant === 'default' ? 'text-bp-blue' : 'text-white'} font-semibold no-underline`}
           >
-            {/* TODO: add transform to logo rotate 360 */}
-            <div className="bg-center bg-no-repeat bg-size-[90%] mr-[4px] inline-block h-[35px] w-[35px] transition duration-750 align-middle p-[2px]">
+            <div className="bg-center bg-no-repeat bg-size-[90%] mr-[4px] inline-block h-[35px] w-[35px] transition duration-750 align-middle p-[2px] hover:animate-spin">
               <Image
                 src={variant == 'nav-white' ? whiteLogo : defaultLogo}
                 alt="blueprint logo"
