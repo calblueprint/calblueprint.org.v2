@@ -1,6 +1,4 @@
-import { FaAngleRight } from 'react-icons/fa';
 import Image from 'next/image';
-import Link from 'next/link';
 import { ProjectData } from '@/app/(hero-layout)/projects/page';
 import HomepageLink from '@/components/HomepageLink/HomepageLink';
 import ProjectDescription from '@/components/ProjectDescription/ProjectDescription';

@@ -31,7 +31,6 @@ const inter = Inter({
   weight: '400',
 });
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
 const bpText = localFont({
   variable: '--font-bptext',
   src: [
