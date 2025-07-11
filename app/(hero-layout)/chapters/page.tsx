@@ -107,11 +107,11 @@ export default function ChapterPage() {
                 Bridge the gap between tech and non-profits.
               </h3>
               <p className="text-[18px] text-dark-gray/70">
-                It&apos;s true that non-profits lack technical resources to do their
-                meaningful work. It&apos;s also true that tech can&apos;t solve global
-                challenges. Therefore, we are creating collaborative spaces both
-                for NPOs and aspiring technologists to make positive changes
-                together!
+                It&apos;s true that non-profits lack technical resources to do
+                their meaningful work. It&apos;s also true that tech can&apos;t
+                solve global challenges. Therefore, we are creating
+                collaborative spaces both for NPOs and aspiring technologists to
+                make positive changes together!
               </p>
             </li>
             <li className="mb-[40px] w-full">

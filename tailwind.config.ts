@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'home': '1200px',
+        home: '1200px',
       },
       colors: {
         background: 'var(--background)',
@@ -71,13 +71,13 @@ export default {
           },
         },
         spin: {
-          '0%':{
+          '0%': {
             transform: 'rotate(0deg)',
           },
           '100%': {
             transform: 'rotate(359deg)',
-          }
-        }
+          },
+        },
       },
       animation: {
         slideLeft: 'slideLeft 0.5s both',
@@ -85,7 +85,7 @@ export default {
         scaleIn: 'scaleIn 0.5s both',
         slideDown: 'slideDown 0.4s both',
         slideLeft400: 'slideLeft 400ms both',
-        spin: 'spin 0.75s both'
+        spin: 'spin 0.75s both',
       },
       boxShadow: {
         'project-item': '3px 3px 20px rgba(44, 62, 80, 0.10)',
