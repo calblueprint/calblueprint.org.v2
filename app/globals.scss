@@ -2,38 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-// Vendor -------------------------
-// @import "bootstrap/dist/css/bootstrap.min.css";
-// @import 'bootstrap/dist/css/bootstrap-grid.min.css';
-// @import 'bootstrap/dist/css/bootstrap-sprockets.min.css';
-// @import 'bootstrap/dist/css/bootstrap-variables.min.css';
-// @import 'bootstrap/dist/css/bootstrap-mixins.min.css';
-// @import 'bootstrap/dist/css/bootstrap-dropdowns.min.css';
-
 // Reset browser-specific CSS
-@import '../styles/vendor/normalize';
+@import '../styles/partials/normalize';
 @import '../styles/partials/reset';
 
 // Other
-@import '../styles/vendor/toastr';
-@import '../styles/project-gradients.scss';
+@import '../app/\(hero-layout\)/projects/project-gradients.scss';
+@import '../styles/partials/containers';
+@import '../components/HomepageLink/linkAnimations.scss';
 
-// Stylesheets --------------------
-
-// Partials
-@import '../styles/partials/variables';
-@import '../styles/partials/animations';
-// @import "../styles/partials/fonts";
+// Set default styles to body
 @import '../styles/partials/layout';
-
-// Styles
-@import '../styles/components/all.scss';
-
-@import '../styles/pages/all.scss';
-@import '../styles/apply/all.scss';
-@import '../styles/nonprofit_applications/all.scss';
-@import '../styles/nonprofit_interest_forms/npo_interest_forms.scss';
-@import '../styles/shared/newsletter-subscribe';
 
 .content {
   position: relative;
