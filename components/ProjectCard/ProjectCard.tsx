@@ -23,9 +23,12 @@ export default async function ProjectCard({
   }
 
   return (
-    <div className="project-card-column">
-      <Link className="project-card" href={`/projects/${name}`}>
-        <div className="project-card--image flex justify-center align-middle relative">
+    <div className="mb-[40px] p-0 sm:py-0 sm:px-[20px] w-full sm:w-1/2 lg:w-1/3">
+      <Link
+        className="flex h-full bg-white flex-col flex-wrap pb-[20px] no-underline transition duration-200 hover:bg-white hover:shadow-project-card-hover hover:-translate-y-[5px]"
+        href={`/projects/${name}`}
+      >
+        <div className="bg-cover bg-center bg-no-repeat h-[200px] mb-[20px] w-full flex justify-center align-middle relative">
           <Image
             className=""
             sizes="100vw"
@@ -35,9 +38,16 @@ export default async function ProjectCard({
             objectFit="contain"
           />
         </div>
-        <h3 className="project-card--title">{title}</h3>
-        <p className="project-card--summary">{short_summary}</p>
-        <div className="card-button" style={{ color: `#${color}` }}>
+        <h3 className="text-black font-bptext text-[23px] font-semibold mt-0 mb-[20px] mx-[20px]">
+          {title}
+        </h3>
+        <p className="text-dark-gray/70 pt-0 px-[20px] pb-[20px]">
+          {short_summary}
+        </p>
+        <div
+          className="font-bptext text-[18px] font-semibold my-0 mx-[20px] mt-auto"
+          style={{ color: `#${color}` }}
+        >
           Read More
         </div>
       </Link>

@@ -1,7 +1,6 @@
-import { FaAngleRight } from 'react-icons/fa';
 import Image from 'next/image';
-import Link from 'next/link';
 import { ProjectData } from '@/app/(hero-layout)/projects/page';
+import HomepageLink from '@/components/HomepageLink/HomepageLink';
 import ProjectDescription from '@/components/ProjectDescription/ProjectDescription';
 import projects from '@/data/projects.json';
 import { env } from '@/env.mjs';
@@ -30,21 +29,20 @@ export default async function ProjectDetailsPage({
 
   return (
     <>
-      <div className="container project-article-container marginTop-xl">
-        <h1 className="static-page-header marginBot-md">{data.title}</h1>
-        <p>{data.short_summary}</p>
-        <div className="project-article-links-container marginBot-md">
-          <Link className="homepage-link" href={data.org_link ?? ''}>
-            <div className="flex flex-row">
-              Learn More
-              <FaAngleRight className="my-auto font-normal" />
-            </div>
-          </Link>
+      <div className="container mx-auto px-[12px] max-w-[700px] mt-[40px] last:pb-[60px]">
+        <h1 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[24px]">
+          {data.title}
+        </h1>
+        <p className="text-dark-gray/70 text-[20px] leading-[1.6] mb-[30px]">
+          {data.short_summary}
+        </p>
+        <div className="mb-[24px]">
+          <HomepageLink buttonText="Learn More" href={data.org_link ?? ''} />
         </div>
       </div>
 
-      <div className="project-article-img-container">
-        <div className="img-container relative">
+      <div className="mt-[40px] mx-auto mb-[60px] max-w-[900px]">
+        <div className="rounded-[4px] h-[400px] shadow-project-description relative">
           <Image
             className=""
             sizes="100vw"

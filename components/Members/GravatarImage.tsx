@@ -17,12 +17,16 @@ export default function GravatarImage({ email, name }: GravatarImageProps) {
   const gravatarUrl = `https://www.gravatar.com/avatar/${crypto.createHash('sha256').update(cleanedEmail).digest('hex')}.png?s=300&d=404`;
 
   return (
-    <Image
-      src={error ? profilePlaceholder : gravatarUrl}
-      alt={name}
-      width={200}
-      height={200}
-      onError={() => setError(true)}
-    />
+    <div className="w-full h-full relative">
+      <Image
+        src={error ? profilePlaceholder : gravatarUrl}
+        alt={name}
+        // width={200}
+        fill
+        // height={200}
+        onError={() => setError(true)}
+        className="object-cover"
+      />
+    </div>
   );
 }

@@ -1,10 +1,12 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import BPButton from '@/components/Button/Button';
 import Hero from '@/components/Hero/Hero';
 import HeroButton from '@/components/HeroButton/HeroButton';
 import HeroMessage from '@/components/HeroMessage/HeroMessage';
 import PageNav from '@/components/PageNav/PageNav';
+import TimelineItem from '@/components/TimelineItem/TimelineItem';
 import config from '@/data/students_applications.json';
 import adaptabilityImage from '@/public/images/apply/students/adaptability.png';
 import attitudeImage from '@/public/images/apply/students/attitude.png';
@@ -50,17 +52,17 @@ export default function StudentApplyPage() {
         }
         action={action}
         heroImage={studentsImage}
-        className={'static-page-hero about-page-hero'}
+        className="bg-cover bg-center bg-no-repeat relative"
       >
         <PageNav sections={sections} />
       </Hero>
 
-      <section className="application-process-section" id="developer">
-        <div className="container marginBot-lg">
-          <h2 className="static-page-header marginBot-sm">
+      <section className="bg-off-white py-[80px] px-0" id="developer">
+        <div className="container mx-auto px-[12px] mb-[32px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             Developer Application Process
           </h2>
-          <p className="static-page-desc marginBot-lg">
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] text-center mb-[32px]">
             Learn what it means to be a developer{' '}
             <strong>
               👉{' '}
@@ -73,15 +75,13 @@ export default function StudentApplyPage() {
               👈
             </strong>
           </p>
-          <div className="student-timeline">
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">01</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Infosession Series</div>
-                <div className="timeline-row-description">
-                  We will host a general in-person infosession on
+          <div className="my-0 mx-auto max-w-[800px]">
+            <TimelineItem
+              num={'01'}
+              title={'Infosession Series'}
+              description={
+                <>
+                  We will host a general in-person infosession on{' '}
                   {config.infosession_dates}, and there will be multiple virtual
                   infosessions on {config.virtual_infosessions_date}. These
                   sessions will give you a chance to ask questions and talk to
@@ -90,55 +90,49 @@ export default function StudentApplyPage() {
                     infosession schedule
                   </Link>{' '}
                   for time and location updates.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">02</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Applications Due</div>
-                <div className="timeline-row-date">
-                  {config.application_deadline}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num={'02'}
+              title="Applications Due"
+              date={config.application_deadline}
+              description={
+                <>
                   The application includes 3 short response questions to help us
                   understand your connection to Blueprint&apos;s mission and
                   values.
                   <strong>
                     The application is due on {config.application_deadline}.
                   </strong>{' '}
-                  Decisions will be released via email on
-                  {' '}{config.written_round_decision_date}. Note that all
+                  Decisions will be released via email on{' '}
+                  {config.written_round_decision_date}. Note that all
                   applications are reviewed after the deadline, so there&apos;s
                   no advantage to submitting early.
-                </div>
-                <div className="timeline-row-btn">
+                </>
+              }
+              additionalInfo={
+                <div className="mt-[25px] mx-0 mb-[35px]">
                   {config.student_applications_enabled ? (
-                    <Link
-                      className="bp-btn"
+                    <BPButton
+                      buttonText="Start Application"
                       href={config.student_application_link}
-                    >
-                      Start Application
-                    </Link>
+                    />
                   ) : (
-                    <div className="timeline-row-notice">
+                    <div className="text-bp-blue text-[14px] font-medium">
                       Student applications will be open on{' '}
                       {config.application_release_date}.
                     </div>
                   )}
                 </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">03</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Blueprint Games</div>
-                <div className="timeline-row-date">{config.bp_games_date}</div>
-                <div className="timeline-row-description">
+              }
+            />
+            <TimelineItem
+              num={'03'}
+              title="Blueprint Games"
+              date={config.bp_games_date}
+              description={
+                <>
                   A fun, interactive teamwork session involving a series of
                   challenges and puzzles that make you think critically. It will
                   simulate working on a Blueprint project team and the
@@ -146,45 +140,42 @@ export default function StudentApplyPage() {
                   invitation only. Time and location will be emailed to invited
                   candidates. Decisions after this round will be emailed on{' '}
                   {config.bp_games_decision_date}.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">04</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Meet the Club</div>
-                <div className="timeline-row-date">{config.mtc_dates}</div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num={'04'}
+              title="Meet the Club"
+              date={config.mtc_dates}
+              description={
+                <>
                   Meet the Club is an event for you to get to know and chat with{' '}
                   <Link href="/about#team">our members</Link> in a casual
                   setting! This event is by invitation only.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">05</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Build with Blueprint</div>
-                <div className="timeline-row-date">{config.bwbp_dates}</div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num={'05'}
+              title="Build with Blueprint"
+              date={config.bwbp_dates}
+              description={
+                <>
                   A 1-hour technical challenge to give you a chance to showcase
                   your technical resourcefulness, growth, and adaptability. This
                   round is by invitation only.
-                </div>
-              </div>
-            </div>
+                </>
+              }
+              last
+            />
           </div>
         </div>
 
-        <div className="container marginTop-xxl" id="external">
-          <h2 className="static-page-header marginBot-sm">
+        <div className="container mx-auto px-[12px] mt-[54px]" id="external">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             External Application Process
           </h2>
-          <p className="static-page-desc marginBot-lg">
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] text-center mb-[32px]">
             Learn what it means to be on external{' '}
             <strong>
               👉{' '}
@@ -198,14 +189,12 @@ export default function StudentApplyPage() {
               👈
             </strong>
           </p>
-          <div className="student-timeline">
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">01</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Infosession Series</div>
-                <div className="timeline-row-description">
+          <div className="my-0 mx-auto max-w-[800px]">
+            <TimelineItem
+              num={'01'}
+              title={'Infosession Series'}
+              description={
+                <>
                   We will host a general in-person infosession on{' '}
                   {config.infosession_dates}, and there will be multiple virtual
                   infosessions on {config.virtual_infosessions_date}. These
@@ -215,19 +204,15 @@ export default function StudentApplyPage() {
                     infosession schedule
                   </Link>{' '}
                   for time and location updates.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">02</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Applications Due</div>
-                <div className="timeline-row-date">
-                  {config.application_deadline}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num={'02'}
+              title="Applications Due"
+              date={config.application_deadline}
+              description={
+                <>
                   The application includes 3 short response questions to help us
                   understand your connection to Blueprint&apos;s mission and
                   values.{' '}
@@ -238,62 +223,57 @@ export default function StudentApplyPage() {
                   {config.written_round_decision_date}. Note that all
                   applications are reviewed after the deadline, so there&apos;s
                   no advantage to submitting early.
-                </div>
-                <div className="timeline-row-btn">
+                </>
+              }
+              additionalInfo={
+                <div className="mt-[25px] mx-0 mb-[35px]">
                   {config.student_applications_enabled ? (
-                    <Link
-                      className="bp-btn"
+                    <BPButton
+                      buttonText="Start Application"
                       href={config.student_application_link}
-                    >
-                      Start Application
-                    </Link>
+                    />
                   ) : (
-                    <div className="timeline-row-notice">
+                    <div className="text-bp-blue text-[14px] font-medium">
                       Student applications will be open on{' '}
                       {config.application_release_date}.
                     </div>
                   )}
                 </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">03</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">External Interviews</div>
-                <div className="timeline-row-date">
-                  {config.external_interview_dates}
-                </div>
-                <div className="timeline-row-description">
+              }
+            />
+            <TimelineItem
+              num={'03'}
+              title="External Interviews"
+              date={config.external_interview_dates}
+              description={
+                <>
                   We will be conducting interviews for the external team
                   throughout the entire week. This event is by invitation only.
                   Invited candidates will receive an interview sign-up link via
                   email.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">04</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Meet the Club</div>
-                <div className="timeline-row-date">{config.mtc_dates}</div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num={'04'}
+              title="Meet the Club"
+              date={config.mtc_dates}
+              description={
+                <>
                   Meet the Club is an event for you to get to know and chat with{' '}
                   <Link href="/about#team">our members</Link> in a casual
                   setting! This event is by invitation only.
-                </div>
-              </div>
-            </div>
+                </>
+              }
+              last
+            />
           </div>
         </div>
-        <div className="container marginTop-xxl" id="designer">
-          <h2 className="static-page-header marginBot-sm">
+        <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             Designer Application Process
           </h2>
-          <p className="static-page-desc marginBot-lg">
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] text-center mb-[32px]">
             Learn what it means to be a designer{' '}
             <strong>
               👉{' '}
@@ -307,14 +287,12 @@ export default function StudentApplyPage() {
               👈
             </strong>
           </p>
-          <div className="student-timeline">
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">01</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Infosession Series</div>
-                <div className="timeline-row-description">
+          <div className="my-0 mx-auto max-w-[800px]">
+            <TimelineItem
+              num="01"
+              title="Infosession Series"
+              description={
+                <>
                   We will host a general in-person infosession on{' '}
                   {config.infosession_dates}, and there will be multiple virtual
                   infosessions on {config.virtual_infosessions_date}. These
@@ -324,19 +302,15 @@ export default function StudentApplyPage() {
                     infosession schedule
                   </Link>{' '}
                   for time and location updates.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">02</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Applications Due</div>
-                <div className="timeline-row-date">
-                  {config.application_deadline}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="02"
+              title="Applications Due"
+              date={config.application_deadline}
+              description={
+                <>
                   The application includes 3 short response questions to help us
                   understand your connection to Blueprint&apos;s mission and
                   values.{' '}
@@ -347,34 +321,30 @@ export default function StudentApplyPage() {
                   {config.written_round_decision_date} by midnight. Note that
                   all applications are reviewed after the deadline, so
                   there&apos;s no advantage to submitting early.
-                </div>
-                <div className="timeline-row-btn">
+                </>
+              }
+              additionalInfo={
+                <div className="mt-[25px] mx-0 mb-[35px]">
                   {config.student_applications_enabled ? (
-                    <Link
-                      className="bp-btn"
+                    <BPButton
+                      buttonText="Start Application"
                       href={config.student_application_link}
-                    >
-                      Start Application
-                    </Link>
+                    />
                   ) : (
-                    <div className="timeline-row-notice">
+                    <div className="text-bp-blue text-[14px] font-medium">
                       Student applications will be open on{' '}
                       {config.application_release_date}.
                     </div>
                   )}
                 </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">03</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Designer Interviews</div>
-                <div className="timeline-row-date">
-                  {config.designer_interview_dates}
-                </div>
-                <div className="timeline-row-description">
+              }
+            />
+            <TimelineItem
+              num="03"
+              title="Designer Interviews"
+              date={config.designer_interview_dates}
+              description={
+                <>
                   We will ask you to brainstorm with us and sketch out
                   low-fidelity solutions in a design challenge. After the
                   interview, you will have a chance to refine your solutions and
@@ -382,51 +352,45 @@ export default function StudentApplyPage() {
                   {config.design_challenge_due_date}. This round is by
                   invitation only. Invited candidates will receive an interview
                   sign-up link via email.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">04</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Meet the Club</div>
-                <div className="timeline-row-date">{config.mtc_dates}</div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="04"
+              title="Meet the Club"
+              date={config.mtc_dates}
+              description={
+                <>
                   Meet the Club is an event for you to get to know and chat with{' '}
                   <Link href="/about#team">our members</Link> in a casual
                   setting! This event is by invitation only.
-                </div>
-              </div>
-            </div>
-            <div className="timeline-row">
-              <div className="num-col">
-                <div className="timeline-num">05</div>
-              </div>
-              <div className="text-col">
-                <div className="timeline-row-title">Design Challenge Due</div>
-                <div className="timeline-row-date">
-                  {config.design_challenge_due_date}
-                </div>
-                <div className="timeline-row-description">
+                </>
+              }
+            />
+            <TimelineItem
+              num="05"
+              title="Design Challenge Due"
+              date={config.design_challenge_due_date}
+              description={
+                <>
                   Building on top of your work from the interview, this
                   submission will give you a chance to showcase your ability to
                   iterate and your visual design skills. The prompt will be
                   covered during the interview.
-                </div>
-              </div>
-            </div>
+                </>
+              }
+              last
+            />
           </div>
         </div>
       </section>
 
-      <section
-        className="application-decision-criteria-section"
-        id="decision-criteria"
-      >
-        <div className="container">
-          <h2 className="static-page-header marginBot-lg">Decision Criteria</h2>
-          <p className="static-page-desc marginBot-xxl">
+      <section className="py-[50px] px-0" id="decision-criteria">
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[32px]">
+            Decision Criteria
+          </h2>
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] mb-[54px]">
             Each semester, we are unfortunately only able to move forward a
             select number of applicants. This is both so that every member of
             our project teams may develop close relationships with our nonprofit
@@ -435,63 +399,99 @@ export default function StudentApplyPage() {
             member. Throughout the recruitment process, we look for the
             following criteria:
           </p>
-          <ul className="decision-criteria-list-container marginBot-lg">
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Passion" src={passionImage} />
+          <ul className="flex flex-row flex-wrap justify-around mb-0 sm:mb-[32px]">
+            <li className="mb-[40px] w-[45%] sm:w-[28%] ">
+              <div className="mb-[10px] max-w-[100px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Passion"
+                  src={passionImage}
+                />
               </div>
-              <h3>Passion</h3>
-              <p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Passion
+              </h3>
+              <p className="text-dark-gray/70">
                 Are you excited to dedicate time, energy, and compassion towards
                 understanding and building with communities?
               </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Growth" src={growthImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%] ">
+              <div className="mb-[10px] max-w-[100px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Growth"
+                  src={growthImage}
+                />
               </div>
-              <h3>Growth</h3>
-              <p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Growth
+              </h3>
+              <p className="text-dark-gray/70">
                 Do you actively seek out ways to grow? Do you take action to
                 work towards that growth?
               </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Adaptability" src={adaptabilityImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%] ">
+              <div className="mb-[10px] max-w-[100px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Adaptability"
+                  src={adaptabilityImage}
+                />
               </div>
-              <h3>Resourcefulness</h3>
-              <p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Resourcefulness
+              </h3>
+              <p className="text-dark-gray/70">
                 Are you self-motivated and driven? Do you adapt to new
                 environments and challenges?
               </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Attitude" src={attitudeImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%] ">
+              <div className="mb-[10px] max-w-[100px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Attitude"
+                  src={attitudeImage}
+                />
               </div>
-              <h3>Attitude</h3>
-              <p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Attitude
+              </h3>
+              <p className="text-dark-gray/70">
                 Do you approach problems and challenges with an open mind? Are
                 you able to work through unfamiliar situations?
               </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Teamwork" src={teamworkImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%] ">
+              <div className="mb-[10px] max-w-[100px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Teamwork"
+                  src={teamworkImage}
+                />
               </div>
-              <h3>Teamwork</h3>
-              <p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Teamwork
+              </h3>
+              <p className="text-dark-gray/70">
                 Do you enjoy collaborating and learning with others? Do you
                 value others&apos; perspectives and experiences?
               </p>
             </li>
-            <li className="decision-criteria-item">
-              <div className="img-container">
-                <Image alt="Culture" src={cultureImage} />
+            <li className="mb-[40px] w-[45%] sm:w-[28%] ">
+              <div className="mb-[10px] max-w-[100px] overflow-hidden">
+                <Image
+                  className="w-full h-full my-0 mx-auto object-cover align-middle"
+                  alt="Culture"
+                  src={cultureImage}
+                />
               </div>
-              <h3>Culture</h3>
-              <p>
+              <h3 className="font-bptext text-[19px] font-semibold mb-[12px]">
+                Culture
+              </h3>
+              <p className="text-dark-gray/70">
                 Are you looking forward to developing meaningful relationships
                 with our members and partners beyond the work environment?
               </p>
@@ -500,13 +500,15 @@ export default function StudentApplyPage() {
         </div>
       </section>
 
-      <section className="application-faqs-section bg-off-white" id="faqs">
-        <div className="container">
-          <h2 className="static-page-header marginBot-xl">
+      <section className="py-[50px] px-0 bg-off-white" id="faqs">
+        <div className="container mx-auto px-[12px]">
+          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[40px]">
             Frequently Asked Questions
           </h2>
-          <h3>What is Blueprint&apos;s structure?</h3>
-          <p>
+          <h3 className="font-bptext text-[22px] font-medium mb-[5px]">
+            What is Blueprint&apos;s structure?
+          </h3>
+          <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             Blueprint&apos;s project structure consists of 5 project teams, each
             with a Project Leader, a designer, and 4-5 developers. Each project
             team is dedicated to one of our nonprofit and community partners and
@@ -521,8 +523,10 @@ export default function StudentApplyPage() {
             along with other project teams, are supported by an executive team
             of 7 students.
           </p>
-          <h3>What are nonprofit and community partner relationships like?</h3>
-          <p>
+          <h3 className="font-bptext text-[22px] font-medium mb-[5px]">
+            What are nonprofit and community partner relationships like?
+          </h3>
+          <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             Our partners each have dedicated internal point(s) of contact who
             meet with our project teams on a regular (weekly or bi-weekly)
             basis. Because interactions vary based on partner capacity,
@@ -539,8 +543,10 @@ export default function StudentApplyPage() {
             was accomplished during the semester (and, in the case of fall, what
             will be accomplished in the spring).
           </p>
-          <h3>What resources does Blueprint have to ensure success?</h3>
-          <p>
+          <h3 className="font-bptext text-[22px] font-medium mb-[5px]">
+            What resources does Blueprint have to ensure success?
+          </h3>
+          <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             Every member of Blueprint has several layers of formal support,
             including their project team members, their Project Leader, and the
             executive team. To keep a pulse check on how members are feeling,

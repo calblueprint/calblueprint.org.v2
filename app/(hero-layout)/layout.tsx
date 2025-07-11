@@ -6,7 +6,8 @@ export default function HeroLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="content pages pages-about">
+    // pages-about applies custom container widths to all Hero pages (see styles/partials/containers.scss)
+    <div className="relative pages-about">
       <Navbar variant="nav-white" />
       {children}
     </div>

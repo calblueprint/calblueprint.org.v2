@@ -31,7 +31,6 @@ const inter = Inter({
   weight: '400',
 });
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
 const bpText = localFont({
   variable: '--font-bptext',
   src: [
@@ -85,7 +84,7 @@ export default function RootLayout({
       className="scroll-smooth"
       style={{ scrollBehavior: 'smooth' }}
     >
-      <body className="scroll-smooth">
+      <body className={`scroll-smooth ${bpText.variable}`}>
         {config.banner_enabled && <Banner />}
         {children}
         <Footer />
