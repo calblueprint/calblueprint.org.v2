@@ -1,6 +1,6 @@
 {
-  "banner_text": "Watch our latest [info session for nonprofits](https://drive.google.com/file/d/1oyeir6kRnm3pjBC8ZR3nqKm3PSc13H7K/view?usp=sharing) or review our [slide-deck](https://docs.google.com/presentation/d/1IlHbPmRVhiH6AaUrmopTmhnPTs0a2Hc7d6aT4ZGSIio/present?slide=id.p)!",
-  "banner_enabled": true,
+  "banner_text": "📣 Our application for Spring 2025 is now closed! 📣",
+  "banner_enabled": false,
 
   "semester": "Spring 2025",
   "student_applications_enabled": false,
