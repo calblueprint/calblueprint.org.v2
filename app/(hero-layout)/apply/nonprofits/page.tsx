@@ -93,8 +93,7 @@ export default function NonprofitApplyPage() {
             >
               recording
             </Link>{' '}
-            of our most recent info-session with Blake Nathan&apos;s Nonprofit
-            Academy!
+            of our most recent info-session!
           </p>
         }
       >
@@ -204,7 +203,8 @@ export default function NonprofitApplyPage() {
               description={
                 <>
                   <p style={{ fontStyle: 'italic' }}>
-                    Note: While the priority deadline is July 11, we have extended the deadline to July 18.
+                    Note: While the priority deadline is July 11, we have
+                    extended the deadline to July 18.
                   </p>
                   Your response helps us understand what you need from
                   Blueprint. You&apos;ll have the opportunity to explain why our
