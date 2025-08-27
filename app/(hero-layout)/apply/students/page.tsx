@@ -38,7 +38,7 @@ export default function StudentApplyPage() {
   const sections = [
     { text: 'Developer', href: '#developer' },
     { text: 'External', href: '#external' },
-    { text: 'Designer', href: '#designer' },
+    // { text: 'Designer', href: '#designer' }, not recruiting for designers in fall 2025
     { text: 'Decision Criteria', href: '#decision-criteria' },
     { text: 'FAQs', href: '#faqs' },
   ];
@@ -269,7 +269,9 @@ export default function StudentApplyPage() {
             />
           </div>
         </div>
-        <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
+        {/* Not recruiting for designers in Fall 2025 */}
+
+        {/* <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             Designer Application Process
           </h2>
@@ -382,7 +384,7 @@ export default function StudentApplyPage() {
               last
             />
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="py-[50px] px-0" id="decision-criteria">
