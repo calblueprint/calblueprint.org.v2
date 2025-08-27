@@ -34,7 +34,7 @@ export default function NonprofitApplyPage() {
   const appsEnabled = config.nonprofit_applications_enabled;
 
   const appsDisabledText =
-    'Applications for Blueprint are closed for this semester. We will recruit more nonprofit partners next summer. If you have any questions, contact us at team@calblueprint.org.';
+    "Applications for Blueprint are closed for this semester. We will recruit more nonprofit partners next summer. If you'd like to express interest in partnering with us in the next cycle, please fill out [this form](https://airtable.com/appaOC3DMDa2pL80J/pagL2RGamvkUmhROk/form).";
 
   const action = appsEnabled ? (
     <HeroButton
