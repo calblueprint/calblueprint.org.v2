@@ -1,24 +1,24 @@
 {
-  "banner_text": "📣 Our application for Spring 2025 is now closed! 📣",
-  "banner_enabled": false,
+  "banner_text": "📣 Our application for Fall 2025 is now open! 📣",
+  "banner_enabled": true,
 
-  "semester": "Spring 2025",
-  "student_applications_enabled": false,
-  "student_application_link": "https://airtable.com/apphgIg5yDsaeF5R8/shrNg7ItqtZTJKwSd",
+  "semester": "Fall 2025",
+  "student_applications_enabled": true,
+  "student_application_link": "https://airtable.com/appYX5Yw4HbhOCYQV/shr0Hylr9mYLhgTfD",
 
-  "application_release_date": "Tuesday, January 21st",
-  "application_deadline": "Thursday, January 30th at 11:59 PM PDT",
+  "application_release_date": "Wednesday, August 27th",
+  "application_deadline": "Thursday, September 4th at 12:00 PM PDT",
 
-  "infosession_dates": "Tuesday, January 28th and Wednesday, January 29th",
-  "virtual_infosessions_date": "Saturday, January 25th",
+  "infosession_dates": "Tuesday, September 2nd",
+  "virtual_infosessions_date": "Wednesday, September 3rd",
 
-  "bp_games_date": "Sunday, February 2nd",
-  "mtc_dates": "February 5th - 6th",
-  "bwbp_dates": "February 4th - 7th",
-  "external_interview_dates": "February 4th - 7th",
+  "bp_games_date": "September 6th - 7th",
+  "mtc_dates": "September 9th - 10th",
+  "bwbp_dates": "September 9th - 11th",
+  "external_interview_dates": "September 8th - 11th",
   "designer_interview_dates": "February 5th - 6th",
   "design_challenge_due_date": "February 7th, 2:00AM PST",
 
-  "written_round_decision_date": "Saturday, February 1st by midnight",
-  "bp_games_decision_date": "Tuesday, February 4th by midnight"
+  "written_round_decision_date": "Friday, September 5th by midnight",
+  "bp_games_decision_date": "Sunday, September 7th by midnight"
 }

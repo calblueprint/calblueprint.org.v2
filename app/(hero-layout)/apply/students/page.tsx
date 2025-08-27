@@ -38,7 +38,7 @@ export default function StudentApplyPage() {
   const sections = [
     { text: 'Developer', href: '#developer' },
     { text: 'External', href: '#external' },
-    { text: 'Designer', href: '#designer' },
+    // { text: 'Designer', href: '#designer' }, not recruiting for designers in fall 2025
     { text: 'Decision Criteria', href: '#decision-criteria' },
     { text: 'FAQs', href: '#faqs' },
   ];
@@ -269,7 +269,9 @@ export default function StudentApplyPage() {
             />
           </div>
         </div>
-        <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
+        {/* Not recruiting for designers in Fall 2025 */}
+
+        {/* <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             Designer Application Process
           </h2>
@@ -382,7 +384,7 @@ export default function StudentApplyPage() {
               last
             />
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="py-[50px] px-0" id="decision-criteria">
@@ -510,11 +512,11 @@ export default function StudentApplyPage() {
           </h3>
           <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             Blueprint&apos;s project structure consists of 5 project teams, each
-            with a Project Leader, a designer, and 4-5 developers. Each project
-            team is dedicated to one of our nonprofit and community partners and
-            works closely with our points of contact to create equitable
-            solutions through design and development. <br />
-            <br /> Blueprint’s External team consists of 6 directors and the
+            with a Project Leader, a designer, 4-5 developers, and an external
+            director. Each project team is dedicated to one of our nonprofit and
+            community partners and works closely with our points of contact to
+            create equitable solutions through design and development. <br />
+            <br /> Blueprint’s External team consists of 5 directors and the
             External Vice President as the team lead. External works to inspire
             students outside of Cal Blueprint about creating change in
             communities and promoting public welfare through tech and design.
