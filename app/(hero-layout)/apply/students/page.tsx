@@ -512,11 +512,11 @@ export default function StudentApplyPage() {
           </h3>
           <p className="text-dark-gray/70 text-[18px] mb-[40px]">
             Blueprint&apos;s project structure consists of 5 project teams, each
-            with a Project Leader, a designer, and 4-5 developers. Each project
-            team is dedicated to one of our nonprofit and community partners and
-            works closely with our points of contact to create equitable
-            solutions through design and development. <br />
-            <br /> Blueprint’s External team consists of 6 directors and the
+            with a Project Leader, a designer, 4-5 developers, and an external
+            director. Each project team is dedicated to one of our nonprofit and
+            community partners and works closely with our points of contact to
+            create equitable solutions through design and development. <br />
+            <br /> Blueprint’s External team consists of 5 directors and the
             External Vice President as the team lead. External works to inspire
             students outside of Cal Blueprint about creating change in
             communities and promoting public welfare through tech and design.
