@@ -1,8 +1,48 @@
- {
+{
   "projects": {
     "projects_list": {
-      "ocf": {
+      "amigos": {
         "status": "current",
+        "title": "Amigos de Los Rios",
+        "blurb": "Amigos de los Rios is working to create the Emerald Necklace: a natural infrastructure network throughout under-served communities in the Los Angeles Basin",
+        "short_summary": "Amigos de los Rios is working to create the Emerald Necklace: a natural infrastructure network of green spaces, green schools, parks, and trails throughout under-served communities in the Los Angeles Basin. In the wake of the Eaton Fire, Amigos is focused on restoring trees and natural spaces in the Altadena area. A key part of their mutual-aid recovery effort is sending volunteers to water newly planted trees on private properties.",
+        "org_link": "https://amigosdelosrios.org/",
+        "color": "A4D65E",
+        "banner_image": "images/projects/amigos.png",
+        "full_description": "Our Project\n-----------\nA mobile application to optimize and support volunteer tree-watering operations. The app will automatically generate efficient routes for each volunteer group using mapping and routing algorithms, removing the need for staff to manually assign tasks. Volunteers will be able to access their personalized routes on their phones, navigate to each property, and submit real-time updates on watering activity, tree conditions, and issues encountered. This system will make the watering program more efficient, scalable, and impactful for Amigos’  reforestation efforts."
+      },
+      "adopt": {
+        "status": "current",
+        "title": "Adopt an Inmate",
+        "blurb": "Adopt an Inmate connects people in prison (adoptees) with free people (adopters) to provide support and guidance within the justice system via letters",
+        "short_summary": "Adopt an Inmate connects people in prison (adoptees) with free people (adopters) to provide support and guidance within the justice system via letters. They aim to increase incarcerated individuals’ likelihood of a successful reentry into society by amplifying their voices and expanding their support system.",
+        "org_link": "https://adoptaninmate.org/",
+        "color": "B02029",
+        "banner_image": "images/projects/adopt.jpg",
+        "full_description": "Our Project\n-----------\nA web application integrated with a vector database that automates the matching process between adopters and adoptees, replacing a slow, manual matching system. The vector database stores vector embeddings of adoptees and is queried using vector embeddings of adopters to find the best matches. The web app manages the adopter experience through an intuitive presentation of the matching process results. This project will streamline Adopt an Inmate’s impact by scaling and expediting their adopter-matching process, ultimately expanding adoptees’ access to support."
+      },
+      "ecovet": {
+        "status": "current",
+        "title": "Ecovet Global",
+        "blurb": "Ecovet is a group of veterinarians and epidemiologists that partner to support communities/ecosystems, focusing mostly on human and animal health",
+        "short_summary": "Ecovet is a group of veterinarians and epidemiologists that partner to support communities/ecosystems, focusing mostly on human and animal health. Their work includes zoonotic disease risk mitigation, health & environmental scenario-planning, capacity enhancement of veterinary/health services, and more!",
+        "org_link": "https://www.ecovetglobal.org/",
+        "color": "E0865C",
+        "banner_image": "images/projects/ecovet.png",
+        "full_description": "Our Project\n-----------\nOur project, called StartX, is a tabletop exercise for organizations to create plans for public health emergencies. In these multiplayer, multi-scenario game sessions, participants can answer scenario-questions and communicate with others in order to evaluate their current emergency-response protocols or build new ones. With government agencies and nonprofit staff members as our primary users, this project will allow teams to create robust, testable plans of action for emergency scenarios."
+      },
+      "rose": {
+        "status": "current",
+        "title": "Rose Academies - Uganda",
+        "blurb": "Rose Academies - Uganda serves rural Ugandan communities by improving access to education on health, nutrition, menstrual hygiene, and job skills",
+        "short_summary": "Rose Academies - Uganda serves rural Ugandan communities by improving access to education on health, nutrition, menstrual hygiene, and job skills, helping prevent disease, strengthen families, and support children’s growth. Their programs are designed to address the lack of healthcare information that often leads to preventable deaths. Their Ugandan educators take these lessons directly into villages, closing the gap for communities with little or no access to vital knowledge.",
+        "org_link": "https://roseacademies.org/",
+        "color": "F922C7",
+        "banner_image": "images/projects/rose.jpeg",
+        "full_description": "Our Project\n-----------\nA Raspberry Pi–powered offline content server that creates its own Wi-Fi network, allowing teachers and students in rural Uganda to access educational and healthcare resources without internet. Teachers can upload, organize, and tag lesson materials, while students can browse, search, and download content on their devices. Designed for off-grid environments, the system supports solar or battery power and provides a sustainable way to deliver up-to-date, trusted information directly into villages.\n"
+      },
+      "ocf": {
+        "status": "past",
         "title": "Our City Forest",
         "blurb": "Our City Forest is the leading nonprofit in Silicon Valley for urban forestry and environmental education.",
         "short_summary": "Our City Forest is the leading nonprofit in Silicon Valley for urban forestry and environmental education. They provide drought-tolerant trees to local residents, schools, and parks, and have a nursery where they educate their community on how to plant and care for trees.\n",
@@ -12,7 +52,7 @@
         "full_description": "Our Project\n-----------\nA [mobile application](https://apps.apple.com/us/app/our-city-forest/id6738364690) to help Our City Forest manage their tree inventory and visualize planted trees in the community. Each of their trees will have a unique QR code. Staff and volunteers can scan this code to view and modify the tree’s properties (whether it’s sick or healthy, its location, whether it’s been sold or planted, etc). Anyone from the general public can scan a tree or shrub’s QR code to see its information and care guide. The app also contains a history feature, where admins can view the health trends species and sources of trees for better inventory care. Finally, the app includes a bookmarking feature for easier access to key tree and shrub species. \n"
       },
       "jdi": {
-        "status": "current",
+        "status": "past",
         "title": "Just Detention International",
         "blurb": "Just Detention International is a human rights organization that seeks to end sexual abuse in detention.",
         "short_summary": "Just Detention International (JDI) is a human rights organization that seeks to end sexual abuse in detention. Their work is guided by three core goals: to hold government officials accountable for sexual abuse in detention; to promote public attitudes that value the safety and dignity of incarcerated people; and to ensure that survivors of sexual abuse get the help they need. \n",
@@ -22,7 +62,7 @@
         "full_description": "Our Project\n-----------\nAn application for prison tablets, which incarcerated survivors can use to access resources from JDI. These resources include counseling from advocates at JDI, educational materials about the crisis of sexual abuse in detention, and healing / mediation guides. The scope may also be increased to include customized resources for released survivors, to better support their transition back into their communities.  \n"
       },
       "ace": {
-        "status": "current",
+        "status": "past",
         "title": "The Alliance for Clean Energy",
         "blurb": "ACE NY encourages the use of renewable energy and energy efficiency in New York state.",
         "short_summary": "ACE NY seeks to encourage the use of renewable energy and energy efficiency in New York State in order to help decrease pollution and improve public health. The organization works towards its goals through public policy advocacy, education, outreach, research, and coalition-building. They work closely with state legislature to increase the use of renewable energy. \n",
@@ -32,7 +72,7 @@
         "full_description": "Our Project\n-----------\nA [web application](https://ace-ny.vercel.app/) that displays an interactive map of renewable energy projects in New York. Different stakeholders can easily visualize the projects, and view further information and specific project details (i.e. size, capacity, status, impact of pro). An admin flow will enable staff to add or edit the information on the map. In addition, the app will include a web scraper to gather data about renewable energy projects, reducing the time ACE NY spends manually finding such information.\n"
       },
       "breadandroses": {
-        "status": "current",
+        "status": "past",
         "title": "Bread & Roses Presents",
         "blurb": "Bread & Roses Presents uplifts the human spirit with free, live, quality entertainment to communities.",
         "short_summary": "Bread & Roses Presents aims to uplift the human spirit by providing free, live, quality entertainment to communities. They are a cultural cornerstone in the Bay Area, producing 500+ shows annually — particularly for vulnerable populations unable to experience the enriching power of art. In its commitment to inclusivity, Bread & Roses Presents brings the joy and inspiration of live music and performing arts to those who need it most.\n",
@@ -42,7 +82,7 @@
         "full_description": "Our Project\n-----------\nA [web application](https://bread-and-roses.vercel.app/) to streamline the processes of organizing and delivering live performances. Facilities will be able to submit their availability and find entertainment that accommodates their schedule. Volunteers can browse event calendars and sign up to perform or host shows. Administrators can then review these requests and carefully select volunteers. These features will simplify event coordination, ensuring each show is a strong fit for the facility’s needs and the volunteers' talents.\n"
       },
       "trapgarden": {
-        "status": "current",
+        "status": "past",
         "title": "Trap Garden",
         "blurb": "Trap Garden uplifts food-insecure communities by supporting community gardens and promoting healthy eating.",
         "short_summary": "Trap Garden’s mission is to uplift food-insecure communities by creating and supporting community gardens and promoting healthy eating. They believe that community gardens serve not only to increase availability and access to healthy foods, but also as safe spaces for community interaction, empowerment and nutritional education for the public.\n",
