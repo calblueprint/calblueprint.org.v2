@@ -120,8 +120,11 @@ export default function StudentApplyPage() {
                     />
                   ) : (
                     <div className="text-bp-blue text-[14px] font-medium">
-                      Student applications will be open on{' '}
-                      {config.application_release_date}.
+                      {/* Change displayed text depending on whether application cycle hasn't started/has passed */}
+                      {/* Student applications will be open on{' '}
+                      {config.application_release_date}. */}
+                      Student applications closed on{' '}
+                      {config.application_deadline}.
                     </div>
                   )}
                 </div>
@@ -234,8 +237,11 @@ export default function StudentApplyPage() {
                     />
                   ) : (
                     <div className="text-bp-blue text-[14px] font-medium">
-                      Student applications will be open on{' '}
-                      {config.application_release_date}.
+                      {/* Change displayed text depending on whether application cycle hasn't started/has passed */}
+                      {/* Student applications will be open on{' '}
+                      {config.application_release_date}. */}
+                      Student applications closed on{' '}
+                      {config.application_deadline}.
                     </div>
                   )}
                 </div>

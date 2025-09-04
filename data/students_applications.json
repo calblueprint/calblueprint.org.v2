@@ -1,13 +1,13 @@
 {
-  "banner_text": "📣 Our application for Fall 2025 is now open! 📣",
+  "banner_text": "📣 Our application for Fall 2025 is now closed! 📣",
   "banner_enabled": true,
 
   "semester": "Fall 2025",
-  "student_applications_enabled": true,
+  "student_applications_enabled": false,
   "student_application_link": "https://airtable.com/appYX5Yw4HbhOCYQV/shr0Hylr9mYLhgTfD",
 
   "application_release_date": "Wednesday, August 27th",
-  "application_deadline": "Thursday, September 4th at 12:00 PM PDT",
+  "application_deadline": "Thursday, September 4th at 1:00 PM PDT",
 
   "infosession_dates": "Tuesday, September 2nd",
   "virtual_infosessions_date": "Wednesday, September 3rd",
