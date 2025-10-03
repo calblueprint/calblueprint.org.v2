@@ -1,6 +1,6 @@
 {
   "banner_text": "📣 Our application for Fall 2025 is now closed! 📣",
-  "banner_enabled": true,
+  "banner_enabled": false,
 
   "semester": "Fall 2025",
   "student_applications_enabled": false,
