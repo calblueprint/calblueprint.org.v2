@@ -117,7 +117,7 @@ export default function HomePage() {
                   <h4 className="font-bptext text-[20px] sm:text-[23px] font-semibold mb-[10px] relative z-[2]">
                     {projectData.title}
                   </h4>
-                  <p className="text-bp-white text-opacity-90 text-[18px] relative z-[2]">
+                  <p className="text-bp-white text-opacity-90 text-[15px] relative z-[2]">
                     {firstSentence(projectData.blurb ?? '')}
                   </p>
                 </div>
