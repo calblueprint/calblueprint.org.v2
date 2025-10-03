@@ -37,7 +37,7 @@
         "blurb": "Replate is a tech-enabled nonprofit that aims to reduce food waste and food insecurity, while also mitigating climate change across the globe",
         "short_summary": "Replate is a tech-enabled nonprofit that aims to reduce food waste and food insecurity, while also mitigating climate change across the globe. Established in 2016, Replate started in Berkeley, picking up food from Cal's dining halls, and handing out the food to Berkeley's unhoused and food-insecure population. Since then, they’ve scaled their food rescue platform to assist business across the nation with donating surplus food to nonprofits that serve food-insecure communities.",
         "org_link": "https://www.replate.org/",
-        "color": "#BB081",
+        "color": "2BB081",
         "banner_image": "images/projects/replate.png",
         "full_description": "Our Project\n-----------\nA cross-platform mobile application (iOS and Android) that enables partner food rescuers to record donation data instantly at the time of pickup. This will replace the current pen-and-paper system, where rescuers log information manually, pass it to an admin, and wait for the admin to upload it into Replate’s system, a process that often causes delays in invoicing food generators and reporting donation metrics. As Replate continues to work with more partner organizations (that are paid to pickup free food), this mobile app would provide a valuable tool to smoothly and easily collect data on food rescues, ultimately improving the whole food ecosystem."
       },
