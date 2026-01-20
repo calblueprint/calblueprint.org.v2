@@ -38,7 +38,7 @@ export default function StudentApplyPage() {
   const sections = [
     { text: 'Developer', href: '#developer' },
     { text: 'External', href: '#external' },
-    // { text: 'Designer', href: '#designer' }, not recruiting for designers in fall 2025
+    { text: 'Designer', href: '#designer' },
     { text: 'Decision Criteria', href: '#decision-criteria' },
     { text: 'FAQs', href: '#faqs' },
   ];
@@ -83,7 +83,7 @@ export default function StudentApplyPage() {
                 <>
                   We will host a general in-person infosession on{' '}
                   {config.infosession_dates}, and there will be multiple virtual
-                  infosessions on {config.virtual_infosessions_date}. These
+                  office hours on {config.virtual_office_hours_dates}. These
                   sessions will give you a chance to ask questions and talk to
                   our members in a comfortable setting! Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
@@ -200,7 +200,7 @@ export default function StudentApplyPage() {
                 <>
                   We will host a general in-person infosession on{' '}
                   {config.infosession_dates}, and there will be multiple virtual
-                  infosessions on {config.virtual_infosessions_date}. These
+                  office hours on {config.virtual_office_hours_dates}. These
                   sessions will give you a chance to ask questions and talk to
                   our members in a comfortable setting! Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
@@ -275,9 +275,8 @@ export default function StudentApplyPage() {
             />
           </div>
         </div>
-        {/* Not recruiting for designers in Fall 2025 */}
 
-        {/* <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
+        <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             Designer Application Process
           </h2>
@@ -303,7 +302,7 @@ export default function StudentApplyPage() {
                 <>
                   We will host a general in-person infosession on{' '}
                   {config.infosession_dates}, and there will be multiple virtual
-                  infosessions on {config.virtual_infosessions_date}. These
+                  office hours on {config.virtual_office_hours_dates}. These
                   sessions will give you a chance to ask questions and talk to
                   our members in a comfortable setting! Take a look at our{' '}
                   <Link href="https://go.calblueprint.org/infosession">
@@ -384,13 +383,14 @@ export default function StudentApplyPage() {
                   Building on top of your work from the interview, this
                   submission will give you a chance to showcase your ability to
                   iterate and your visual design skills. The prompt will be
-                  covered during the interview.
+                  covered during the interview. We will host design challenge
+                  office hours on {config.design_challenge_office_hours}.
                 </>
               }
               last
             />
           </div>
-        </div> */}
+        </div>
       </section>
 
       <section className="py-[50px] px-0" id="decision-criteria">
