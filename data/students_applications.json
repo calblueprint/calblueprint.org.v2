@@ -1,24 +1,25 @@
 {
-  "banner_text": "📣 Our application for Fall 2025 is now closed! 📣",
-  "banner_enabled": false,
+  "banner_text": "📣 Our application for Spring 2026 is now open! 📣",
+  "banner_enabled": true,
 
-  "semester": "Fall 2025",
-  "student_applications_enabled": false,
-  "student_application_link": "https://airtable.com/appYX5Yw4HbhOCYQV/shr0Hylr9mYLhgTfD",
+  "semester": "Spring 2026",
+  "student_applications_enabled": true,
+  "student_application_link": "https://airtable.com/appeCehUD1XDvocZU/pagHQO2OP2jJUvJGF",
 
-  "application_release_date": "Wednesday, August 27th",
-  "application_deadline": "Thursday, September 4th at 1:00 PM PDT",
+  "application_release_date": "Tuesday, January 20th",
+  "application_deadline": "Thursday, January 29th at 1:00 PM PST",
 
-  "infosession_dates": "Tuesday, September 2nd",
-  "virtual_infosessions_date": "Wednesday, September 3rd",
+  "infosession_dates": "Tuesday, January 27th",
+  "virtual_office_hours_dates": "Wednesday, January 28th",
 
-  "bp_games_date": "September 6th - 7th",
-  "mtc_dates": "September 9th - 10th",
-  "bwbp_dates": "September 9th - 11th",
-  "external_interview_dates": "September 8th - 11th",
-  "designer_interview_dates": "February 5th - 6th",
-  "design_challenge_due_date": "February 7th, 2:00AM PST",
+  "bp_games_date": "January 31st - February 1st",
+  "mtc_dates": "February 3rd - 4th",
+  "bwbp_dates": "February 3rd - 5th",
+  "external_interview_dates": "February 2nd - 5th",
+  "designer_interview_dates": "February 2nd - 5th",
+  "design_challenge_due_date": "Wednesday, February 4th at 11:59 PM PST",
+  "design_challenge_office_hours": "February 4th at 4:00 PM PST",
 
-  "written_round_decision_date": "Friday, September 5th by midnight",
-  "bp_games_decision_date": "Sunday, September 7th by midnight"
+  "written_round_decision_date": "Friday, January 30th by midnight",
+  "bp_games_decision_date": "Sunday, February 1st by midnight"
 }
