@@ -23,7 +23,9 @@ export const metadata: Metadata = {
 export default function StudentApplyPage() {
   const appsEnabled = config.student_applications_enabled;
 
-  const appsDisabledText = `Our student applications for the ${config.semester} semester will open ${config.application_release_date}, and close on ${config.application_deadline}.`;
+  const appsDisabledText = config.student_applications_enabled
+  ? `Our student applications for the ${config.semester} semester will open ${config.application_release_date}, and close on ${config.application_deadline}.`
+  : 'Applications are currently closed. Please check next semester!';
 
   const action = appsEnabled ? (
     <HeroButton
