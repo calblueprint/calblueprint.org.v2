@@ -337,7 +337,7 @@ export default function HomePage() {
               Couldn&apos;t find what you needed? We&apos;re easily reached via
               email or social media.
             </h3>
-            <div className="ml-0 mt-[30px] sm:ml-auto sm:mt-0 w-[300px]">
+            <div className="ml-0 mt-[30px] sm:ml-auto sm:mt-0">
               <BPButton
                 buttonText="Email Us"
                 href={externalLinks.email}
@@ -346,7 +346,6 @@ export default function HomePage() {
               <BPButton
                 buttonText="Facebook Page"
                 href={externalLinks.facebook}
-                variant="white"
                 className="mb-[6px]"
               />
             </div>

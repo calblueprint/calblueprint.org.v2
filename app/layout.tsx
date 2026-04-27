@@ -20,7 +20,7 @@ const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
   display: 'swap',
-  weight: '400',
+  weight: ['400', '500', '600'],
 });
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -28,7 +28,7 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
-  weight: '400',
+  weight: ['300', '400', '500', '600'],
 });
 
 const bpText = localFont({
@@ -84,7 +84,7 @@ export default function RootLayout({
       className="scroll-smooth"
       style={{ scrollBehavior: 'smooth' }}
     >
-      <body className={`scroll-smooth ${bpText.variable}`}>
+      <body className={`scroll-smooth ${poppins.variable} ${inter.variable}`}>
         {config.banner_enabled && <Banner />}
         {children}
         <Footer />

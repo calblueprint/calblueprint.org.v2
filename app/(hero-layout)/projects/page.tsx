@@ -5,6 +5,7 @@ import ProjectCard from '@/components/ProjectCard/ProjectCard';
 import externalLinks from '@/data/external_links.json';
 import projects from '@/data/projects.json';
 import heroImage from '@/public/images/projects/background.png';
+import BPButton from '@/components/Button/Button';
 
 export const metadata: Metadata = {
   title: 'Projects | Blueprint',
@@ -26,7 +27,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <Hero
+      {/* <Hero
         title={'Our Projects'}
         body={
           'All of Blueprint’s work is open source because we believe in building technology that makes us more open and connected.'
@@ -40,14 +41,25 @@ export default function ProjectsPage() {
         }
         heroImage={heroImage}
         className={'bg-center bg-cover bg-no-repeat relative'}
-      />
+      /> */}
+      <div className='flex flex-col gap-[36px] px-14 pt-28 pb-14 bg-gray-50'>
+        <p className='text-bp-500 font-poppins text-7xl font-semibold leading-11 tracking-normal'>
+          Our Projects
+        </p>
+        <p className='text-slate-500 font-inter text-4xl font-normal leading-8 tracking-normal'>
+          All of Blueprint’s work is open source because we believe in building technology that makes us more open and connected.
+        </p>
+        <div className='w-[143px]'>
+          <BPButton 
+            buttonText='GitHub →'
+            href={externalLinks.github}
+          />
+        </div>
+      </div>
 
-      <section className="bg-off-white py-[50px] px-0">
+      <section className="bg-gray-50 py-[50px] px-0">
         <div className="max-w-[1200px] mx-auto px-[30px]">
-          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[54px]">
-            Current Projects
-          </h2>
-          <div className="flex flex-row flex-wrap">
+          <div className="grid grid-cols-3 gap-[56px]">
             {Object.keys(projectList).map(name => {
               const projectData = projectList[
                 name as keyof typeof projectList
@@ -60,6 +72,7 @@ export default function ProjectsPage() {
                   name={name}
                   banner_image={projectData.banner_image}
                   title={projectData.title}
+                  tags={["Mobile", "Hardware", "Machine Learning"]}
                   short_summary={projectData.short_summary}
                   color={projectData.color}
                 />
@@ -69,12 +82,12 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="py-[50px] px-0">
+      <section className="bg-gray-50 py-[50px] px-0">
         <div className="max-w-[1200px] mx-auto px-[30px]">
-          <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold mb-[54px]">
-            Past Projects
+          <h2 className="font-poppins text-4xl text-bp-700 font-medium leading-7 tracking-normal mb-[48px]">
+            PAST PROJECTS
           </h2>
-          <div className="flex flex-row flex-wrap">
+          <div className="grid grid-cols-3 gap-[56px]">
             {Object.keys(projectList).map(name => {
               const projectData = projectList[
                 name as keyof typeof projectList
