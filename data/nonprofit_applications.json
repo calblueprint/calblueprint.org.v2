@@ -1,14 +1,14 @@
 {
-  "nonprofit_applications_enabled": false,
+  "nonprofit_applications_enabled": true,
   "nonprofit_application_link": "https://airtable.com/appaOC3DMDa2pL80J/pagb5CjfPOYwPE7GM/form",
-  "infosession_slides_link": "https://docs.google.com/presentation/d/1IlHbPmRVhiH6AaUrmopTmhnPTs0a2Hc7d6aT4ZGSIio/present?slide=id.p",
+  "infosession_slides_link": "https://docs.google.com/presentation/d/1dCjwTSsc3RyM3VEbuzIKs14099zjKBMYNqw9-ESRWp0/present?slide=id.p#slide=id.p",
   "infosession_recording_link": "https://drive.google.com/file/d/1oyeir6kRnm3pjBC8ZR3nqKm3PSc13H7K/view?usp=sharing",
 
   "interest_form_release_dates": "June 1 - July 12",
-  "phone_call_dates": "June 9 - July 18",
-  "phone_call_availabilities_link": "https://docs.google.com/spreadsheets/d/1dXkRmEAJP42isMBaFtBcybTzLhKDTRC5icpVKeEcp_Q/edit?usp=sharing",
-  "written_application_due": "July 18",
-  "final_interview_dates": "July 21 - August 1",
+  "phone_call_dates": "June 8 - July 11",
+  "phone_call_availabilities_link": "https://docs.google.com/spreadsheets/d/1apNaxFnP3nNpamvgxAbWKRIoFeQHJuw6SnZp2xXqShs/edit?gid=0#gid=0",
+  "written_application_due": "July 11",
+  "final_interview_dates": "July 13 - August 1",
   "decision_released_date": "Early August",
   "project_scoping_dates": "Early August - End of August"
 }
