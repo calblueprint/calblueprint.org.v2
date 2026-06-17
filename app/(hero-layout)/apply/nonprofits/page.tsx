@@ -14,6 +14,7 @@ import carouselImage2 from '@/public/images/apply/nonprofits/carousel_2.jpg';
 import carouselImage3 from '@/public/images/apply/nonprofits/carousel_3.jpg';
 import carouselImage4 from '@/public/images/apply/nonprofits/carousel_4.jpg';
 import credibilityImage from '@/public/images/apply/nonprofits/credibility.png';
+import customSolImage from '@/public/images/apply/nonprofits/custom_solutions.png';
 import impactImage from '@/public/images/apply/nonprofits/impact.png';
 import mobileImage from '@/public/images/apply/nonprofits/mobile.png';
 import necessityImage from '@/public/images/apply/nonprofits/necessity.png';
@@ -96,8 +97,8 @@ export default function NonprofitApplyPage() {
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[54px]">
             Our Services
           </h2>
-          <div className="block sm:flex sm:flex-row sm:flex-wrap">
-            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full sm:w-1/2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-8">
+            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full ">
               <div className="mt-0 mx-auto mb-[20px] text-center w-1/2">
                 <Image alt="Web" src={webImage} />
               </div>
@@ -110,7 +111,7 @@ export default function NonprofitApplyPage() {
                 publicly available or ones that help facilitate task management.
               </p>
             </div>
-            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full sm:w-1/2">
+            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full">
               <div className="mt-0 mx-auto mb-[20px] text-center w-1/2">
                 <Image alt="Mobile" src={mobileImage} />
               </div>
@@ -121,6 +122,19 @@ export default function NonprofitApplyPage() {
                 Mobile applications let your users download an app and access it
                 on their phone. This might be better for applications that need
                 to be portable or accessed with no internet connection.
+              </p>
+            </div>
+            <div className="py-0 px-[30px] text-center my-[20px] mx-auto sm:m-0 max-w-[450px] sm:max-w-none w-full">
+              <div className="mt-0 mx-auto mb-[20px] text-center w-1/2">
+                <Image alt="Custom Solutions" src={customSolImage} />
+              </div>
+              <h3 className="font-bptext text-[23px] font-semibold mb-[16px]">
+                Custom Solutions
+              </h3>
+              <p className="text-dark-gray/70 text-[18px]">
+                Sometimes the most impactful technology isn’t an app at all. We
+                build custom solutions that streamline operations, reduce manual
+                work, and surface insights from your existing data.
               </p>
             </div>
           </div>
