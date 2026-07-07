@@ -207,6 +207,10 @@ export default function NonprofitApplyPage() {
               date={config.written_application_due}
               description={
                 <>
+                  <p style={{ fontStyle: 'italic' }}>
+                    Note: While the priority deadline is July 11, we have
+                    extended the deadline to July 18.
+                  </p>
                   Your response helps us understand what you need from
                   Blueprint. You&apos;ll have the opportunity to explain why our
                   services could be helpful to your organization, identify any
