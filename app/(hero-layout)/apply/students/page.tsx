@@ -39,7 +39,7 @@ export default function StudentApplyPage() {
 
   const sections = [
     { text: 'Developer', href: '#developer' },
-    { text: 'External', href: '#external' },
+    // { text: 'External', href: '#external' }, not recruiting for external in fall 26
     { text: 'Designer', href: '#designer' },
     { text: 'Decision Criteria', href: '#decision-criteria' },
     { text: 'FAQs', href: '#faqs' },
@@ -176,7 +176,9 @@ export default function StudentApplyPage() {
           </div>
         </div>
 
-        <div className="container mx-auto px-[12px] mt-[54px]" id="external">
+        {/* Not recruiting for external in Fall 2026 */}
+
+        {/* <div className="container mx-auto px-[12px] mt-[54px]" id="external"> 
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             External Application Process
           </h2>
@@ -239,9 +241,9 @@ export default function StudentApplyPage() {
                     />
                   ) : (
                     <div className="text-bp-blue text-[14px] font-medium">
-                      {/* Change displayed text depending on whether application cycle hasn't started/has passed */}
-                      {/* Student applications will be open on{' '}
-                      {config.application_release_date}. */}
+                      Change displayed text depending on whether application cycle hasn't started/has passed
+                      Student applications will be open on{' '}
+                      {config.application_release_date}.
                       Student applications closed on{' '}
                       {config.application_deadline}.
                     </div>
@@ -276,7 +278,7 @@ export default function StudentApplyPage() {
               last
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="container mx-auto px-[12px] mt-[54px]" id="designer">
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
@@ -567,7 +569,7 @@ export default function StudentApplyPage() {
             periodic one-on-ones with members. We also guide all new developers
             and designers through our technical onboarding processes and make
             sure there is always space to ask for help, no matter how large or
-            small the task. Project Leaders and our External Vice Presidet also
+            small the task. Project Leaders and our External Vice President also
             ensure project success through organized timelines that make tasks
             and expectations as clear as possible throughout the semester.{' '}
             <br />
