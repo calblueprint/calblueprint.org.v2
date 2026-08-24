@@ -176,10 +176,15 @@ export default function StudentApplyPage() {
           </div>
         </div>
 
+        {/* Not recruiting for external in Fall 2026 */}
         <div className="container mx-auto px-[12px] mt-[54px]" id="external">
           <h2 className="font-bptext text-[28px] sm:text-[36px] font-semibold text-center mb-[16px]">
             External Application Process
           </h2>
+          <p className="text-dark-gray/60 text-[18px] sm:text-[21px] text-center mb-[15px] italic">
+            Due to limited capacity, we will not be recruiting for our external
+            team this semester.
+          </p>
           <p className="text-dark-gray/60 text-[18px] sm:text-[21px] text-center mb-[32px]">
             Learn what it means to be on external{' '}
             <strong>
@@ -239,8 +244,8 @@ export default function StudentApplyPage() {
                     />
                   ) : (
                     <div className="text-bp-blue text-[14px] font-medium">
-                      {/* Change displayed text depending on whether application cycle hasn't started/has passed */}
-                      {/* Student applications will be open on{' '}
+                      {/* Change displayed text depending on whether application cycle hasn't started/has passed
+                      Student applications will be open on{' '}
                       {config.application_release_date}. */}
                       Student applications closed on{' '}
                       {config.application_deadline}.
@@ -388,8 +393,7 @@ export default function StudentApplyPage() {
                   Building on top of your work from the interview, this
                   submission will give you a chance to showcase your ability to
                   iterate and your visual design skills. The prompt will be
-                  covered during the interview. We will host design challenge
-                  office hours on {config.design_challenge_office_hours}.
+                  covered during the interview.
                 </>
               }
               last
@@ -567,7 +571,7 @@ export default function StudentApplyPage() {
             periodic one-on-ones with members. We also guide all new developers
             and designers through our technical onboarding processes and make
             sure there is always space to ask for help, no matter how large or
-            small the task. Project Leaders and our External Vice Presidet also
+            small the task. Project Leaders and our External Vice President also
             ensure project success through organized timelines that make tasks
             and expectations as clear as possible throughout the semester.{' '}
             <br />
