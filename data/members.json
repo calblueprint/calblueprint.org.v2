@@ -91,6 +91,20 @@
       "role": "Designer"
     },
     {
+      "first_name": "Yash",
+      "last_name": "Saswade",
+      "email": "yashsaswade@berkeley.edu",
+      "role": "Designer",
+      "prev_roles": "Designer, External Director"
+    },
+        {
+      "first_name": "Jesslyn",
+      "last_name": "Ruswan",
+      "email": "jesslyn_ruswan@berkeley.edu",
+      "role": "Designer",
+      "prev_roles": "Designer"
+    },
+    {
       "first_name": "Haeum",
       "last_name": "Lee",
       "email": "haeumlee@berkeley.edu",
@@ -119,7 +133,7 @@
       "first_name": "Kyle",
       "last_name": "Ramachandran",
       "email": "kyleramachandran@berkeley.edu",
-      "role": "External Director",
+      "role": "Social",
       "prev_roles": "President, VP of Technology, Project Leader, Project Developer"
     },
     {
@@ -260,13 +274,6 @@
       "prev_roles": "Project Leader, Project Developer"
     },
     {
-      "first_name": "Jesslyn",
-      "last_name": "Ruswan",
-      "email": "jesslyn_ruswan@berkeley.edu",
-      "role": "Social",
-      "prev_roles": "Designer"
-    },
-    {
       "first_name": "Joshua",
       "last_name": "Chou",
       "email": "joshchou@berkeley.edu",
@@ -314,13 +321,6 @@
       "email": "torinnayak@berkeley.edu",
       "role": "Social",
       "prev_roles": "Project Developer"
-    },
-    {
-      "first_name": "Yash",
-      "last_name": "Saswade",
-      "email": "yashsaswade@berkeley.edu",
-      "role": "Social",
-      "prev_roles": "Designer, External Director"
     }
   ],
 
