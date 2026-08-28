@@ -1,8 +1,58 @@
 {
   "projects": {
     "projects_list": {
-      "amigos": {
+      "borp": {
         "status": "current",
+        "title": "BORP",
+        "blurb": "BORP works to provide adaptive sports, fitness, and recreational programs for youth and adults with physical mobility and vision disabilities",
+        "short_summary": "BORP or Bay Area Outreach and Recreation Program, originally based in Berkeley, CA, works to provide adaptive sports, fitness, and recreational programs for youth and adults with physical mobility and vision disabilities. Access California (Access CA) is a BORP program that, for roughly 20 years, has published detailed accessibility guides for outdoor sites across California — largely along the coast.",
+        "org_link": "https://www.borp.org",
+        "color": "1c5b92",
+        "banner_image": "images/projects/borp.png",
+        "full_description": "Our Project\n-----------\nAn iOS-first mobile app for BORP's Access California program that digitizes outdoor accessibility surveying, replacing manual, equipment-heavy fieldwork with a structured in-app workflow. It walks surveyors through a guided, site-ordered questionnaire using the device's camera to measure features like slope and width, tagging each site with GPS location, and working fully offline since trails rarely have signal. By combining structured surveying, offline capture, GPS mapping, and direct barrier reporting — a combination no existing app offers — the project will let the NPO produce accessibility guides faster and expand access to outdoor recreation for people with mobility and vision disabilities."
+      },
+      "btsadv": {
+        "status": "current",
+        "title": "BTSADV",
+        "blurb": "BTSADV is a nonprofit helping survivors of domestic violence access peer support, advocacy, education, healing programs, and trusted resources",
+        "short_summary": "BTSADV, or Break the Silence Against Domestic Violence, is a national nonprofit helping survivors of domestic violence access peer support, advocacy, education, healing programs, and trusted resources with one of the largest online networks and communities in this space. Their goal is to make it easier for survivors to safely get help, find the right support, and rebuild their lives.",
+        "org_link": "https://breakthesilencedv.org",
+        "color": "632082",
+        "banner_image": "images/projects/btsadv.jpeg",
+        "full_description": "Our Project\n-----------\nA discreet iOS app built to give survivors a safer way to seek help and document abuse. Survivors can contact BTSADV’s non-crisis Support Line, get matched with trusted local resources, and privately keep journals, photos, videos, and important documents in one place. The app will be designed to look like a normal lifestyle/wellness app, with features like quick exit, discreet notifications, and protected access."
+      },
+      "oaklandbloom": {
+        "status": "current",
+        "title": "Oakland Bloom",
+        "blurb": "Oakland Bloom works towards support working-class, immigrant, and refugee groups in Oakland creating restaurant businesses",
+        "short_summary": "Oakland Bloom is a nonprofit that works towards support working-class, immigrant, and refugee groups in Oakland creating restaurant businesses. Their goal is to develop economic equity and racial justice in the food industry; particularly through communicating catering options and leading Open Test Kitchen — a shared commercial kitchen that chefs can use, giving them affordable facilities, business support, catering and pop-up opportunities, and connections to resources. ",
+        "org_link": "https://oaklandbloom.org",
+        "color": "45abad",
+        "banner_image": "images/projects/oaklandbloom.png",
+        "full_description": "Our Project\n-----------\nThis project builds a WhatsApp bot and companion app for Oakland Bloom, a nonprofit supporting immigrant and refugee chefs through its shared Open Test Kitchen. The bot automates catering communication, pulling from a database of past events and orders to cut down repetitive coordination, while the app adds a kitchen/equipment booking system that prevents double-booking, plus photo-based check-in/check-out (with potential CV) to track equipment condition. An admin dashboard gives staff a centralized view of reservations, equipment, and chef activity — reducing manual work and helping Oakland Bloom scale support for chefs."
+      },
+      "vts": {
+        "status": "current",
+        "title": "VTS",
+        "blurb": "VTS helps veterans, active duty service members, reservists, National Guard members, and military spouses transition into civilian careers",
+        "short_summary": "Veterans Transition Support (VTS) is an all-volunteer 501(c)(3) nonprofit based in San Diego County, California, founded in 2014 to help veterans, active duty service members, reservists, National Guard members, and military spouses transition into civilian careers. They host free and low-cost certification classes, career workshops, networking events, and resource briefings aimed at helping participants build confidence and move into meaningful civilian jobs.",
+        "org_link": "https://veteranstransitionsupport.org/",
+        "color": "254771",
+        "banner_image": "images/projects/vts.png",
+        "full_description": "Our Project\n-----------\nVTS's biggest challenge is that participants must repeatedly re-enter the same personal, military, education, certification, and employment information every time they register for a workshop, apply for an opportunity, or request a service. Our solution is a centralized participant portal where each person creates one account and maintains one reusable profile. This is also tied to their reporting needs, since demonstrating impact to donors, grantors, and their board is a priority and they want to avoid double-counting participants who attend multiple programs. We will also be building an automated job matching board based on applicant experience and military certifications."
+      },
+      "zeroabuse": {
+        "status": "current",
+        "title": "Zero Abuse Project",
+        "blurb": "Zero Abuse Project works to prevent child exploitation and strengthen child safety through education, training, research, and policy. Their team works in a landscape that changes incredibly quickly, with new technologies, platforms, and developments in AI creating new challenges for professionals trying to keep children safe.",
+        "short_summary": "Zero Abuse Project works to prevent child exploitation and strengthen child safety through education, training, research, and policy. Their team works in a landscape that changes incredibly quickly, with new technologies, platforms, and developments in AI creating new challenges for professionals trying to keep children safe.",
+        "org_link": "https://zeroabuseproject.org/",
+        "color": "FFDD00",
+        "banner_image": "images/projects/zeroabuse.png",
+        "full_description": "Our Project\n-----------\nWe’re building a Trusted Intelligence Platform, an AI-powered system that continuously gathers information from trusted public sources such as news, research, government reports, court cases, and platform updates. The platform will organize and connect this information so their team can quickly understand what’s happening, what’s changing, and what might be emerging."
+      },
+      "amigos": {
+        "status": "past",
         "title": "Amigos de Los Rios",
         "blurb": "Amigos de los Rios is working to create the Emerald Necklace: a natural infrastructure network throughout under-served communities in the Los Angeles Basin",
         "short_summary": "Amigos de los Rios is working to create the Emerald Necklace: a natural infrastructure network of green spaces, green schools, parks, and trails throughout under-served communities in the Los Angeles Basin. In the wake of the Eaton Fire, Amigos is focused on restoring trees and natural spaces in the Altadena area. A key part of their mutual-aid recovery effort is sending volunteers to water newly planted trees on private properties.",
@@ -12,7 +62,7 @@
         "full_description": "Our Project\n-----------\nA mobile application to optimize and support volunteer tree-watering operations. The app will automatically generate efficient routes for each volunteer group using mapping and routing algorithms, removing the need for staff to manually assign tasks. Volunteers will be able to access their personalized routes on their phones, navigate to each property, and submit real-time updates on watering activity, tree conditions, and issues encountered. This system will make the watering program more efficient, scalable, and impactful for Amigos’  reforestation efforts."
       },
       "adopt": {
-        "status": "current",
+        "status": "past",
         "title": "Adopt an Inmate",
         "blurb": "Adopt an Inmate connects people in prison (adoptees) with free people (adopters) to provide support and guidance within the justice system via letters",
         "short_summary": "Adopt an Inmate connects people in prison (adoptees) with free people (adopters) to provide support and guidance within the justice system via letters. They aim to increase incarcerated individuals’ likelihood of a successful reentry into society by amplifying their voices and expanding their support system.",
@@ -22,7 +72,7 @@
         "full_description": "Our Project\n-----------\nA web application integrated with a vector database that automates the matching process between adopters and adoptees, replacing a slow, manual matching system. The vector database stores vector embeddings of adoptees and is queried using vector embeddings of adopters to find the best matches. The web app manages the adopter experience through an intuitive presentation of the matching process results. This project will streamline Adopt an Inmate’s impact by scaling and expediting their adopter-matching process, ultimately expanding adoptees’ access to support."
       },
       "ecovet": {
-        "status": "current",
+        "status": "past",
         "title": "Ecovet Global",
         "blurb": "Ecovet is a group of veterinarians and epidemiologists that partner to support communities/ecosystems, focusing mostly on human and animal health",
         "short_summary": "Ecovet is a group of veterinarians and epidemiologists that partner to support communities/ecosystems, focusing mostly on human and animal health. Their work includes zoonotic disease risk mitigation, health & environmental scenario-planning, capacity enhancement of veterinary/health services, and more!",
@@ -32,7 +82,7 @@
         "full_description": "Our Project\n-----------\nOur project, called StartX, is a tabletop exercise for organizations to create plans for public health emergencies. In these multiplayer, multi-scenario game sessions, participants can answer scenario-questions and communicate with others in order to evaluate their current emergency-response protocols or build new ones. With government agencies and nonprofit staff members as our primary users, this project will allow teams to create robust, testable plans of action for emergency scenarios."
       },
       "replate": {
-        "status": "current",
+        "status": "past",
         "title": "Replate",
         "blurb": "Replate is a tech-enabled nonprofit that aims to reduce food waste and food insecurity, while also mitigating climate change across the globe",
         "short_summary": "Replate is a tech-enabled nonprofit that aims to reduce food waste and food insecurity, while also mitigating climate change across the globe. Established in 2016, Replate started in Berkeley, picking up food from Cal's dining halls, and handing out the food to Berkeley's unhoused and food-insecure population. Since then, they’ve scaled their food rescue platform to assist business across the nation with donating surplus food to nonprofits that serve food-insecure communities.",
@@ -42,7 +92,7 @@
         "full_description": "Our Project\n-----------\nA cross-platform mobile application (iOS and Android) that enables partner food rescuers to record donation data instantly at the time of pickup. This will replace the current pen-and-paper system, where rescuers log information manually, pass it to an admin, and wait for the admin to upload it into Replate’s system, a process that often causes delays in invoicing food generators and reporting donation metrics. As Replate continues to work with more partner organizations (that are paid to pickup free food), this mobile app would provide a valuable tool to smoothly and easily collect data on food rescues, ultimately improving the whole food ecosystem."
       },
       "rose": {
-        "status": "current",
+        "status": "past",
         "title": "Rose Academies - Uganda",
         "blurb": "Rose Academies - Uganda serves rural Ugandan communities by improving access to education on health, nutrition, menstrual hygiene, and job skills",
         "short_summary": "Rose Academies - Uganda serves rural Ugandan communities by improving access to education on health, nutrition, menstrual hygiene, and job skills, helping prevent disease, strengthen families, and support children’s growth. Their programs are designed to address the lack of healthcare information that often leads to preventable deaths. Their Ugandan educators take these lessons directly into villages, closing the gap for communities with little or no access to vital knowledge.",
