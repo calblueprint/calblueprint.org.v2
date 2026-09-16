@@ -1,9 +1,9 @@
 {
   "banner_text": "📣 Our application for Fall 2026 is now open! 📣",
-  "banner_enabled": true,
+  "banner_enabled": false,
 
   "semester": "Fall 2026",
-  "student_applications_enabled": true,
+  "student_applications_enabled": false,
   "student_application_link": "https://airtable.com/appcLNEj60rKEFNSB/pagHQO2OP2jJUvJGF/form",
 
   "application_release_date": "Sunday, August 23rd",
