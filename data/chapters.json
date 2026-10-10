@@ -44,9 +44,15 @@
     },
     {
       "name": "Simon Fraser University",
-      "description": "Established in 2023, SFU Blueprint is our newest chapter in Canada🍁",
+      "description": "Established in 2023, SFU Blueprint is our newest chapter in Canada 🍁",
       "url": "https://sfublueprint.org/",
       "image": "images/chapters/sfu.png"
+    },
+    {
+      "name": "Stevens Institute of Technology",
+      "description": "Blueprint at the Stevens Institute of Technology was established in 2021 🚀",
+      "url": "https://sitblueprint.com/",
+      "image": "images/chapters/stevens.png"
     }
   ]
 }
