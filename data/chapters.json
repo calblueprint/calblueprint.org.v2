@@ -14,7 +14,7 @@
     },
     {
       "name": "University of Toronto",
-      "description": "We were very excited to establish the second Canadian chapter in 2020 🌿",
+      "description": "Blueprint at the University of Toronto is the second Canadian chapter, established in 2020 🌿",
       "url": "http://uoftblueprint.org/",
       "image": "images/chapters/toronto.png"
     },
@@ -44,7 +44,7 @@
     },
     {
       "name": "Simon Fraser University",
-      "description": "Established in 2023, SFU Blueprint is our newest chapter in Canada 🍁",
+      "description": "Established in 2023, SFU Blueprint is another chapter in Canada 🍁",
       "url": "https://sfublueprint.org/",
       "image": "images/chapters/sfu.png"
     },
@@ -53,6 +53,24 @@
       "description": "Blueprint at the Stevens Institute of Technology was established in 2021 🚀",
       "url": "https://sitblueprint.com/",
       "image": "images/chapters/stevens.png"
+    },
+    {
+      "name": "University of Alberta",
+      "description": "Our UofA Chapter is our first chapter in Western Canada 🚀",
+      "url": "https://uofablueprint.com/",
+      "image": "images/chapters/alberta.png"
+    },
+    {
+      "name": "University of California, Santa Cruz",
+      "description": "Blueprint at the University of California, Santa Cruz was established in 2023 🚀",
+      "url": "https://ucscblueprint.org/",
+      "image": "images/chapters/ucsc.png"
+    },
+    {
+      "name": "University at Albany",
+      "description": "Blueprint at the University at Albany is our newest chapter ♥️",
+      "url": "https://www.instagram.com/uablueprint/",
+      "image": "images/chapters/albany.png"
     }
   ]
 }
